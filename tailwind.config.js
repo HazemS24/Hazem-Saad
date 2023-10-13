@@ -14,6 +14,10 @@ module.exports = {
     extend: {
       fontFamily: {
         tanker: "tanker",
+        oswald: ["Oswald", "sans-serif"]
+      },
+      colors: {
+        'very-dark-gray': '#25252A'
       }
     },
   },

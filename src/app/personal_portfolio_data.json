@@ -88,14 +88,14 @@
 		"description": "Achieved first place across all participating schools (in the Greater Toronto Area) in MIST's Math Olympics.",
 		"start_date": "May 2022",
 		"end_date": null,
-		"type": "Award"
+		"type": "Awards"
 	},
 	{
 		"name": "Ontario Scholar",
 		"description": "Achieved a grade of 80% at least six times in Grade 12 courses.",
 		"start_date": "June 2022",
 		"end_date": null,
-		"type": "Award"
+		"type": "Awards"
 	},
 
 	{
@@ -103,20 +103,20 @@
 		"description": "Achieved top 25% out of all participants across the world in the following contests: \nPascal Contest (2018)\nCayley Contest (2019)\nFermat Contest (2020)\nCanadian Senior Mathematics Contest (2020)\nCanadian Senior Mathematics Contest (2021)",
 		"start_date": "2018",
 		"end_date": "2022",
-		"type": "Award"
+		"type": "Awards"
 	},
 	{
 		"name": "ASD-S Math Competition",
 		"description": "Achieved first place with a team in a Mathematics Competition across all schools in the Anglophone South District - South (ASD-S) District.",
 		"start_date": "November 2019",
 		"end_date": null,
-		"type": "Award"
+		"type": "Awards"
 	},
 	{
 		"name": "GreyHound Hounds Honors",
 		"description": "Achieved GreyHound Hounds Honors with a 95% average at Saint John High School during the 2018-2019 school year.",
 		"start_date": "June 2019",
 		"end_date": null,
-		"type": "Award"
+		"type": "Awards"
 	}
 ]
