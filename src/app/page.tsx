@@ -11,7 +11,7 @@ import {
 import { RxDashboard } from "react-icons/rx";
 import { BiSolidAward } from "react-icons/bi";
 import Image from "next/image";
-import hazem from "public/hazem_saad.jpg";
+import hazem from "public/images/hazem_saad.jpg";
 import sections from "./personal_portfolio_data.json";
 import { useState } from "react";
 
@@ -110,10 +110,10 @@ export default function Home() {
 
         <section className="flex bg-white m-5 realtive rounded-3xl overflow-hidden border-very-dark-gray dark:border-white border-[4px]">
           <div
-            className={`bg-very-dark-gray p-5 pt-8 shadow-xl  duration-500 md:relative max-md:absolute max-md:ml-4 max-md:mt-4 ${
+            className={`bg-very-dark-gray p-5 pt-8 shadow-xl duration-500 md:relative max-md:absolute max-md:ml-4 max-md:mt-4 z-10 ${
               open
                 ? "md:w-72 max-md:rounded-2xl"
-                : "md:w-24 max-md:w-0 max-md:h-0 max-md:p-0"
+                : "md:w-24 max-md:w-0 max-md:h-0 max-md:p-0 max-md:z-40"
             }`}
           >
             <BsArrowLeftShort
@@ -258,7 +258,7 @@ export default function Home() {
                 const { name, description, start_date, end_date, image } = section;
                 return (
                   <li className="text-center shadow-lg p-10 rounded-xl basis-5/12 flex-1 relative">
-                    <img src={section.image} className="max-w-60 max-h-60 bg-very-dark-gray p-1.5 rounded-2xl mx-auto"/>
+                    {/* <img src={section.image} className="max-w-60 max-h-60 bg-very-dark-gray p-1.5 rounded-2xl mx-auto"/> */}
                     <div className="text-lg font-medium pt-8 pb-2">
                       <strong>{name}</strong>
                     </div>

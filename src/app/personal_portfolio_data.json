@@ -5,7 +5,7 @@
 		"start_date": "January 2023",
 		"end_date": "April 2023",
 		"type": "Work Experience",
-		"image": "tuq.png"
+		"image": "images/tuq.png"
 	},
 	{
 		"name": "MIST TORONTO Competitions Organizor",
@@ -13,7 +13,7 @@
 		"start_date": "September 2022",
 		"end_date": "March 2023",
 		"type": "Volunteer Experience",
-		"image": "MIST_Toronto.png"
+		"image": "images/MIST_Toronto.png"
 	},
 	{
 		"name": "Math4me - Mentor",
@@ -21,7 +21,7 @@
 		"start_date": "November 2020",
 		"end_date": "Present",
 		"type": "Work Experience",
-		"image": "math4me.png"
+		"image": "images/math4me.png"
 	},
 	{
 		"name": "Ontario Scholar",
@@ -29,7 +29,7 @@
 		"start_date": "June 2022",
 		"end_date": null,
 		"type": "Awards",
-		"image": "ontario_scholar.jpg"
+		"image": "images/ontario_scholar.jpg"
 	},
 	{
 		"name": "MIST (Muslim Interscholastic Tournament) Toronto Math Olympics",
@@ -37,7 +37,7 @@
 		"start_date": "May 2022",
 		"end_date": null,
 		"type": "Awards",
-		"image": "Tuq.png"
+		"image": "images/mist_math_olympics.png"
 	},
 	{
 		"name": "Senior Scholar at John Fraser Secondary School",
@@ -45,7 +45,7 @@
 		"start_date": "September 2021",
 		"end_date": " June 2022",
 		"type": "Volunteer Experience",
-		"image": "johnfraser_logo.png"
+		"image": "images/johnfraser_logo.png"
 	},
 	{
 		"name": "University of Waterloo - Math Contests",
@@ -53,7 +53,7 @@
 		"start_date": "2018",
 		"end_date": "2022",
 		"type": "Awards",
-		"image": "Tuq.png"
+		"image": "images/uw_math_contests.png"
 	},
 	{
 		"name": "Muslim Student Association (MSA) Event Organizer",
@@ -61,7 +61,7 @@
 		"start_date": "September 2021",
 		"end_date": "June 2022",
 		"type": "Volunteer Experience",
-		"image": "jfss_msa.jpg"
+		"image": "images/jfss_msa.jpg"
 	},
 	{
 		"name": "Mikey AED CPR",
@@ -69,7 +69,7 @@
 		"start_date": "October 2020",
 		"end_date": null,
 		"type": "Volunteer Experience",
-		"image": "mikey_aid_cpr.png"
+		"image": "images/mikey_aid_cpr.png"
 	},
 	{
 		"name": "Scholten's Shell - Convenience Store",
@@ -77,7 +77,7 @@
 		"start_date": "June 2020",
 		"end_date": "August 2020",
 		"type": "Work Experience",
-		"image": "scholten.jpg"
+		"image": "images/scholten.jpg"
 	},
 	{
 		"name": "ASD-S Math Competition",
@@ -85,14 +85,15 @@
 		"start_date": "November 2019",
 		"end_date": null,
 		"type": "Awards",
-		"image": "asds_winner.jpg"
+		"image": "images/asds_winner.jpg"
 	},
 	{
 		"name": "Youth Peace Mural - 10 St. James Street, Saint John, NB",
 		"description": "The Youth Peace mural was a building-size project which took several months to complete. I would be scheduled to help paint the mural for 5 hours a week alongside other people and newcomers. I gained experience creating ice-breakers and being more socially aware since some newcomers could not speak English, so I took it as my own responsibility to make sure that everyone had the best experience, no matter what obstacles they faced. It was my honour to be a part of it since it stands for diversity and equality between all people with no discrimination!",
 		"start_date": "September 2019",
 		"end_date": "November 2019",
-		"type": "Volunteer Experience"
+		"type": "Volunteer Experience",
+		"image": "images/peace_mural.png"
 	},
 	{
 		"name": "Third Shift Workshops",
@@ -100,7 +101,7 @@
 		"start_date": "August 2019",
 		"end_date": null,
 		"type": "Volunteer Experience",
-		"image": "thirdshift.jpg"
+		"image": "images/thirdshift.jpg"
 	},
 	{
 		"name": "Volunteer Book Organizer at Big Brothers Big sisters of Saint John, NB",
@@ -108,7 +109,7 @@
 		"start_date": "August 2019",
 		"end_date": null,
 		"type": "Volunteer Experience",
-		"image": "bbbs.png"
+		"image": "images/bbbs.png"
 	},
 	{
 		"name": "GreyHound Hounds Honors",
@@ -116,7 +117,7 @@
 		"start_date": "June 2019",
 		"end_date": null,
 		"type": "Awards",
-		"image": "greyhound.jpg"
+		"image": "images/greyhound.jpg"
 	},
 	{
 		"name": "Salvation Army Kettle Drive",
@@ -124,7 +125,7 @@
 		"start_date": "February 2018",
 		"end_date": null,
 		"type": "Volunteer Experience",
-		"image": "salvation_army.jpg"
+		"image": "images/salvation_army.jpg"
 	},
 	{
 		"name": "Gleaning",
@@ -132,6 +133,6 @@
 		"start_date": "Ocotober 2018",
 		"end_date": null,
 		"type": "Volunteer Experience",
-		"image": "carrots.jpg"
+		"image": "images/carrots.jpg"
 	}
 ]
