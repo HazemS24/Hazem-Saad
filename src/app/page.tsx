@@ -252,13 +252,12 @@ export default function Home() {
           </div>
 
           <div className="p-[30px] md:pt-5 ">
-            {/* <h1></h1> */}
             <ul className="lg:flex lg:flex-row lg:flex-wrap lg:justify-between gap-10">
               {filteredSections.slice(0, visible).map((section) => {
                 const { name, description, start_date, end_date, image } = section;
                 return (
                   <li className="text-center shadow-lg p-10 rounded-xl basis-5/12 flex-1 relative">
-                    {/* <img src={section.image} className="max-w-60 max-h-60 bg-very-dark-gray p-1.5 rounded-2xl mx-auto"/> */}
+                    <img src={section.image} className="max-w-60 max-h-60 bg-very-dark-gray p-1.5 rounded-2xl mx-auto"/>
                     <div className="text-lg font-medium pt-8 pb-2">
                       <strong>{name}</strong>
                     </div>
