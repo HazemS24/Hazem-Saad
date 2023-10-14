@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,7 +19,3 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@font-face{
-  font-family: "tanker";
-  src: url('/public/Tanker-Regular.otf')
-}

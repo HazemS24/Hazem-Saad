@@ -104,12 +104,12 @@ export default function Home() {
 
         <section className="flex bg-white m-5 realtive rounded-3xl overflow-hidden border-very-dark-gray dark:border-white border-[4px]">
           <div
-            className={`bg-very-dark-gray p-5 pt-8 shadow-xl  duration-500 md:relative max-md:absolute max-md:ml-4 max-md:mt-4 font-oswald${
+            className={`bg-very-dark-gray p-5 pt-8 shadow-xl  duration-500 md:relative max-md:absolute max-md:ml-4 max-md:mt-4 ${
               open ? "md:w-72 max-md:rounded-2xl" : "md:w-24 max-md:w-0 max-md:h-0 max-md:p-0"
             }`}
           >
             <BsArrowLeftShort
-              className={`max-md:hidden bg-white text-teal-500 text-3xl absolute rounded-full -right-3 top-4 border-2 border-teal-500 duration-500 cursor-pointer ${
+              className={`max-md:hidden bg-very-dark-gray text-teal-500 text-4xl absolute rounded-full -right-4 top-4 border-2 border-teal-500 duration-500 cursor-pointer ${
                 !open && "rotate-180"
               }`}
               onClick={() => setOpen(!open)}
