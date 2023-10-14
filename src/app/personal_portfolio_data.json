@@ -7,20 +7,6 @@
 		"type": "Work Experience"
 	},
 	{
-		"name": "Math4me - Mentor",
-		"description": "Worked as a Math, Science, and English mentor to middle-school and high-school students who required assistance with those subjects. I achieved 'Mentor of the Month' at the time I started because of the hard work and dedication I had put into the job. After almost two years of working at Math4me, I have learned how to adapt and please different mindsets while convincing people - especially youth - to do what is right for them.",
-		"start_date": "November 2020",
-		"end_date": "Present",
-		"type": "Work Experience"
-	},
-	{
-		"name": "Scholten's Shell - Convenience Store",
-		"description": "A floor worker and substitute cashier at a convenience store in New Brunswick. Working here gave me the experience to know how people think, and what the average person wants.",
-		"start_date": "June 2020",
-		"end_date": "August 2020",
-		"type": "Work Experience"
-	},
-	{
 		"name": "MIST TORONTO Competitions Organizor",
 		"description": "Helped recruit 50+ judges and moderators for the competitions to take place. I completed this with a team of 100+ members in 6 months.",
 		"start_date": "September 2022",
@@ -28,11 +14,39 @@
 		"type": "Volunteer Experience"
 	},
 	{
+		"name": "Math4me - Mentor",
+		"description": "Worked as a Math, Science, and English mentor to middle-school and high-school students who required assistance with those subjects. I achieved 'Mentor of the Month' at the time I started because of the hard work and dedication I had put into the job. After almost two years of working at Math4me, I have learned how to adapt and please different mindsets while convincing people - especially youth - to do what is right for them.",
+		"start_date": "November 2020",
+		"end_date": "Present",
+		"type": "Work Experience"
+	},
+	{
+		"name": "Ontario Scholar",
+		"description": "Achieved a grade of 80% at least six times in Grade 12 courses.",
+		"start_date": "June 2022",
+		"end_date": null,
+		"type": "Awards"
+	},
+	{
+		"name": "MIST (Muslim Interscholastic Tournament) Toronto Math Olympics",
+		"description": "Achieved first place across all participating schools (in the Greater Toronto Area) in MIST's Math Olympics.",
+		"start_date": "May 2022",
+		"end_date": null,
+		"type": "Awards"
+	},
+	{
 		"name": "Senior Scholar at John Fraser Secondary School",
 		"description": "I would be placed for an hour time slot every week to help out peers and students in our school with specific subject materials that they were struggling with. I got the chance to feel charitable and master all the concepts I was helping with from all points of view - since I had to understand their questions and use my logical thinking to connect them to common misinterpretations about each concept.",
 		"start_date": "September 2021",
 		"end_date": " June 2022",
 		"type": "Volunteer Experience"
+	},
+	{
+		"name": "University of Waterloo - Math Contests",
+		"description": "Achieved top 25% out of all participants across the world in the following contests: \nPascal Contest (2018)\nCayley Contest (2019)\nFermat Contest (2020)\nCanadian Senior Mathematics Contest (2020)\nCanadian Senior Mathematics Contest (2021)",
+		"start_date": "2018",
+		"end_date": "2022",
+		"type": "Awards"
 	},
 	{
 		"name": "Muslim Student Association (MSA) Event Organizer",
@@ -47,6 +61,20 @@
 		"start_date": "October 2020",
 		"end_date": null,
 		"type": "Volunteer Experience"
+	},
+	{
+		"name": "Scholten's Shell - Convenience Store",
+		"description": "A floor worker and substitute cashier at a convenience store in New Brunswick. Working here gave me the experience to know how people think, and what the average person wants.",
+		"start_date": "June 2020",
+		"end_date": "August 2020",
+		"type": "Work Experience"
+	},
+	{
+		"name": "ASD-S Math Competition",
+		"description": "Achieved first place with a team in a Mathematics Competition across all schools in the Anglophone South District - South (ASD-S) District.",
+		"start_date": "November 2019",
+		"end_date": null,
+		"type": "Awards"
 	},
 	{
 		"name": "Youth Peace Mural - 10 St. James Street, Saint John, NB",
@@ -70,6 +98,13 @@
 		"type": "Volunteer Experience"
 	},
 	{
+		"name": "GreyHound Hounds Honors",
+		"description": "Achieved GreyHound Hounds Honors with a 95% average at Saint John High School during the 2018-2019 school year.",
+		"start_date": "June 2019",
+		"end_date": null,
+		"type": "Awards"
+	},
+	{
 		"name": "Salvation Army Kettle Drive",
 		"description": "The Salvation Army Kettle Drive is an organization that dedicates its efforts to donations. I - with a group of people - collected donations in an Atlantic Superstore during Christmas with candy canes as a gift for people who did donate.",
 		"start_date": "February 2018",
@@ -82,41 +117,5 @@
 		"start_date": "Ocotober 2018",
 		"end_date": null,
 		"type": "Volunteer Experience"
-	},
-	{
-		"name": "MIST (Muslim Interscholastic Tournament) Toronto Math Olympics",
-		"description": "Achieved first place across all participating schools (in the Greater Toronto Area) in MIST's Math Olympics.",
-		"start_date": "May 2022",
-		"end_date": null,
-		"type": "Awards"
-	},
-	{
-		"name": "Ontario Scholar",
-		"description": "Achieved a grade of 80% at least six times in Grade 12 courses.",
-		"start_date": "June 2022",
-		"end_date": null,
-		"type": "Awards"
-	},
-
-	{
-		"name": "University of Waterloo - Math Contests",
-		"description": "Achieved top 25% out of all participants across the world in the following contests: \nPascal Contest (2018)\nCayley Contest (2019)\nFermat Contest (2020)\nCanadian Senior Mathematics Contest (2020)\nCanadian Senior Mathematics Contest (2021)",
-		"start_date": "2018",
-		"end_date": "2022",
-		"type": "Awards"
-	},
-	{
-		"name": "ASD-S Math Competition",
-		"description": "Achieved first place with a team in a Mathematics Competition across all schools in the Anglophone South District - South (ASD-S) District.",
-		"start_date": "November 2019",
-		"end_date": null,
-		"type": "Awards"
-	},
-	{
-		"name": "GreyHound Hounds Honors",
-		"description": "Achieved GreyHound Hounds Honors with a 95% average at Saint John High School during the 2018-2019 school year.",
-		"start_date": "June 2019",
-		"end_date": null,
-		"type": "Awards"
 	}
 ]

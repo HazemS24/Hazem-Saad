@@ -3,7 +3,11 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill, BsArrowLeftShort } from "react-icons/bs";
 import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
-import { MdWorkOutline, MdOutlineVolunteerActivism } from "react-icons/md";
+import {
+  MdWorkOutline,
+  MdOutlineVolunteerActivism,
+  MdOutlineFilterList,
+} from "react-icons/md";
 import { RxDashboard } from "react-icons/rx";
 import { BiSolidAward } from "react-icons/bi";
 import Image from "next/image";
@@ -13,8 +17,13 @@ import { useState } from "react";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
+  const [visible, setVisible] = useState(4);
   const [filteredSections, setFilteredSections] = useState(sections);
+
+  const showMoreItems = () => {
+    setVisible((previousValue) => previousValue + 4);
+  };
 
   const filterByType = (type: string) => {
     const filtered = sections.filter((section) => section.type.includes(type));
@@ -93,25 +102,39 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="flex bg-white m-5 relative rounded-3xl overflow-hidden border-very-dark-gray dark:border-white border-[4px]">
+        <section className="flex bg-white m-5 realtive rounded-3xl overflow-hidden border-very-dark-gray dark:border-white border-[4px]">
           <div
-            className={`bg-very-dark-gray p-5 pt-8 ${
-              open ? "w-72" : "w-24"
-            } duration-500 relative font-oswald`}
+            className={`bg-very-dark-gray p-5 pt-8 shadow-xl  duration-500 md:relative max-md:absolute max-md:ml-4 max-md:mt-4 font-oswald${
+              open ? "md:w-72 max-md:rounded-2xl" : "md:w-24 max-md:w-0 max-md:h-0 max-md:p-0"
+            }`}
           >
             <BsArrowLeftShort
-              className={`bg-white text-teal-500 text-3xl absolute rounded-full -right-3 top-4 border-2 border-teal-500 duration-500 cursor-pointer ${
+              className={`max-md:hidden bg-white text-teal-500 text-3xl absolute rounded-full -right-3 top-4 border-2 border-teal-500 duration-500 cursor-pointer ${
                 !open && "rotate-180"
               }`}
               onClick={() => setOpen(!open)}
             />
 
-            <div className="flex py-5">
+            <MdOutlineFilterList
+              className={`md:hidden bg-teal-500 rounded-md border-2  border-very-dark-gray text-very-dark-gray text-5xl duration-500 cursor-pointer ${
+                open === true ? "w-60" : "rotate-[360deg]"
+              }`}
+              onClick={() => setOpen(!open)}
+            />
+
+            <div
+              className={`flex py-5 transition-all ease-in-out duration-500 ${
+                open === true ? "" : "max-md:scale-0"
+              }`}
+            >
               <button
                 className={`p-0 pt-5 ${
                   open ? "w-60" : "w-10"
                 } duration-500 relative`}
-                onClick={(e) => filterByType("")}
+                onClick={() => {
+                  filterByType("");
+                  setVisible(4);
+                }}
               >
                 <RxDashboard
                   className={`bg-teal-500 text-5xl rounded float-left mr-2 duration-500 flex-shrink-0 p-1 ${
@@ -128,12 +151,19 @@ export default function Home() {
               </button>
             </div>
 
-            <div className="flex py-5">
+            <div
+              className={`flex py-5 transition-all ease-in-out duration-500 ${
+                open === true ? "" : "max-md:scale-0"
+              }`}
+            >
               <button
                 className={`p-0 ${
                   open ? "w-60" : "w-10"
                 } duration-500 relative`}
-                onClick={(e) => filterByType("Work Experience")}
+                onClick={() => {
+                  filterByType("Work Experience");
+                  setVisible(4);
+                }}
               >
                 <MdWorkOutline
                   className={`bg-teal-500 text-5xl rounded float-left mr-2 duration-500 flex-shrink-0 p-1 ${
@@ -150,12 +180,19 @@ export default function Home() {
               </button>
             </div>
 
-            <div className="flex py-5">
+            <div
+              className={`flex py-5 transition-all ease-in-out duration-500 ${
+                open === true ? "" : "max-md:scale-0"
+              }`}
+            >
               <button
                 className={`p-0 ${
                   open ? "w-60" : "w-10"
                 } duration-500 relative`}
-                onClick={(e) => filterByType("Volunteer Experience")}
+                onClick={() => {
+                  filterByType("Volunteer Experience");
+                  setVisible(4);
+                }}
               >
                 <MdOutlineVolunteerActivism
                   className={`bg-teal-500 text-5xl rounded float-left mr-2 duration-500 flex-shrink-0 p-1 ${
@@ -163,7 +200,7 @@ export default function Home() {
                   }`}
                 />
                 <h1
-                  className={`text-white origin-left font-medium text-lg duration-75 pt-2 text-left pl-16 ${
+                  className={`text-white origin-left font-medium text-lg duration-75  text-left pl-16 ${
                     !open && "scale-0"
                   }`}
                 >
@@ -172,12 +209,19 @@ export default function Home() {
               </button>
             </div>
 
-            <div className="flex py-5">
+            <div
+              className={`flex py-5 transition-all ease-in-out duration-500 ${
+                open === true ? "" : "max-md:scale-0"
+              }`}
+            >
               <button
                 className={`p-0 ${
                   open ? "w-60" : "w-12 pr-10"
                 } duration-500 relative`}
-                onClick={(e) => filterByType("Awards")}
+                onClick={() => {
+                  filterByType("Awards");
+                  setVisible(4);
+                }}
               >
                 <BiSolidAward
                   className={`bg-teal-500 text-5xl rounded float-left mr-2 duration-500 flex-shrink-0 p-1 ${
@@ -195,14 +239,15 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="px-10 pb-10 md:pt-5 ">
+          <div className="p-[30px] md:pt-5 ">
+            {/* <h1></h1> */}
             <ul className="lg:flex lg:flex-row lg:flex-wrap lg:justify-between gap-10">
-              {filteredSections.map((section) => {
+              {filteredSections.slice(0, visible).map((section) => {
                 const { name, description, start_date, end_date } = section;
                 return (
                   <li className="text-center shadow-lg p-10 rounded-xl basis-5/12 flex-1">
                     <div className="text-lg font-medium pt-8 pb-2">
-                      Name: <strong>{name}</strong>
+                      <strong>{name}</strong>
                     </div>
                     <div className="py-2">Description: {description}</div>
                     <div className="py-4 text-teal-600">
@@ -211,6 +256,12 @@ export default function Home() {
                   </li>
                 );
               })}
+              <button
+                className="text-center shadow-lg p-10 rounded-xl w-[100%] block"
+                onClick={showMoreItems}
+              >
+                Load More
+              </button>
             </ul>
           </div>
         </section>
