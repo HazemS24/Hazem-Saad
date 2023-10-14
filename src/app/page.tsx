@@ -19,9 +19,15 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [open, setOpen] = useState(false);
   const [visible, setVisible] = useState(4);
+  const [noMore, setNoMore] = useState(false);
   const [filteredSections, setFilteredSections] = useState(sections);
 
   const showMoreItems = () => {
+    if (visible + 4 >= filteredSections.length) {
+      setNoMore(true);
+    } else {
+      setNoMore(false);
+    }
     setVisible((previousValue) => previousValue + 4);
   };
 
@@ -136,6 +142,7 @@ export default function Home() {
                 onClick={() => {
                   filterByType("");
                   setVisible(4);
+                  setNoMore(false);
                 }}
               >
                 <RxDashboard
@@ -148,7 +155,7 @@ export default function Home() {
                     !open && "scale-0"
                   }`}
                 >
-                  MY WORK
+                  ABOUT ME...
                 </h1>
               </button>
             </div>
@@ -165,6 +172,7 @@ export default function Home() {
                 onClick={() => {
                   filterByType("Work Experience");
                   setVisible(4);
+                  setNoMore(false);
                 }}
               >
                 <MdWorkOutline
@@ -194,6 +202,7 @@ export default function Home() {
                 onClick={() => {
                   filterByType("Volunteer Experience");
                   setVisible(4);
+                  setNoMore(false);
                 }}
               >
                 <MdOutlineVolunteerActivism
@@ -223,6 +232,7 @@ export default function Home() {
                 onClick={() => {
                   filterByType("Awards");
                   setVisible(4);
+                  setNoMore(false);
                 }}
               >
                 <BiSolidAward
@@ -245,9 +255,10 @@ export default function Home() {
             {/* <h1></h1> */}
             <ul className="lg:flex lg:flex-row lg:flex-wrap lg:justify-between gap-10">
               {filteredSections.slice(0, visible).map((section) => {
-                const { name, description, start_date, end_date } = section;
+                const { name, description, start_date, end_date, image } = section;
                 return (
-                  <li className="text-center shadow-lg p-10 rounded-xl basis-5/12 flex-1">
+                  <li className="text-center shadow-lg p-10 rounded-xl basis-5/12 flex-1 relative">
+                    <img src={section.image} className="max-w-60 max-h-60 bg-very-dark-gray p-1.5 rounded-2xl mx-auto"/>
                     <div className="text-lg font-medium pt-8 pb-2">
                       <strong>{name}</strong>
                     </div>
@@ -259,7 +270,9 @@ export default function Home() {
                 );
               })}
               <button
-                className="text-center shadow-lg p-10 rounded-xl w-[100%] font-pixel"
+                className={`text-center shadow-lg p-10 rounded-xl w-[100%] font-pixel ${
+                  noMore === true ? "hidden" : ""
+                }`}
                 onClick={showMoreItems}
               >
                 LOAD MORE...
