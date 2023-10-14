@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "class",
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
@@ -13,10 +12,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        pixel: ["Pixelify Sans", "sans-serif"]
+        poopins: ["Poppins", "sans-serif"]
       },
       colors: {
-        'very-dark-gray': '#25252A'
+        'very-dark-gray': '#25252A',
+        'very-dark-blue': '#293241'
+      },
+      boxShadow: {
+        'lg': '0px 0px 50px -10px rgba(0, 0, 0, 0.3)',
       }
     },
   },

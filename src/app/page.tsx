@@ -1,8 +1,13 @@
 "use client";
 
 import Head from "next/head";
-import { BsFillMoonStarsFill, BsArrowLeftShort } from "react-icons/bs";
-import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
+import { BsArrowLeftShort } from "react-icons/bs";
+import {
+  AiFillLinkedin,
+  AiFillYoutube,
+  AiOutlineInstagram,
+  AiOutlineGithub,
+} from "react-icons/ai";
 import {
   MdWorkOutline,
   MdOutlineVolunteerActivism,
@@ -16,7 +21,6 @@ import sections from "./personal_portfolio_data.json";
 import { useState } from "react";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
   const [open, setOpen] = useState(false);
   const [visible, setVisible] = useState(4);
   const [noMore, setNoMore] = useState(false);
@@ -50,49 +54,41 @@ export default function Home() {
   }
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div className="bg-slate-900 font-poopins">
       <Head>
         <title>Hazem Saad's Portfolio</title>
         <meta name="description" content="Personal Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white  dark:bg-gray-900">
-        <section className=" min-h-screen px-10 pb-10 md:pt-5 md:px-20 lg:px-30">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl">Hazem Saad</h1>
-            <ul className="flex items-center">
-              <li>
-                <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl hover:animate-pulse dark:text-white"
-                />
-              </li>
-              <li>
-                <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="https://www.linkedin.com/in/hazem-saad"
-                  rel="noreferrer"
-                >
-                  LinkedIn
-                </a>
-              </li>
-            </ul>
-          </nav>
+      <main>
+        <section className="min-h-screen px-10 pb-10 md:pt-5 md:px-20 lg:px-30">
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-lg">Hazem Saad</h2>
-            <h3 className="text-2xl py-2 md:text-3xl ">
+            <h2 className="text-5xl pb-2 md:pt-20 max-md:pt-16 text-slate-200 font-bold">
+              Hazem Saad
+            </h2>
+            <h3 className="text-2xl py-2 md:text-3xl text-slate-300">
               Developer and Engineer.
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
+            <p className="text-md py-5 leading-8 md:text-xl max-w-xl mx-auto text-slate-400">
               Dm=ummy text, this owuld be a parragrpah
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-20 py-4 text-gray-600">
-            <AiFillLinkedin />
-            <AiFillYoutube />
+          <div className="text-5xl text-slate-400  flex justify-center gap-20 py-4">
+            <a href="https://github.com/HazemS24">
+              <AiOutlineGithub className="hover:text-slate-200" />
+            </a>
+            <a href="https://www.linkedin.com/in/hazem-saad">
+              <AiFillLinkedin className="hover:text-slate-200" />
+            </a>
+            <a href="https://www.instagram.com/hazem_saad04/">
+              <AiOutlineInstagram className="hover:text-slate-200" />
+            </a>
+            <a href="https://www.youtube.com/channel/UCW2xU773uz7wGhp5ToAIX2A/">
+              <AiFillYoutube className="hover:text-slate-200" />
+            </a>
           </div>
-          <div className="relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden border-black md:h-96 md:w-96 dark:border-white border-2">
+          <div className="relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden border-slate-200 md:h-96 md:w-96  border-2">
             <Image src={hazem} alt="" />
           </div>
         </section>
@@ -108,16 +104,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="flex bg-white m-5 realtive rounded-3xl overflow-hidden border-very-dark-gray dark:border-white border-[4px]">
+        <section className="flex m-5 realtive rounded-3xl overflow-hidden shadow-lg shadow-slate-300">
           <div
-            className={`bg-very-dark-gray p-5 pt-8 shadow-xl duration-500 md:relative max-md:absolute max-md:ml-4 max-md:mt-4 z-10 ${
+            className={`bg-slate-900 p-5 pt-8 shadow-lg shadow-slate-200 duration-500 md:relative max-md:absolute max-md:ml-4 max-md:mt-4 z-10 ${
               open
                 ? "md:w-72 max-md:rounded-2xl"
                 : "md:w-24 max-md:w-0 max-md:h-0 max-md:p-0 max-md:z-40"
             }`}
           >
             <BsArrowLeftShort
-              className={`max-md:hidden bg-very-dark-gray text-teal-500 text-4xl absolute rounded-full -right-4 top-4 border-2 border-teal-500 duration-500 cursor-pointer ${
+              className={`max-md:hidden bg-slate-900 text-teal-500 text-4xl absolute rounded-full -right-4 top-4 border-2 border-teal-500 duration-500 cursor-pointer ${
                 !open && "rotate-180"
               }`}
               onClick={() => setOpen(!open)}
@@ -136,9 +132,9 @@ export default function Home() {
               }`}
             >
               <button
-                className={`p-0 pt-5 ${
+                className={`p-0 duration-500 relative rounded-md hover:bg-slate-400 ${
                   open ? "w-60" : "w-[52px]"
-                } duration-500 relative`}
+                }`}
                 onClick={() => {
                   filterByType("");
                   setVisible(4);
@@ -146,12 +142,12 @@ export default function Home() {
                 }}
               >
                 <RxDashboard
-                  className={`bg-teal-500 text-5xl rounded float-left mr-2 duration-500 flex-shrink-0 p-1 ${
+                  className={`bg-slate-300 text-5xl rounded float-left m-2 duration-500 flex-shrink-0 p-1 ${
                     open && "rotate-[360deg]"
                   }`}
                 />
                 <h1
-                  className={`text-white origin-left font-medium text-lg duration-75 pt-2 text-left pl-16 ${
+                  className={`text-slate-300 origin-left font-medium text-lg duration-75 pt-4 text-left pl-16 ${
                     !open && "scale-0"
                   }`}
                 >
@@ -166,9 +162,9 @@ export default function Home() {
               }`}
             >
               <button
-                className={`p-0 ${
+                className={`p-0 duration-500 relative rounded-md hover:bg-slate-400 ${
                   open ? "w-60" : "w-[52px]"
-                } duration-500 relative`}
+                }`}
                 onClick={() => {
                   filterByType("Work Experience");
                   setVisible(4);
@@ -176,12 +172,12 @@ export default function Home() {
                 }}
               >
                 <MdWorkOutline
-                  className={`bg-teal-500 text-5xl rounded float-left mr-2 duration-500 flex-shrink-0 p-1 ${
+                  className={`bg-slate-300 text-5xl rounded float-left mr-2 duration-500 flex-shrink-0 p-1 ${
                     open && "rotate-[360deg]"
                   }`}
                 />
                 <h1
-                  className={`text-white origin-left font-medium text-lg duration-75 pt-2 text-left pl-16 ${
+                  className={`text-slate-300 origin-left font-medium text-lg duration-75 pt-2 text-left pl-16 ${
                     !open && "scale-0"
                   }`}
                 >
@@ -196,9 +192,9 @@ export default function Home() {
               }`}
             >
               <button
-                className={`p-0 ${
+                className={`p-0 duration-500 relative rounded-md hover:bg-slate-400 ${
                   open ? "w-60" : "w-[52px]"
-                } duration-500 relative`}
+                }`}
                 onClick={() => {
                   filterByType("Volunteer Experience");
                   setVisible(4);
@@ -206,12 +202,12 @@ export default function Home() {
                 }}
               >
                 <MdOutlineVolunteerActivism
-                  className={`bg-teal-500 text-5xl rounded float-left mr-2 duration-500 flex-shrink-0 p-1 ${
+                  className={`bg-slate-300 text-5xl rounded float-left mr-2 duration-500 flex-shrink-0 p-1 ${
                     open && "rotate-[360deg]"
                   }`}
                 />
                 <h1
-                  className={`text-white origin-left font-medium text-lg duration-75  text-left pl-16 ${
+                  className={`text-slate-300 origin-left font-medium text-lg duration-75  text-left pl-16 ${
                     !open && "scale-0"
                   }`}
                 >
@@ -226,9 +222,9 @@ export default function Home() {
               }`}
             >
               <button
-                className={`p-0 ${
+                className={`p-0 duration-500 relative rounded-md hover:bg-slate-400 ${
                   open ? "w-60" : "w-[52px]"
-                } duration-500 relative`}
+                }`}
                 onClick={() => {
                   filterByType("Awards");
                   setVisible(4);
@@ -236,12 +232,12 @@ export default function Home() {
                 }}
               >
                 <BiSolidAward
-                  className={`bg-teal-500 text-5xl rounded float-left mr-2 duration-500 flex-shrink-0 p-1 ${
+                  className={`bg-slate-300 text-5xl rounded float-left mr-2 duration-500 flex-shrink-0 p-1 ${
                     open && "rotate-[360deg]"
                   }`}
                 />
                 <h1
-                  className={`text-white origin-left font-medium text-lg duration-75 pt-2 text-left pl-16 ${
+                  className={`text-slate-300 origin-left font-medium text-lg duration-75 pt-2 text-left pl-16 ${
                     !open && "scale-0"
                   }`}
                 >
@@ -251,13 +247,17 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="p-[30px] md:pt-5 ">
-            <ul className="lg:flex lg:flex-row lg:flex-wrap lg:justify-between gap-10">
+          <div className="p-[30px] md:pt-5">
+            <ul className="text-slate-300 lg:flex lg:flex-row lg:flex-wrap lg:justify-between gap-10">
               {filteredSections.slice(0, visible).map((section) => {
-                const { name, description, start_date, end_date, image } = section;
+                const { name, description, start_date, end_date, image } =
+                  section;
                 return (
-                  <li className="text-center shadow-lg p-10 rounded-xl basis-5/12 flex-1 relative">
-                    <img src={section.image} className="max-w-60 max-h-60 bg-very-dark-gray p-1.5 rounded-2xl mx-auto"/>
+                  <li className="text-center bg-slate-800 hover:shadow-lg hover:shadow-slate-300 p-10 rounded-xl basis-5/12 flex-1 relative my-2 ml-2 duration-200">
+                    <img
+                      src={section.image}
+                      className="max-h-[250px] bg-slate-700 p-4 rounded-2xl mx-auto "
+                    />
                     <div className="text-lg font-medium pt-8 pb-2">
                       <strong>{name}</strong>
                     </div>
@@ -269,7 +269,7 @@ export default function Home() {
                 );
               })}
               <button
-                className={`text-center shadow-lg p-10 rounded-xl w-[100%] font-pixel ${
+                className={`text-center shadow-lg shadow-slate-300 p-10 rounded-xl w-[100%] font-pixel ${
                   noMore === true ? "hidden" : ""
                 }`}
                 onClick={showMoreItems}
