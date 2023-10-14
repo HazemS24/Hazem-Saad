@@ -13,8 +13,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        tanker: "tanker",
-        oswald: ["Oswald", "sans-serif"]
+        pixel: ["Pixelify Sans", "sans-serif"]
       },
       colors: {
         'very-dark-gray': '#25252A'

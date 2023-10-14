@@ -54,7 +54,7 @@ export default function Home() {
       <main className="bg-white  dark:bg-gray-900">
         <section className=" min-h-screen px-10 pb-10 md:pt-5 md:px-20 lg:px-30">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-tanker">Hazem Saad</h1>
+            <h1 className="text-xl">Hazem Saad</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -74,7 +74,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-md">Hazem Saad</h2>
+            <h2 className="text-5xl py-2 text-teal-600 font-lg">Hazem Saad</h2>
             <h3 className="text-2xl py-2 md:text-3xl ">
               Developer and Engineer.
             </h3>
@@ -105,7 +105,9 @@ export default function Home() {
         <section className="flex bg-white m-5 realtive rounded-3xl overflow-hidden border-very-dark-gray dark:border-white border-[4px]">
           <div
             className={`bg-very-dark-gray p-5 pt-8 shadow-xl  duration-500 md:relative max-md:absolute max-md:ml-4 max-md:mt-4 ${
-              open ? "md:w-72 max-md:rounded-2xl" : "md:w-24 max-md:w-0 max-md:h-0 max-md:p-0"
+              open
+                ? "md:w-72 max-md:rounded-2xl"
+                : "md:w-24 max-md:w-0 max-md:h-0 max-md:p-0"
             }`}
           >
             <BsArrowLeftShort
@@ -257,10 +259,10 @@ export default function Home() {
                 );
               })}
               <button
-                className="text-center shadow-lg p-10 rounded-xl w-[100%] block"
+                className="text-center shadow-lg p-10 rounded-xl w-[100%] font-pixel"
                 onClick={showMoreItems}
               >
-                Load More
+                LOAD MORE...
               </button>
             </ul>
           </div>
