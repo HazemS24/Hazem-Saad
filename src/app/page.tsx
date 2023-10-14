@@ -88,7 +88,7 @@ export default function Home() {
               <AiFillYoutube className="hover:text-slate-200" />
             </a>
           </div>
-          <div className="relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden border-slate-200 md:h-96 md:w-96  border-2">
+          <div className="relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden border-slate-200 md:h-96 md:w-96  border-2 shadow-cs-lg shadow-slate-300">
             <Image src={hazem} alt="" />
           </div>
         </section>
@@ -104,9 +104,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="flex m-5 realtive rounded-3xl overflow-hidden shadow-lg shadow-slate-300">
+        <section className="flex m-5 realtive rounded-3xl overflow-hidden shadow-cs-lg shadow-slate-300">
           <div
-            className={`bg-slate-900 p-5 pt-8 shadow-lg shadow-slate-200 duration-500 md:relative max-md:absolute max-md:ml-4 max-md:mt-4 z-10 ${
+            className={`bg-slate-900 p-5 pt-8 shadow-cs-lg shadow-slate-200 duration-500 md:relative max-md:absolute max-md:ml-4 max-md:mt-4 z-10 ${
               open
                 ? "md:w-72 max-md:rounded-2xl"
                 : "md:w-24 max-md:w-0 max-md:h-0 max-md:p-0 max-md:z-40"
@@ -253,7 +253,7 @@ export default function Home() {
                 const { name, description, start_date, end_date, image } =
                   section;
                 return (
-                  <li className="text-center bg-slate-800 hover:shadow-lg hover:shadow-slate-300 p-10 rounded-xl basis-5/12 flex-1 relative my-2 ml-2 duration-200">
+                  <li className="text-center bg-slate-800 hover:shadow-cs-lg hover:shadow-slate-300 p-10 rounded-xl basis-5/12 flex-1 relative my-2 ml-2 duration-200">
                     <img
                       src={section.image}
                       className="max-h-[250px] bg-slate-700 p-4 rounded-2xl mx-auto "
@@ -269,7 +269,7 @@ export default function Home() {
                 );
               })}
               <button
-                className={`text-center shadow-lg shadow-slate-300 p-10 rounded-xl w-[100%] font-pixel ${
+                className={`text-center shadow-cs-lg shadow-slate-300 p-10 rounded-xl w-[100%] font-pixel ${
                   noMore === true ? "hidden" : ""
                 }`}
                 onClick={showMoreItems}
