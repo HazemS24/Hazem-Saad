@@ -137,7 +137,7 @@ export default function Home() {
             >
               <button
                 className={`p-0 pt-5 ${
-                  open ? "w-60" : "w-10"
+                  open ? "w-60" : "w-[52px]"
                 } duration-500 relative`}
                 onClick={() => {
                   filterByType("");
@@ -167,7 +167,7 @@ export default function Home() {
             >
               <button
                 className={`p-0 ${
-                  open ? "w-60" : "w-10"
+                  open ? "w-60" : "w-[52px]"
                 } duration-500 relative`}
                 onClick={() => {
                   filterByType("Work Experience");
@@ -197,7 +197,7 @@ export default function Home() {
             >
               <button
                 className={`p-0 ${
-                  open ? "w-60" : "w-10"
+                  open ? "w-60" : "w-[52px]"
                 } duration-500 relative`}
                 onClick={() => {
                   filterByType("Volunteer Experience");
@@ -227,7 +227,7 @@ export default function Home() {
             >
               <button
                 className={`p-0 ${
-                  open ? "w-60" : "w-12 pr-10"
+                  open ? "w-60" : "w-[52px]"
                 } duration-500 relative`}
                 onClick={() => {
                   filterByType("Awards");
@@ -261,7 +261,7 @@ export default function Home() {
                     <div className="text-lg font-medium pt-8 pb-2">
                       <strong>{name}</strong>
                     </div>
-                    <div className="py-2">Description: {description}</div>
+                    <div className="py-2">{description}</div>
                     <div className="py-4 text-teal-600">
                       {EndDate(start_date, end_date)}
                     </div>
