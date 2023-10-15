@@ -19,7 +19,8 @@ module.exports = {
         'very-dark-blue': '#293241'
       },
       boxShadow: {
-        'cs-lg': '0px 0px 50px -10px rgba(0, 0, 0, 0.3)',
+        'cs-lg': '0px 0px 30px 20px rgba(0, 0, 0, 0.3)',
+        'cs-xl': '0px 0px 30px -10px rgba(0, 0, 0, 0.3)'
       }
     },
   },

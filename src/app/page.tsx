@@ -1,7 +1,6 @@
 "use client";
 
 import Head from "next/head";
-import { BsArrowLeftShort } from "react-icons/bs";
 import {
   AiFillLinkedin,
   AiFillYoutube,
@@ -12,6 +11,7 @@ import {
   MdWorkOutline,
   MdOutlineVolunteerActivism,
   MdOutlineFilterList,
+  MdKeyboardArrowLeft,
 } from "react-icons/md";
 import { RxDashboard } from "react-icons/rx";
 import { BiSolidAward } from "react-icons/bi";
@@ -40,7 +40,9 @@ export default function Home() {
     setFilteredSections(filtered);
   };
 
-  const types = Array.from(new Set(sections.map((section) => section.type)));
+  const types = Array.from(
+    new Set(sections.map((section) => section.type))
+  );
 
   function EndDate(section_start_date: any, section_end_date: any) {
     if (section_end_date) {
@@ -54,7 +56,7 @@ export default function Home() {
   }
 
   return (
-    <div className="bg-slate-900 font-poopins">
+    <div className="bg-slate-900 font-poopins overflow-hidden">
       <Head>
         <title>Hazem Saad's Portfolio</title>
         <meta name="description" content="Personal Portfolio" />
@@ -64,7 +66,7 @@ export default function Home() {
       <main>
         <section className="min-h-screen px-10 pb-10 md:pt-5 md:px-20 lg:px-30">
           <div className="text-center p-10">
-            <h2 className="text-5xl pb-2 md:pt-20 max-md:pt-16 text-slate-200 font-bold">
+            <h2 className="text-5xl pb-2 md:pt-20 max-lg:pt-16 text-slate-200 font-bold">
               Hazem Saad
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl text-slate-300">
@@ -74,7 +76,7 @@ export default function Home() {
               Dm=ummy text, this owuld be a parragrpah
             </p>
           </div>
-          <div className="text-5xl text-slate-400  flex justify-center gap-20 py-4">
+          <div className="text-5xl text-slate-400 flex justify-center gap-20 py-4">
             <a href="https://github.com/HazemS24">
               <AiOutlineGithub className="hover:text-slate-200" />
             </a>
@@ -88,7 +90,7 @@ export default function Home() {
               <AiFillYoutube className="hover:text-slate-200" />
             </a>
           </div>
-          <div className="relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden border-slate-200 md:h-96 md:w-96  border-2 shadow-cs-lg shadow-slate-300">
+          <div className="relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden border-slate-200 md:h-96 md:w-96 border-2 shadow-cs-xl shadow-slate-500">
             <Image src={hazem} alt="" />
           </div>
         </section>
@@ -104,36 +106,36 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="flex m-5 realtive rounded-3xl overflow-hidden shadow-cs-lg shadow-slate-300">
+        <section className="flex m-5 realtive rounded-3xl overflow-hidden border-slate-300 border-2 shadow-cs-xl shadow-slate-500">
           <div
-            className={`bg-slate-900 p-5 pt-8 shadow-cs-lg shadow-slate-200 duration-500 md:relative max-md:absolute max-md:ml-4 max-md:mt-4 z-10 ${
+            className={`bg-slate-900 p-5 pt-8 shadow-cs-xl shadow-slate-500 duration-500 lg:relative max-lg:absolute max-lg:ml-4 max-lg:mt-4 z-10 ${
               open
-                ? "md:w-72 max-md:rounded-2xl"
-                : "md:w-24 max-md:w-0 max-md:h-0 max-md:p-0 max-md:z-40"
+                ? " w-[340px] max-lg:rounded-2xl"
+                : "lg:w-[104px] max-lg:w-0 max-lg:h-0 max-lg:p-0 max-lg:z-40"
             }`}
           >
-            <BsArrowLeftShort
-              className={`max-md:hidden bg-slate-900 text-teal-500 text-4xl absolute rounded-full -right-4 top-4 border-2 border-teal-500 duration-500 cursor-pointer ${
+            <MdKeyboardArrowLeft
+              className={`max-lg:hidden bg-slate-900 text-slate-300 text-4xl absolute rounded-full -right-4 top-4 border-2 border-slate-300 duration-500 cursor-pointer my-5 ${
                 !open && "rotate-180"
               }`}
               onClick={() => setOpen(!open)}
             />
 
             <MdOutlineFilterList
-              className={`md:hidden bg-teal-500 rounded-md border-2  border-very-dark-gray text-very-dark-gray text-5xl duration-500 cursor-pointer ${
-                open === true ? "w-60" : "rotate-[360deg]"
+              className={`lg:hidden rounded-md border-2 bg-slate-900 text-slate-300 hover:bg-slate-300 hover:text-slate-900 border-slate-300 text-5xl duration-500 cursor-pointer mb-5 ${
+                open ? "w-[300px]" : "rotate-[360deg] mt-1 ml-1"
               }`}
               onClick={() => setOpen(!open)}
             />
 
             <div
-              className={`flex py-5 transition-all ease-in-out duration-500 ${
-                open === true ? "" : "max-md:scale-0"
+              className={`flex py-5 transition-all ease-in-out duration-500 lg:mt-10 lg:mx-2 ${
+                open ? "" : "max-lg:scale-0"
               }`}
             >
               <button
-                className={`p-0 duration-500 relative rounded-md hover:bg-slate-400 ${
-                  open ? "w-60" : "w-[52px]"
+                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+                  open ? "w-[300px]" : ""
                 }`}
                 onClick={() => {
                   filterByType("");
@@ -142,13 +144,13 @@ export default function Home() {
                 }}
               >
                 <RxDashboard
-                  className={`bg-slate-300 text-5xl rounded float-left m-2 duration-500 flex-shrink-0 p-1 ${
-                    open && "rotate-[360deg]"
+                  className={`text-5xl rounded float-left flex-shrink-0 p-1 [transition:_color_75ms,transform_0.5s_ease-in-out] ${
+                    open ? "rotate-[360deg]" : ""
                   }`}
                 />
                 <h1
-                  className={`text-slate-300 origin-left font-medium text-lg duration-75 pt-4 text-left pl-16 ${
-                    !open && "scale-0"
+                  className={`text-slate-300 text-lg duration-75 text-inherit float-left ml-3 mt-2.5 ${
+                    open ? "" : "hidden"
                   }`}
                 >
                   ABOUT ME...
@@ -157,13 +159,13 @@ export default function Home() {
             </div>
 
             <div
-              className={`flex py-5 transition-all ease-in-out duration-500 ${
-                open === true ? "" : "max-md:scale-0"
+              className={`flex py-5 transition-all ease-in-out duration-500 lg:mx-2 ${
+                open ? "" : "max-lg:scale-0"
               }`}
             >
               <button
-                className={`p-0 duration-500 relative rounded-md hover:bg-slate-400 ${
-                  open ? "w-60" : "w-[52px]"
+                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+                  open ? "w-[300px]" : ""
                 }`}
                 onClick={() => {
                   filterByType("Work Experience");
@@ -172,13 +174,13 @@ export default function Home() {
                 }}
               >
                 <MdWorkOutline
-                  className={`bg-slate-300 text-5xl rounded float-left mr-2 duration-500 flex-shrink-0 p-1 ${
-                    open && "rotate-[360deg]"
+                  className={`text-5xl rounded float-left flex-shrink-0 p-1 [transition:_color_75ms,transform_0.5s_ease-in-out] ${
+                    open ? "rotate-[360deg]" : ""
                   }`}
                 />
                 <h1
-                  className={`text-slate-300 origin-left font-medium text-lg duration-75 pt-2 text-left pl-16 ${
-                    !open && "scale-0"
+                  className={`text-slate-300 text-lg duration-75 text-inherit float-left ml-3 mt-2.5 ${
+                    open ? "" : "hidden"
                   }`}
                 >
                   WORK EXPERIENCE
@@ -187,13 +189,13 @@ export default function Home() {
             </div>
 
             <div
-              className={`flex py-5 transition-all ease-in-out duration-500 ${
-                open === true ? "" : "max-md:scale-0"
+              className={`flex py-5 transition-all ease-in-out duration-500 lg:mx-2 ${
+                open ? "" : "max-lg:scale-0"
               }`}
             >
               <button
-                className={`p-0 duration-500 relative rounded-md hover:bg-slate-400 ${
-                  open ? "w-60" : "w-[52px]"
+                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+                  open ? "w-[300px]" : ""
                 }`}
                 onClick={() => {
                   filterByType("Volunteer Experience");
@@ -202,13 +204,13 @@ export default function Home() {
                 }}
               >
                 <MdOutlineVolunteerActivism
-                  className={`bg-slate-300 text-5xl rounded float-left mr-2 duration-500 flex-shrink-0 p-1 ${
-                    open && "rotate-[360deg]"
+                  className={`text-5xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-in-out] flex-shrink-0 p-1 ${
+                    open ? "rotate-[360deg]" : ""
                   }`}
                 />
                 <h1
-                  className={`text-slate-300 origin-left font-medium text-lg duration-75  text-left pl-16 ${
-                    !open && "scale-0"
+                  className={`text-slate-300 text-lg duration-75 text-inherit float-left ml-3 mt-2.5 ${
+                    open ? "" : "hidden"
                   }`}
                 >
                   VOLUNTEER EXPERIENCE
@@ -217,13 +219,13 @@ export default function Home() {
             </div>
 
             <div
-              className={`flex py-5 transition-all ease-in-out duration-500 ${
-                open === true ? "" : "max-md:scale-0"
+              className={`flex py-5 transition-all ease-in-out duration-500 lg:mx-2 ${
+                open ? "" : "max-lg:scale-0"
               }`}
             >
               <button
-                className={`p-0 duration-500 relative rounded-md hover:bg-slate-400 ${
-                  open ? "w-60" : "w-[52px]"
+                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+                  open ? "w-[300px]" : ""
                 }`}
                 onClick={() => {
                   filterByType("Awards");
@@ -232,13 +234,13 @@ export default function Home() {
                 }}
               >
                 <BiSolidAward
-                  className={`bg-slate-300 text-5xl rounded float-left mr-2 duration-500 flex-shrink-0 p-1 ${
-                    open && "rotate-[360deg]"
+                  className={`text-5xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-in-out] flex-shrink-0 p-1 ${
+                    open ? "rotate-[360deg]" : ""
                   }`}
                 />
                 <h1
-                  className={`text-slate-300 origin-left font-medium text-lg duration-75 pt-2 text-left pl-16 ${
-                    !open && "scale-0"
+                  className={`text-slate-300 text-lg duration-75 text-inherit float-left ml-3 mt-2.5 ${
+                    open ? "" : "hidden"
                   }`}
                 >
                   AWARDS
@@ -247,30 +249,30 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="p-[30px] md:pt-5">
-            <ul className="text-slate-300 lg:flex lg:flex-row lg:flex-wrap lg:justify-between gap-10">
+          <div className="p-[30px] xl:pt-5">
+            <ul className="text-slate-300 xl:flex xl:flex-row xl:flex-wrap xl:justify-between md:max-lg:flex md:max-lg:flex-row md:max-lg:flex-wrap md:max-lg:justify-between">
               {filteredSections.slice(0, visible).map((section) => {
                 const { name, description, start_date, end_date, image } =
                   section;
                 return (
-                  <li className="text-center bg-slate-800 hover:shadow-cs-lg hover:shadow-slate-300 p-10 rounded-xl basis-5/12 flex-1 relative my-2 ml-2 duration-200">
+                  <li className="text-center hover:bg-slate-800 shadow-cs-lg p-10 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center">
                     <img
                       src={section.image}
-                      className="max-h-[250px] bg-slate-700 p-4 rounded-2xl mx-auto "
+                      className="max-h-[250px] bg-slate-700 p-4 rounded-2xl mx-auto"
                     />
                     <div className="text-lg font-medium pt-8 pb-2">
                       <strong>{name}</strong>
                     </div>
                     <div className="py-2">{description}</div>
-                    <div className="py-4 text-teal-600">
+                    <div className="p-4 my-5 text-teal-300 rounded-full bg-teal-400/10">
                       {EndDate(start_date, end_date)}
                     </div>
                   </li>
                 );
               })}
               <button
-                className={`text-center shadow-cs-lg shadow-slate-300 p-10 rounded-xl w-[100%] font-pixel ${
-                  noMore === true ? "hidden" : ""
+                className={`text-center shadow-cs-xl shadow-slate-500 p-10 rounded-xl w-[100%] font-pixel ${
+                  noMore ? "hidden" : ""
                 }`}
                 onClick={showMoreItems}
               >
