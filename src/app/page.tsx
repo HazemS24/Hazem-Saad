@@ -40,9 +40,7 @@ export default function Home() {
     setFilteredSections(filtered);
   };
 
-  const types = Array.from(
-    new Set(sections.map((section) => section.type))
-  );
+  const types = Array.from(new Set(sections.map((section) => section.type)));
 
   function EndDate(section_start_date: any, section_end_date: any) {
     if (section_end_date) {
@@ -108,10 +106,10 @@ export default function Home() {
 
         <section className="flex m-5 realtive rounded-3xl overflow-hidden border-slate-300 border-2 shadow-cs-xl shadow-slate-500">
           <div
-            className={`bg-slate-900 p-5 pt-8 shadow-cs-xl shadow-slate-500 duration-500 lg:relative max-lg:absolute max-lg:ml-4 max-lg:mt-4 z-10 ${
+            className={`bg-slate-900 p-5 pt-8 shadow-cs-xl shadow-slate-500 duration-500 lg:relative max-lg:absolute max-lg:ml-4 max-lg:mt-4 z-10 border-slate-300 rounded-3xl ml-4 my-4 ${
               open
-                ? " w-[340px] max-lg:rounded-2xl"
-                : "lg:w-[104px] max-lg:w-0 max-lg:h-0 max-lg:p-0 max-lg:z-40"
+                ? "w-[340px] max-lg:rounded-2xl border-2"
+                : "lg:w-[112px] max-lg:w-0 max-lg:h-0 max-lg:p-0 max-lg:z-40 lg:border-2"
             }`}
           >
             <MdKeyboardArrowLeft
@@ -134,7 +132,7 @@ export default function Home() {
               }`}
             >
               <button
-                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-400 hover:text-slate-900 ${
                   open ? "w-[300px]" : ""
                 }`}
                 onClick={() => {
@@ -145,11 +143,11 @@ export default function Home() {
               >
                 <RxDashboard
                   className={`text-5xl rounded float-left flex-shrink-0 p-1 [transition:_color_75ms,transform_0.5s_ease-in-out] ${
-                    open ? "rotate-[360deg]" : ""
+                    open ? "rotate-[360deg] m-3" : ""
                   }`}
                 />
                 <h1
-                  className={`text-slate-300 text-lg duration-75 text-inherit float-left ml-3 mt-2.5 ${
+                  className={`text-lg duration-75 text-inherit float-left ml-3 mt-[22px] ${
                     open ? "" : "hidden"
                   }`}
                 >
@@ -164,7 +162,7 @@ export default function Home() {
               }`}
             >
               <button
-                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-400 hover:text-slate-900 ${
                   open ? "w-[300px]" : ""
                 }`}
                 onClick={() => {
@@ -179,7 +177,7 @@ export default function Home() {
                   }`}
                 />
                 <h1
-                  className={`text-slate-300 text-lg duration-75 text-inherit float-left ml-3 mt-2.5 ${
+                  className={`text-lg duration-75 text-inherit float-left ml-3 mt-2.5 ${
                     open ? "" : "hidden"
                   }`}
                 >
@@ -194,7 +192,7 @@ export default function Home() {
               }`}
             >
               <button
-                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-400 hover:text-slate-900 ${
                   open ? "w-[300px]" : ""
                 }`}
                 onClick={() => {
@@ -209,7 +207,7 @@ export default function Home() {
                   }`}
                 />
                 <h1
-                  className={`text-slate-300 text-lg duration-75 text-inherit float-left ml-3 mt-2.5 ${
+                  className={`text-lg duration-75 text-inherit float-left ml-3 mt-2.5 ${
                     open ? "" : "hidden"
                   }`}
                 >
@@ -224,7 +222,7 @@ export default function Home() {
               }`}
             >
               <button
-                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-400 hover:text-slate-900 ${
                   open ? "w-[300px]" : ""
                 }`}
                 onClick={() => {
@@ -239,7 +237,7 @@ export default function Home() {
                   }`}
                 />
                 <h1
-                  className={`text-slate-300 text-lg duration-75 text-inherit float-left ml-3 mt-2.5 ${
+                  className={`text-lg duration-75 text-inherit float-left ml-3 mt-2.5 ${
                     open ? "" : "hidden"
                   }`}
                 >
@@ -271,7 +269,7 @@ export default function Home() {
                 );
               })}
               <button
-                className={`text-center shadow-cs-xl shadow-slate-500 p-10 rounded-xl w-[100%] font-pixel ${
+                className={`text-center hover:bg-slate-800  shadow-cs-lg p-10 rounded-xl w-[100%] mx-1 xl:mx-3 md:max-lg:mx-3 ${
                   noMore ? "hidden" : ""
                 }`}
                 onClick={showMoreItems}
