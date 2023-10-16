@@ -1,5 +1,6 @@
 "use client";
 
+import { Transition } from "@headlessui/react";
 import Head from "next/head";
 import {
   AiFillLinkedin,
@@ -25,6 +26,7 @@ export default function Home() {
   const [visible, setVisible] = useState(4);
   const [noMore, setNoMore] = useState(false);
   const [filteredSections, setFilteredSections] = useState(sections);
+  const [type, setType] = useState("ALL ABOUT ME...");
 
   const showMoreItems = () => {
     if (visible + 4 >= filteredSections.length) {
@@ -38,6 +40,19 @@ export default function Home() {
   const filterByType = (type: string) => {
     const filtered = sections.filter((section) => section.type.includes(type));
     setFilteredSections(filtered);
+
+    if (type === "") {
+      setType("ALL ABOUT ME...");
+    }
+    if (type === "Work Experience") {
+      setType("WORK EXPERIENCES...");
+    }
+    if (type === "Volunteer Experience") {
+      setType("VOLUNTEER EXPERIENCES...");
+    }
+    if (type === "Awards") {
+      setType("AWARDS...");
+    }
   };
 
   const types = Array.from(new Set(sections.map((section) => section.type)));
@@ -108,12 +123,12 @@ export default function Home() {
           <div
             className={`bg-slate-900 p-5 pt-8 shadow-cs-xl shadow-slate-500 duration-500 lg:relative max-lg:absolute max-lg:ml-4 max-lg:mt-4 z-10 border-slate-300 rounded-3xl ml-4 my-4 ${
               open
-                ? "w-[340px] max-lg:rounded-2xl border-2"
-                : "lg:w-[112px] max-lg:w-0 max-lg:h-0 max-lg:p-0 max-lg:z-40 lg:border-2"
+                ? "w-[400px] max-lg:rounded-2xl border-2"
+                : "lg:w-[136px] max-lg:w-0 max-lg:h-0 max-lg:p-0 max-lg:z-40 lg:border-2"
             }`}
           >
             <MdKeyboardArrowLeft
-              className={`max-lg:hidden bg-slate-900 text-slate-300 text-4xl absolute rounded-full -right-4 top-4 border-2 border-slate-300 duration-500 cursor-pointer my-5 ${
+              className={`max-lg:hidden bg-slate-900 text-slate-300 hover:bg-slate-300 hover:text-slate-900 text-4xl absolute rounded-full -right-4 top-4 border-2 border-slate-300  [transition:_color_75ms,transform_0.5s_ease-in-out] cursor-pointer my-5 ${
                 !open && "rotate-180"
               }`}
               onClick={() => setOpen(!open)}
@@ -121,19 +136,27 @@ export default function Home() {
 
             <MdOutlineFilterList
               className={`lg:hidden rounded-md border-2 bg-slate-900 text-slate-300 hover:bg-slate-300 hover:text-slate-900 border-slate-300 text-5xl duration-500 cursor-pointer mb-5 ${
-                open ? "w-[300px]" : "rotate-[360deg] mt-1 ml-1"
+                open ? "w-[360px]" : "rotate-[360deg] mt-1 ml-1"
               }`}
               onClick={() => setOpen(!open)}
             />
 
             <div
-              className={`flex py-5 transition-all ease-in-out duration-500 lg:mt-10 lg:mx-2 ${
-                open ? "" : "max-lg:scale-0"
+              className={`bg-slate-900 text-slate-300 text-6xl duration-500 font-archivo ${
+                open ? "lg:ml-5 lg:mt-4 max-lg:hidden" : "scale-0 m-0 p-0"
+              }`}
+            >
+              FILTERS
+            </div>
+
+            <div
+              className={`flex py-5 ease-in-out duration-500 lg:mt-5 lg:mx-2 ${
+                open ? "" : "max-lg:scale-0 p-0"
               }`}
             >
               <button
-                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-400 hover:text-slate-900 ${
-                  open ? "w-[300px]" : ""
+                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+                  open ? "w-[360px]" : "flex-none"
                 }`}
                 onClick={() => {
                   filterByType("");
@@ -142,28 +165,38 @@ export default function Home() {
                 }}
               >
                 <RxDashboard
-                  className={`text-5xl rounded float-left flex-shrink-0 p-1 [transition:_color_75ms,transform_0.5s_ease-in-out] ${
-                    open ? "rotate-[360deg] m-3" : ""
+                  className={`text-5xl rounded float-left flex-shrink-0 p-1 [transition:_color_75ms,transform_0.5s_ease-in-out] m-3 ${
+                    open ? "rotate-[360deg] mr-0" : ""
                   }`}
                 />
-                <h1
-                  className={`text-lg duration-75 text-inherit float-left ml-3 mt-[22px] ${
-                    open ? "" : "hidden"
-                  }`}
+                <Transition
+                  show={open}
+                  enter="transition ease-in duration-[200ms] delay-100"
+                  enterTo="scale-100"
+                  enterFrom="scale-0 absolute"
+                  leave="transition duration-0"
+                  leaveFrom="scale-100"
+                  leaveTo="scale-0 absolute"
                 >
-                  ABOUT ME...
-                </h1>
+                  <h1
+                    className={`text-lg [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px] ${
+                      open ? "" : ""
+                    }`}
+                  >
+                    ALL ABOUT ME...
+                  </h1>
+                </Transition>
               </button>
             </div>
 
             <div
-              className={`flex py-5 transition-all ease-in-out duration-500 lg:mx-2 ${
+              className={`flex py-5 ease-in-out duration-500 lg:mx-2 ${
                 open ? "" : "max-lg:scale-0"
               }`}
             >
               <button
-                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-400 hover:text-slate-900 ${
-                  open ? "w-[300px]" : ""
+                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+                  open ? "w-[360px]" : "flex-none"
                 }`}
                 onClick={() => {
                   filterByType("Work Experience");
@@ -172,28 +205,38 @@ export default function Home() {
                 }}
               >
                 <MdWorkOutline
-                  className={`text-5xl rounded float-left flex-shrink-0 p-1 [transition:_color_75ms,transform_0.5s_ease-in-out] ${
-                    open ? "rotate-[360deg]" : ""
+                  className={`text-5xl rounded float-left flex-shrink-0 p-1 [transition:_color_75ms,transform_0.5s_ease-in-out] m-3 ${
+                    open ? "rotate-[360deg] mr-0" : ""
                   }`}
                 />
-                <h1
-                  className={`text-lg duration-75 text-inherit float-left ml-3 mt-2.5 ${
-                    open ? "" : "hidden"
-                  }`}
+                <Transition
+                  show={open}
+                  enter="transition ease-in duration-[200ms] delay-100"
+                  enterTo="scale-100"
+                  enterFrom="scale-0 absolute"
+                  leave="transition duration-0"
+                  leaveFrom="scale-100"
+                  leaveTo="scale-0 absolute"
                 >
-                  WORK EXPERIENCE
-                </h1>
+                  <h1
+                    className={`text-lg [transition:_color_75ms,transform_0.5s_ease-in-out] text-inherit float-left ml-3 mt-[22px] ${
+                      open ? "" : ""
+                    }`}
+                  >
+                    WORK EXPERIENCE
+                  </h1>
+                </Transition>
               </button>
             </div>
 
             <div
-              className={`flex py-5 transition-all ease-in-out duration-500 lg:mx-2 ${
+              className={`flex py-5 ease-in-out duration-500 lg:mx-2 ${
                 open ? "" : "max-lg:scale-0"
               }`}
             >
               <button
-                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-400 hover:text-slate-900 ${
-                  open ? "w-[300px]" : ""
+                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+                  open ? "w-[360px]" : "flex-none"
                 }`}
                 onClick={() => {
                   filterByType("Volunteer Experience");
@@ -202,28 +245,38 @@ export default function Home() {
                 }}
               >
                 <MdOutlineVolunteerActivism
-                  className={`text-5xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-in-out] flex-shrink-0 p-1 ${
-                    open ? "rotate-[360deg]" : ""
+                  className={`text-5xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-in-out] flex-shrink-0 p-1 m-3 ${
+                    open ? "rotate-[360deg] mr-0" : ""
                   }`}
                 />
-                <h1
-                  className={`text-lg duration-75 text-inherit float-left ml-3 mt-2.5 ${
-                    open ? "" : "hidden"
-                  }`}
+                <Transition
+                  show={open}
+                  enter="transition ease-in duration-[200ms] delay-100"
+                  enterTo="scale-100"
+                  enterFrom="scale-0 absolute"
+                  leave="transition duration-0"
+                  leaveFrom="scale-100"
+                  leaveTo="scale-0 absolute"
                 >
-                  VOLUNTEER EXPERIENCE
-                </h1>
+                  <h1
+                    className={`text-lg [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px] ${
+                      open ? "" : ""
+                    }`}
+                  >
+                    VOLUNTEER EXPERIENCE
+                  </h1>
+                </Transition>
               </button>
             </div>
 
             <div
-              className={`flex py-5 transition-all ease-in-out duration-500 lg:mx-2 ${
+              className={`flex py-5 ease-in-out duration-500 lg:mx-2 ${
                 open ? "" : "max-lg:scale-0"
               }`}
             >
               <button
-                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-400 hover:text-slate-900 ${
-                  open ? "w-[300px]" : ""
+                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+                  open ? "w-[360px]" : "flex-none"
                 }`}
                 onClick={() => {
                   filterByType("Awards");
@@ -232,22 +285,38 @@ export default function Home() {
                 }}
               >
                 <BiSolidAward
-                  className={`text-5xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-in-out] flex-shrink-0 p-1 ${
-                    open ? "rotate-[360deg]" : ""
+                  className={`text-5xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-in-out] flex-shrink-0 p-1 m-3 ${
+                    open ? "rotate-[360deg] mr-0" : ""
                   }`}
                 />
-                <h1
-                  className={`text-lg duration-75 text-inherit float-left ml-3 mt-2.5 ${
-                    open ? "" : "hidden"
-                  }`}
+                <Transition
+                  show={open}
+                  enter="transition ease-in duration-[200ms] delay-100"
+                  enterTo="scale-100"
+                  enterFrom="scale-0 absolute"
+                  leave="transition duration-0"
+                  leaveFrom="scale-100"
+                  leaveTo="scale-0 absolute"
                 >
-                  AWARDS
-                </h1>
+                  <h1
+                    className={`text-lg [transition:_color_75ms,transform_0.5s_ease-in-out] text-inherit float-left ml-3 mt-[22px] ${
+                      open ? "" : ""
+                    }`}
+                  >
+                    AWARDS
+                  </h1>
+                </Transition>
               </button>
             </div>
           </div>
 
           <div className="p-[30px] xl:pt-5">
+            <div className="text-right font-archivo shadow-cs-lg shadow-slate-900 p-10 rounded-xl w-[100%] mx-1 xl:mx-3 md:max-lg:mx-3 mb-3">
+              <div className="text-slate-300 max-h-[100%] max-w-[100%] max-sm:text-3xl sm:max-md:text-5xl md:text-6xl duration-500">
+                {type}
+              </div>
+            </div>
+
             <ul className="text-slate-300 xl:flex xl:flex-row xl:flex-wrap xl:justify-between md:max-lg:flex md:max-lg:flex-row md:max-lg:flex-wrap md:max-lg:justify-between">
               {filteredSections.slice(0, visible).map((section) => {
                 const { name, description, start_date, end_date, image } =
@@ -256,20 +325,20 @@ export default function Home() {
                   <li className="text-center hover:bg-slate-800 shadow-cs-lg p-10 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center">
                     <img
                       src={section.image}
-                      className="max-h-[250px] bg-slate-700 p-4 rounded-2xl mx-auto"
+                      className="max-h-[250px] rounded-2xl mx-auto drop-shadow-2xl mt-5"
                     />
                     <div className="text-lg font-medium pt-8 pb-2">
                       <strong>{name}</strong>
                     </div>
                     <div className="py-2">{description}</div>
-                    <div className="p-4 my-5 text-teal-300 rounded-full bg-teal-400/10">
+                    <div className="p-4 my-5 text-teal-300 rounded-full bg-teal-400/10 shadow-cs-md">
                       {EndDate(start_date, end_date)}
                     </div>
                   </li>
                 );
               })}
               <button
-                className={`text-center hover:bg-slate-800  shadow-cs-lg p-10 rounded-xl w-[100%] mx-1 xl:mx-3 md:max-lg:mx-3 ${
+                className={`text-center text-lg bg-slate-300 text-slate-900 hover:bg-slate-900 hover:text-slate-300 border-2 border-slate-300 shadow-cs-lg p-10 rounded-xl w-[100%] mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 ${
                   noMore ? "hidden" : ""
                 }`}
                 onClick={showMoreItems}
