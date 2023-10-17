@@ -15,7 +15,7 @@ import {
   MdKeyboardArrowLeft,
 } from "react-icons/md";
 import { RxDashboard } from "react-icons/rx";
-import { BiSolidAward } from "react-icons/bi";
+import { BiSolidAward, BiCodeAlt } from "react-icons/bi";
 import Image from "next/image";
 import hazem from "public/images/hazem_saad.jpg";
 import sections from "./personal_portfolio_data.json";
@@ -43,6 +43,9 @@ export default function Home() {
 
     if (type === "") {
       setType("ALL ABOUT ME...");
+    }
+    if (type === "Projects") {
+      setType("PROJECTS...");
     }
     if (type === "Work Experience") {
       setType("WORK EXPERIENCES...");
@@ -85,11 +88,14 @@ export default function Home() {
             <h3 className="text-2xl py-2 md:text-3xl text-slate-300">
               Developer and Engineer.
             </h3>
-            <p className="text-md py-5 leading-8 md:text-xl max-w-xl mx-auto text-slate-400">
-              Dm=ummy text, this owuld be a parragrpah
+            <p className="text-md py-5 leading-8 md:text-lg max-w-2xl mx-auto text-slate-400 font-archivo">
+              A current University of Waterloo student pursuing a Computer
+              Engineering Major. I have gained vital life experience after
+              travelling the world, living in THREE different countries, and
+              observing different cultures.
             </p>
           </div>
-          <div className="text-5xl text-slate-400 flex justify-center gap-20 py-4">
+          <div className="text-5xl text-slate-400 flex justify-center gap-[60px] py-4">
             <a href="https://github.com/HazemS24">
               <AiOutlineGithub className="hover:text-slate-200" />
             </a>
@@ -103,19 +109,8 @@ export default function Home() {
               <AiFillYoutube className="hover:text-slate-200" />
             </a>
           </div>
-          <div className="relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden border-slate-200 md:h-96 md:w-96 border-2 shadow-cs-xl shadow-slate-500">
+          <div className="relative mx-auto rounded-full w-80 h-80 my-20 overflow-hidden border-slate-200 md:h-96 md:w-96 border-2 shadow-cs-xl shadow-slate-500">
             <Image src={hazem} alt="" />
-          </div>
-        </section>
-
-        <section className="px-10 pb-10 md:pt-5 md:px-20 lg:px-30">
-          <div>
-            <h3 className="text-3xl py-1">Projects</h3>
-            <p className="text-md pt-2 leading-8 text-gray-800">
-              Bio goes here bruh <span className="text-teal-500">this</span> is
-              filler text to make it big neough but u should probaky rremove it
-              later heh. anyways, enjoy making this fancy wesbite{" "}
-            </p>
           </div>
         </section>
 
@@ -141,13 +136,23 @@ export default function Home() {
               onClick={() => setOpen(!open)}
             />
 
-            <div
-              className={`bg-slate-900 text-slate-300 text-6xl duration-500 font-archivo ${
-                open ? "lg:ml-5 lg:mt-4 max-lg:hidden" : "scale-0 m-0 p-0"
-              }`}
+            <Transition
+              show={open}
+              enter="transition ease-in duration-200 delay-100"
+              enterTo="scale-100 w-[100%]"
+              enterFrom="scale-0 w-[0%]"
+              leave="transition ease-in duration-100"
+              leaveFrom="scale-100 w-[100%]"
+              leaveTo="scale-0 w-[0%] ml-15"
             >
-              FILTERS
-            </div>
+              <div
+                className={`bg-slate-900 text-slate-300 text-6xl font-archivo ${
+                  open ? "lg:ml-5 lg:mt-4 max-lg:hidden" : "h-0 m-0 pl-10 pt-10"
+                }`}
+              >
+                FILTERS
+              </div>
+            </Transition>
 
             <div
               className={`flex py-5 ease-in-out duration-500 lg:mt-5 lg:mx-2 ${
@@ -184,6 +189,44 @@ export default function Home() {
                     }`}
                   >
                     ALL ABOUT ME...
+                  </h1>
+                </Transition>
+              </button>
+            </div>
+
+            <div
+              className={`flex py-5 ease-in-out duration-500 lg:mx-2 ${
+                open ? "" : "max-lg:scale-0"
+              }`}
+            >
+              <button
+                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+                  open ? "w-[360px]" : "flex-none"
+                }`}
+                onClick={() => {
+                  filterByType("Projects");
+                  setVisible(4);
+                  setNoMore(false);
+                }}
+              >
+                <BiCodeAlt
+                  className={`text-5xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-in-out] flex-shrink-0 p-1 m-3 ${
+                    open ? "rotate-[360deg] mr-0" : ""
+                  }`}
+                />
+                <Transition
+                  show={open}
+                  enter="transition ease-in duration-[200ms] delay-100"
+                  enterTo="scale-100"
+                  enterFrom="scale-0 absolute"
+                  leave="transition duration-0"
+                  leaveFrom="scale-100"
+                  leaveTo="scale-0 absolute"
+                >
+                  <h1
+                    className={`text-lg [transition:_color_75ms,transform_0.5s_ease-in-out] text-inherit float-left ml-3 mt-[22px]`}
+                  >
+                    PROJECTS
                   </h1>
                 </Transition>
               </button>
@@ -325,12 +368,16 @@ export default function Home() {
                   <li className="text-center hover:bg-slate-800 shadow-cs-lg p-10 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center">
                     <img
                       src={section.image}
-                      className="max-h-[250px] rounded-2xl mx-auto drop-shadow-2xl mt-5"
+                      className="max-h-[250px] rounded-2xl mx-auto drop-shadow-3xl mt-5"
                     />
                     <div className="text-lg font-medium pt-8 pb-2">
                       <strong>{name}</strong>
                     </div>
-                    <div className="py-2">{description}</div>
+                    <div className="py-2">
+                      {description.split("\n").map((line) => (
+                        <p className="mt-1">{line}</p>
+                      ))}
+                    </div>
                     <div className="p-4 my-5 text-teal-300 rounded-full bg-teal-400/10 shadow-cs-md">
                       {EndDate(start_date, end_date)}
                     </div>

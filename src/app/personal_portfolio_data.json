@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Tuq Inc - Junior Developer",
-		"description": "Worked on the back-end aspect of 6 client based projects using Rails and RubyMine.",
+		"description": "I worked on 6 client-based projects and maintained 3 older company projects throughout the Work Term. Each project contained 20+ models, updated with user-specific features and tested with 2500+ RSpec tests. These projects were planned with detailed database diagrams encompassing models and associations using draw.io. All projects were created with Ruby on Rails, RSpec, rswag, HTML, PostgreSQL, Linux as the OS, and GitHub for source control.",
 		"start_date": "January 2023",
 		"end_date": "April 2023",
 		"type": "Work Experience",
@@ -9,7 +9,7 @@
 	},
 	{
 		"name": "MIST TORONTO Competitions Organizor",
-		"description": "Helped recruit 50+ judges and moderators for the competitions to take place. I completed this with a team of 100+ members in 6 months.",
+		"description": "Helped recruit 70+ judges, moderators, and volunteers for high-school competitions - of all categories - to take place at the University of Toronto Saint George Campus. I completed this task with 100+ members in 6 months while attending bi-weekly meetings.",
 		"start_date": "September 2022",
 		"end_date": "March 2023",
 		"type": "Volunteer Experience",
@@ -17,7 +17,7 @@
 	},
 	{
 		"name": "Math4me - Mentor",
-		"description": "Worked as a Math, Science, and English mentor to middle-school and high-school students who required assistance with those subjects. I achieved 'Mentor of the Month' at the time I started because of the hard work and dedication I had put into the job. After almost two years of working at Math4me, I have learned how to adapt and please different mindsets while convincing people - especially youth - to do what is right for them.",
+		"description": "Worked as a Math, Science, and English mentor to middle-school and high-school students who required assistance. I achieved 'Mentor of the Month' during my first month as a result of the hard work and dedication I had put into the job. After almost 3 years of working at Math4me, I have learned how to adapt and please different mindsets while convincing people - especially youth - to do what is right for them.",
 		"start_date": "November 2020",
 		"end_date": "Present",
 		"type": "Work Experience",
@@ -25,7 +25,15 @@
 	},
 	{
 		"name": "Ontario Scholar",
-		"description": "Achieved a grade of 80% at least six times in Grade 12 courses.",
+		"description": "Achieved a grade of 80% at least six times in Grade 12 courses and graduted with an impressive 97% average from John Fraser Secondary School.",
+		"start_date": "June 2022",
+		"end_date": null,
+		"type": "Awards",
+		"image": "images/tmmc_two.png"
+	},
+	{
+		"name": "Ontario Scholar",
+		"description": "Achieved a grade of 80% at least six times in Grade 12 courses and graduted with an impressive 97% average from John Fraser Secondary School.",
 		"start_date": "June 2022",
 		"end_date": null,
 		"type": "Awards",
@@ -33,7 +41,7 @@
 	},
 	{
 		"name": "MIST (Muslim Interscholastic Tournament) Toronto Math Olympics",
-		"description": "Achieved first place across all participating schools (in the Greater Toronto Area) in MIST's Math Olympics.",
+		"description": "Achieved first place across all participating schools (in the Greater Toronto Area) in MIST Toronto's Math Olympics. This took almost 6 months of weekly exams and self-supervised tests as a practice to achieve.",
 		"start_date": "May 2022",
 		"end_date": null,
 		"type": "Awards",
@@ -41,7 +49,7 @@
 	},
 	{
 		"name": "Senior Scholar at John Fraser Secondary School",
-		"description": "I would be placed for an hour time slot every week to help out peers and students in our school with specific subject materials that they were struggling with. I got the chance to feel charitable and master all the concepts I was helping with from all points of view - since I had to understand their questions and use my logical thinking to connect them to common misinterpretations about each concept.",
+		"description": "I volunteered an hour of my time per week to help out peers and students in our school with specific subject materials that they were struggling with. I got the chance to feel charitable and master all the concepts I was helping with from all points of view - since I had to understand their questions and use my logical thinking and connect them to common misinterpretations about each concept.",
 		"start_date": "September 2021",
 		"end_date": " June 2022",
 		"type": "Volunteer Experience",
@@ -49,7 +57,7 @@
 	},
 	{
 		"name": "University of Waterloo - Math Contests",
-		"description": "Achieved top 25% out of all participants across the world in the following contests:\\nPascal Contest (2018)\\nCayley Contest (2019)\\nFermat Contest (2020)\\nCanadian Senior Mathematics Contest (2020)\\nCanadian Senior Mathematics Contest (2021)",
+		"description": "Achieved top 25% out of all participants across the world in the following contests:\nPascal Contest (2018)\nCayley Contest (2019)\nFermat Contest (2020)\nCanadian Senior Mathematics Contest (2020)\nCanadian Senior Mathematics Contest (2021)",
 		"start_date": "2018",
 		"end_date": "2022",
 		"type": "Awards",
@@ -57,7 +65,7 @@
 	},
 	{
 		"name": "Muslim Student Association (MSA) Event Organizer",
-		"description": "I was part of the planners of major school-wide events. I learned about the responsibilities it takes for someone to run public events in an organized manner. Since we were the people who had to clean after these events, we multitasked to make sure that there would be minimal littering involved while also enjoying our time.",
+		"description": "I was part of the planners for major school-wide events. I learned about the responsibilities it takes for someone to run public events in an organized manner. We multitasked to make sure that there would be minimal littering involved while also enjoying our time, since we had to create a sense of responsibililty within participants.",
 		"start_date": "September 2021",
 		"end_date": "June 2022",
 		"type": "Volunteer Experience",
@@ -65,7 +73,7 @@
 	},
 	{
 		"name": "Mikey AED CPR",
-		"description": "A course that I voluntarily took to learn about the procedures of performing CPR and other life-saving techniques which could be used if someone else ever needed it.",
+		"description": "This is a course that I voluntarily took to learn about the procedures of performing CPR and other life-saving techniques which could be used if someone else ever needed it.",
 		"start_date": "October 2020",
 		"end_date": null,
 		"type": "Volunteer Experience",
@@ -73,7 +81,7 @@
 	},
 	{
 		"name": "Scholten's Shell - Convenience Store",
-		"description": "A floor worker and substitute cashier at a convenience store in New Brunswick. Working here gave me the experience to know how people think, and what the average person wants.",
+		"description": "I was a floor worker and a substitute cashier at a convenience store in New Brunswick. Working here gave me the experience to know how people think, and what the average person wants.",
 		"start_date": "June 2020",
 		"end_date": "August 2020",
 		"type": "Work Experience",
@@ -81,7 +89,7 @@
 	},
 	{
 		"name": "ASD-S Math Competition",
-		"description": "Achieved first place with a team in a Mathematics Competition across all schools in the Anglophone South District - South (ASD-S) District.",
+		"description": "Achieved first place with a team in a Mathematics Competition across all schools in the Anglophone South District - South (ASD-S) District at Saint John, Neww Brunswick.",
 		"start_date": "November 2019",
 		"end_date": null,
 		"type": "Awards",
@@ -89,7 +97,7 @@
 	},
 	{
 		"name": "Youth Peace Mural - 10 St. James Street, Saint John, NB",
-		"description": "The Youth Peace mural was a building-size project which took several months to complete. I would be scheduled to help paint the mural for 5 hours a week alongside other people and newcomers. I gained experience creating ice-breakers and being more socially aware since some newcomers could not speak English, so I took it as my own responsibility to make sure that everyone had the best experience, no matter what obstacles they faced. It was my honour to be a part of it since it stands for diversity and equality between all people with no discrimination!",
+		"description": "The Youth Peace mural was a building-size project which took several months of work. I would be scheduled to help paint the mural for 5 hours per week alongside other people and newcomers. I gained experience creating ice-breakers and being socially aware since some newcomers could not speak English. I took it as my own responsibility to make sure that everyone had the best experience, no matter what obstacles they faced. It was my honour to be a part of this project since it stands for diversity and equality between all people with no discrimination!",
 		"start_date": "September 2019",
 		"end_date": "November 2019",
 		"type": "Volunteer Experience",
@@ -97,7 +105,7 @@
 	},
 	{
 		"name": "Third Shift Workshops",
-		"description": "The third shift workshop was a painting project dedicated to the city of Saint John. The painting was established on the idea of building a new life/career after immigrating to a new city that supported it. Since it was also a two-person project, I gained experience working in a less chaotic environment where communication was vital to ensure efficient success.",
+		"description": "The third shift workshop was a painting project dedicated to the city of Saint John. The painting was established on the idea of building a new life/career after immigrating to a new city that supported it. Furthermore, since it was also a two-person project, I gained experience working in a less chaotic environment where communication was vital to ensure efficient success.",
 		"start_date": "August 2019",
 		"end_date": null,
 		"type": "Volunteer Experience",
@@ -105,7 +113,7 @@
 	},
 	{
 		"name": "Volunteer Book Organizer at Big Brothers Big sisters of Saint John, NB",
-		"description": "I was very fortunate to volunteer for Big Brothers Big Sisters of Saint John as we took the time to organize all the donated books. Our main goal was to ensure people could find what they wanted to read without having a hard time finding it, as that convinces them to read more.",
+		"description": "I was very fortunate to volunteer for Big Brothers Big Sisters of Saint John as we took the time to organize all the donated books. Our main goal was to ensure people could find what they wanted to read as that is a mah=jor factor when convincing others to read more and put in the effort.",
 		"start_date": "August 2019",
 		"end_date": null,
 		"type": "Volunteer Experience",
@@ -113,7 +121,7 @@
 	},
 	{
 		"name": "GreyHound Hounds Honors",
-		"description": "Achieved GreyHound Hounds Honors with a 95% average at Saint John High School during the 2018-2019 school year.",
+		"description": "I achieved GreyHound Hounds Honors with a 95% average at Saint John High School during the 2018-2019 school year. I was also enrolled in an IB program, making this achievement a lot more impressive than it seems.",
 		"start_date": "June 2019",
 		"end_date": null,
 		"type": "Awards",
@@ -121,7 +129,7 @@
 	},
 	{
 		"name": "Salvation Army Kettle Drive",
-		"description": "The Salvation Army Kettle Drive is an organization that dedicates its efforts to donations. I - with a group of people - collected donations in an Atlantic Superstore during Christmas with candy canes as a gift for people who did donate.",
+		"description": "The Salvation Army Kettle Drive is an organization that dedicates its efforts to donations. I - with a group of people - collected donations in an Atlantic Superstore during Christmas, and presented candy canes as a gift for donators.",
 		"start_date": "February 2018",
 		"end_date": null,
 		"type": "Volunteer Experience",
@@ -129,7 +137,7 @@
 	},
 	{
 		"name": "Gleaning",
-		"description": "A group of people from the YMCA - which I was part of - went to a local farm, and gleaned carrots to donate to food banks in the City of Saint John.",
+		"description": "A group of 100+ people affiliated with the YMCA - including myself - went to a local farm, and gleaned carrots to donate to food banks in the City of Saint John.",
 		"start_date": "Ocotober 2018",
 		"end_date": null,
 		"type": "Volunteer Experience",
