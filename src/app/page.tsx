@@ -182,9 +182,7 @@ export default function Home() {
                   leaveTo="scale-0 absolute"
                 >
                   <h1
-                    className={`text-lg [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px] ${
-                      open ? "" : ""
-                    }`}
+                    className={`text-lg [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
                   >
                     ALL ABOUT ME...
                   </h1>
@@ -222,7 +220,7 @@ export default function Home() {
                   leaveTo="scale-0 absolute"
                 >
                   <h1
-                    className={`text-lg [transition:_color_75ms,transform_0.5s_ease-in-out] text-inherit float-left ml-3 mt-[22px]`}
+                    className={`text-lg [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
                   >
                     PROJECTS
                   </h1>
@@ -260,9 +258,7 @@ export default function Home() {
                   leaveTo="scale-0 absolute"
                 >
                   <h1
-                    className={`text-lg [transition:_color_75ms,transform_0.5s_ease-in-out] text-inherit float-left ml-3 mt-[22px] ${
-                      open ? "" : ""
-                    }`}
+                    className={`text-lg [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
                   >
                     WORK EXPERIENCE
                   </h1>
@@ -300,9 +296,7 @@ export default function Home() {
                   leaveTo="scale-0 absolute"
                 >
                   <h1
-                    className={`text-lg [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px] ${
-                      open ? "" : ""
-                    }`}
+                    className={`text-lg [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
                   >
                     VOLUNTEER EXPERIENCE
                   </h1>
@@ -340,9 +334,7 @@ export default function Home() {
                   leaveTo="scale-0 absolute"
                 >
                   <h1
-                    className={`text-lg [transition:_color_75ms,transform_0.5s_ease-in-out] text-inherit float-left ml-3 mt-[22px] ${
-                      open ? "" : ""
-                    }`}
+                    className={`text-lg [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
                   >
                     AWARDS
                   </h1>

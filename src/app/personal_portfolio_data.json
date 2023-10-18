@@ -5,7 +5,7 @@
 		"start_date": "September 2023",
 		"end_date": "Present",
 		"type": "Work Experience",
-		"image": "images/renison.png"
+		"image": "/images/renison.png"
 	},
 	{
 		"name": "Tuq Inc - Junior Developer",
@@ -13,7 +13,7 @@
 		"start_date": "January 2023",
 		"end_date": "April 2023",
 		"type": "Work Experience",
-		"image": "images/tuq.png"
+		"image": "/images/tuq.png"
 	},
 	{
 		"name": "Pinned",
@@ -21,7 +21,7 @@
 		"start_date": "October 2023",
 		"end_date": "Present",
 		"type": "Projects",
-		"image": "images/pin.png"
+		"image": "/images/pin.png"
 	},
 	{
 		"name": "MIST TORONTO Competitions Organizor",
@@ -29,7 +29,7 @@
 		"start_date": "September 2022",
 		"end_date": "March 2023",
 		"type": "Volunteer Experience",
-		"image": "images/MIST_Toronto.png"
+		"image": "/images/MIST_Toronto.png"
 	},
 	{
 		"name": "Math4me - Mentor",
@@ -37,7 +37,7 @@
 		"start_date": "November 2020",
 		"end_date": "Present",
 		"type": "Work Experience",
-		"image": "images/math4me.png"
+		"image": "/images/math4me.png"
 	},
 	{
 		"name": "Personal Portfolio",
@@ -45,7 +45,7 @@
 		"start_date": "September 2020",
 		"end_date": "Present",
 		"type": "Projects",
-		"image": "images/portfolio.png"
+		"image": "/images/portfolio.png"
 	},
 	{
 		"name": "2023 Toyota Innovation Challenge",
@@ -53,7 +53,7 @@
 		"start_date": "May 2023",
 		"end_date": null,
 		"type": ["Awards","Projects"],
-		"image": "images/tmmc.png"
+		"image": "/images/tmmc.png"
 	},
 	{
 		"name": "MIST (Muslim Interscholastic Tournament) Toronto Math Olympics",
@@ -61,7 +61,7 @@
 		"start_date": "May 2022",
 		"end_date": null,
 		"type": "Awards",
-		"image": "images/mist_math_olympics.png"
+		"image": "/images/mist_math_olympics.png"
 	},
 	{
 		"name": "Self Employed - Math Tutor for International Students",
@@ -69,7 +69,7 @@
 		"start_date": "September 2021",
 		"end_date": "Present",
 		"type": "Work Experience",
-		"image": "images/face.png"
+		"image": "/images/face.png"
 	},
 	{
 		"name": "Ontario Scholar",
@@ -77,7 +77,7 @@
 		"start_date": "June 2022",
 		"end_date": null,
 		"type": "Awards",
-		"image": "images/ontario_scholar.jpg"
+		"image": "/images/ontario_scholar.jpg"
 	},
 	{
 		"name": "Senior Scholar at John Fraser Secondary School",
@@ -85,7 +85,7 @@
 		"start_date": "September 2021",
 		"end_date": " June 2022",
 		"type": "Volunteer Experience",
-		"image": "images/johnfraser_logo.png"
+		"image": "/images/johnfraser_logo.png"
 	},
 	{
 		"name": "University of Waterloo - Math Contests",
@@ -93,7 +93,7 @@
 		"start_date": "2018",
 		"end_date": "2022",
 		"type": "Awards",
-		"image": "images/uw_math_contests.png"
+		"image": "/images/uw_math_contests.png"
 	},
 	{
 		"name": "Youth Peace Mural",
@@ -101,7 +101,7 @@
 		"start_date": "September 2019",
 		"end_date": "November 2019",
 		"type": "Volunteer Experience",
-		"image": "images/peace_mural.png"
+		"image": "/images/peace_mural.png"
 	},
 	{
 		"name": "Deforestation Prevention Foundation",
@@ -109,7 +109,7 @@
 		"start_date": "September 2020",
 		"end_date": "January 2022",
 		"type": "Projects",
-		"image": "images/tree.png"
+		"image": "/images/tree.png"
 	},
 	{
 		"name": "Muslim Student Association (MSA) Event Organizer",
@@ -117,7 +117,7 @@
 		"start_date": "September 2021",
 		"end_date": "June 2022",
 		"type": "Volunteer Experience",
-		"image": "images/jfss_msa.jpg"
+		"image": "/images/jfss_msa.jpg"
 	},
 	{
 		"name": "Scholten's Shell - Convenience Store",
@@ -125,7 +125,7 @@
 		"start_date": "June 2020",
 		"end_date": "August 2020",
 		"type": "Work Experience",
-		"image": "images/scholten.jpg"
+		"image": "/images/scholten.jpg"
 	},
 	{
 		"name": "ASD-S Math Competition",
@@ -133,7 +133,7 @@
 		"start_date": "November 2019",
 		"end_date": null,
 		"type": "Awards",
-		"image": "images/asds_winner.jpg"
+		"image": "/images/asds_winner.jpg"
 	},
 	{
 		"name": "Third Shift Workshops",
@@ -141,7 +141,7 @@
 		"start_date": "August 2019",
 		"end_date": null,
 		"type": "Volunteer Experience",
-		"image": "images/thirdshift.jpg"
+		"image": "/images/thirdshift.jpg"
 	},
 	{
 		"name": "Mikey AED CPR",
@@ -149,7 +149,7 @@
 		"start_date": "October 2020",
 		"end_date": null,
 		"type": "Volunteer Experience",
-		"image": "images/mikey_aid_cpr.png"
+		"image": "/images/mikey_aid_cpr.png"
 	},
 	{
 		"name": "Volunteer Book Organizer at Big Brothers Big sisters of Saint John",
@@ -157,7 +157,7 @@
 		"start_date": "August 2019",
 		"end_date": null,
 		"type": "Volunteer Experience",
-		"image": "images/bbbs.png"
+		"image": "/images/bbbs.png"
 	},
 	{
 		"name": "GreyHound Hounds Honors",
@@ -165,7 +165,7 @@
 		"start_date": "June 2019",
 		"end_date": null,
 		"type": "Awards",
-		"image": "images/greyhound.jpg"
+		"image": "/images/greyhound.jpg"
 	},
 	{
 		"name": "Salvation Army Kettle Drive",
@@ -173,7 +173,7 @@
 		"start_date": "February 2018",
 		"end_date": null,
 		"type": "Volunteer Experience",
-		"image": "images/salvation_army.jpg"
+		"image": "/images/salvation_army.jpg"
 	},
 	{
 		"name": "Gleaning",
@@ -181,6 +181,6 @@
 		"start_date": "Ocotober 2018",
 		"end_date": null,
 		"type": "Volunteer Experience",
-		"image": "images/carrots.jpg"
+		"image": "/images/carrots.jpg"
 	}
 ]
