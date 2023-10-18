@@ -1,6 +1,5 @@
 "use client";
 
-import { ThemeProvider } from "next-themes";
 import { Transition } from "@headlessui/react";
 import Head from "next/head";
 import {
@@ -28,6 +27,7 @@ export default function Home() {
   const [noMore, setNoMore] = useState(false);
   const [filteredSections, setFilteredSections] = useState(sections);
   const [type, setType] = useState("ALL ABOUT ME...");
+  const[darkMode, setDarkMode] = useState(false)
 
   const showMoreItems = () => {
     if (visible + 4 >= filteredSections.length) {
