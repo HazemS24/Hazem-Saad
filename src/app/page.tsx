@@ -49,10 +49,10 @@ export default function Home() {
       setType("PROJECTS...");
     }
     if (type === "Work Experience") {
-      setType("WORK EXPERIENCES...");
+      setType("WORK EXPERIENCE...");
     }
     if (type === "Volunteer Experience") {
-      setType("VOLUNTEER EXPERIENCES...");
+      setType("VOLUNTEER EXPERIENCE...");
     }
     if (type === "Awards") {
       setType("AWARDS...");
@@ -117,7 +117,7 @@ export default function Home() {
           <div
             className={`bg-slate-900 p-5 pt-8 shadow-cs-xl shadow-slate-500 duration-500 lg:relative max-lg:absolute max-lg:ml-4 max-lg:mt-4 z-10 border-slate-300 rounded-3xl ml-4 my-4 ${
               open
-                ? "w-[400px] max-lg:rounded-2xl border-2"
+                ? "w-[400px] max-lg:rounded-2xl border-2 max-sm:w-[345px]"
                 : "lg:w-[136px] max-lg:w-0 max-lg:h-0 max-lg:p-0 max-lg:z-40 lg:border-2"
             }`}
           >
@@ -130,7 +130,7 @@ export default function Home() {
 
             <MdOutlineFilterList
               className={`lg:hidden rounded-md border-2 bg-slate-900 text-slate-300 hover:bg-slate-300 hover:text-slate-900 border-slate-300 text-5xl duration-500 cursor-pointer mb-5 ${
-                open ? "w-[360px]" : "rotate-[360deg] mt-1 ml-1"
+                open ? "w-[100%]" : "rotate-[360deg] mt-1 ml-1"
               }`}
               onClick={() => setOpen(!open)}
             />
