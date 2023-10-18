@@ -1,6 +1,6 @@
 ("use client");
-localStorage.theme = "light";
 
+import { ThemeProvider } from "next-themes";
 import { Transition } from "@headlessui/react";
 import Head from "next/head";
 import {
@@ -20,7 +20,7 @@ import { BiSolidAward, BiCodeAlt } from "react-icons/bi";
 import Image from "next/image";
 import hazem from "public/images/hazem_saad.jpg";
 import sections from "./personal_portfolio_data.json";
-import { useState } from "react";
+import { useState } from "react"; 
 
 export default function Home() {
   const [open, setOpen] = useState(false);
