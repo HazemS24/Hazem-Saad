@@ -78,7 +78,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="light">
         <section className="min-h-screen px-10 pb-10 md:pt-5 md:px-20 lg:px-30">
           <div className="text-center p-10">
             <h2 className="text-5xl pb-2 md:pt-20 max-lg:pt-16 text-slate-200 font-bold">
