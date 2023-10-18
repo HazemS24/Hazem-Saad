@@ -94,7 +94,7 @@ export default function Home() {
               observing different cultures.
             </p>
           </div>
-          <div className="text-5xl text-slate-400 flex justify-center gap-[60px] py-4">
+          <div className="text-5xl text-slate-400 flex justify-center gap-[60px] py-4 max-md:gap-[30px]">
             <a href="https://github.com/HazemS24">
               <AiOutlineGithub className="hover:text-slate-200" />
             </a>
@@ -368,21 +368,21 @@ export default function Home() {
                     <div className="text-lg font-medium pt-8 pb-2">
                       <strong>{name}</strong>
                     </div>
-                    <div className="py-2">
+                    <div className="py-2 max-sm:text-sm">
                       {description.split("\n").map((line) => (
                         <p key="" className="mt-1">
                           {line}
                         </p>
                       ))}
                     </div>
-                    <div className="p-4 my-5 text-teal-300 rounded-full bg-teal-400/10 shadow-cs-md">
+                    <div className="p-4 my-5 text-teal-300 rounded-full bg-teal-400/10 shadow-cs-md max-sm:text-sm">
                       {EndDate(start_date, end_date)}
                     </div>
                   </li>
                 );
               })}
               <button
-                className={`text-center text-lg bg-slate-300 text-slate-900 hover:bg-slate-900 hover:text-slate-300 border-2 border-slate-300 shadow-cs-lg p-10 rounded-xl w-[100%] mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 ${
+                className={`text-center text-lg bg-slate-300 text-slate-900 hover:bg-slate-900 hover:text-slate-300 border-2 border-slate-300 shadow-cs-lg p-10 rounded-xl w-[100%] mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 max-sm:text-sm ${
                   noMore ? "hidden" : ""
                 }`}
                 onClick={showMoreItems}
