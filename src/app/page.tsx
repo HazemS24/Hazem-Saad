@@ -71,7 +71,7 @@ export default function Home() {
   }
 
   return (
-    <div className="bg-slate-900 dark:bg-slate-200 font-poopins overflow-hidden">
+    <div className="bg-slate-900 font-poopins overflow-hidden">
       <Head>
         <title>Hazem Saad&apos;s Portfolio</title>
         <meta name="description" content="Personal Portfolio" />
@@ -81,20 +81,20 @@ export default function Home() {
       <main className="light">
         <section className="min-h-screen px-10 pb-10 md:pt-5 md:px-20 lg:px-30">
           <div className="text-center p-10">
-            <h2 className="text-5xl pb-2 md:pt-20 max-lg:pt-16 text-slate-200 font-bold">
+            <h2 className="text-5xl max-sm:text-3xl pb-2 md:pt-20 max-lg:pt-16 text-slate-200 font-bold">
               Hazem Saad
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl text-slate-300">
+            <h3 className="text-2xl max-sm:text-lg py-2 md:text-3xl text-slate-300">
               Developer and Engineer.
             </h3>
-            <p className="text-md py-5 leading-8 md:text-lg max-w-2xl mx-auto text-slate-400 font-archivo">
+            <p className="text-md max-sm:text-sm py-5 leading-8 md:text-lg max-w-2xl mx-auto text-slate-400 font-archivo">
               A current University of Waterloo student pursuing a Computer
-              Engineering Major. I have gained vital life experience after
+              Engineering Major. I have gained vital life pyexperience after
               travelling the world, living in THREE different countries, and
               observing different cultures.
             </p>
           </div>
-          <div className="text-5xl text-slate-400 flex justify-center gap-[60px] py-4 max-md:gap-[30px]">
+          <div className="text-5xl max-sm:text-3xl max-sm:py-0  text-slate-400 flex justify-center gap-[60px] py-4 max-md:gap-[30px]">
             <a href="https://github.com/HazemS24">
               <AiOutlineGithub className="hover:text-slate-200" />
             </a>
@@ -108,12 +108,12 @@ export default function Home() {
               <AiFillYoutube className="hover:text-slate-200" />
             </a>
           </div>
-          <div className="relative mx-auto rounded-full w-80 h-80 my-20 overflow-hidden border-slate-200 md:h-96 md:w-96 border-2 shadow-cs-xl shadow-slate-500">
+          <div className="relative mx-auto rounded-full w-80 h-80 my-20 max-sm:mb-0  overflow-hidden border-slate-200 md:h-96 md:w-96 border-2 shadow-cs-xl shadow-slate-500 max-sm:h-60 max-sm:w-60">
             <Image src={hazem} alt="" />
           </div>
         </section>
 
-        <section className="flex m-5 realtive rounded-3xl overflow-hidden border-slate-300 border-2 shadow-cs-xl shadow-slate-500">
+        <section className="flex m-5 max-sm:my-1 realtive rounded-3xl overflow-hidden border-slate-300 border-2 shadow-cs-xl shadow-slate-500">
           <div
             className={`bg-slate-900 p-5 pt-8 shadow-cs-xl shadow-slate-500 duration-500 lg:relative max-lg:absolute max-lg:ml-4 max-lg:mt-4 z-10 border-slate-300 rounded-3xl ml-4 my-4 ${
               open
