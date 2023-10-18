@@ -1,4 +1,5 @@
-"use client";
+localStorage.theme = "light";
+("use client");
 
 import { Transition } from "@headlessui/react";
 import Head from "next/head";
@@ -355,7 +356,10 @@ export default function Home() {
                 const { name, description, start_date, end_date, image } =
                   section;
                 return (
-                  <li key="" className="text-center hover:bg-slate-800 shadow-cs-lg p-10 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center">
+                  <li
+                    key=""
+                    className="text-center hover:bg-slate-800 shadow-cs-lg p-10 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center"
+                  >
                     <img
                       src={section.image}
                       alt=""
@@ -366,7 +370,9 @@ export default function Home() {
                     </div>
                     <div className="py-2">
                       {description.split("\n").map((line) => (
-                        <p key="" className="mt-1">{line}</p>
+                        <p key="" className="mt-1">
+                          {line}
+                        </p>
                       ))}
                     </div>
                     <div className="p-4 my-5 text-teal-300 rounded-full bg-teal-400/10 shadow-cs-md">
