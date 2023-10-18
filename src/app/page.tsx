@@ -117,7 +117,7 @@ export default function Home() {
           <div
             className={`bg-slate-900 p-5 pt-8 shadow-cs-xl shadow-slate-500 duration-500 lg:relative max-lg:absolute max-lg:ml-4 max-lg:mt-4 z-10 border-slate-300 rounded-3xl ml-4 my-4 ${
               open
-                ? "w-[400px] max-lg:rounded-2xl border-2 max-sm:w-[345px]"
+                ? "w-[400px] max-sm:w-[335px] max-lg:rounded-2xl border-2"
                 : "lg:w-[136px] max-lg:w-0 max-lg:h-0 max-lg:p-0 max-lg:z-40 lg:border-2"
             }`}
           >
@@ -154,7 +154,7 @@ export default function Home() {
             </Transition>
 
             <div
-              className={`flex py-5 ease-in-out duration-500 lg:mt-5 lg:mx-2 ${
+              className={`flex py-5 max-sm:py-1 ease-in-out duration-500 lg:mt-5 lg:mx-2 ${
                 open ? "" : "max-lg:scale-0 p-0"
               }`}
             >
@@ -169,7 +169,7 @@ export default function Home() {
                 }}
               >
                 <RxDashboard
-                  className={`text-5xl rounded float-left flex-shrink-0 p-1 [transition:_color_75ms,transform_0.5s_ease-in-out] m-3 ${
+                  className={`text-5xl max-sm:text-4xl rounded float-left flex-shrink-0 p-1 [transition:_color_75ms,transform_0.5s_ease-in-out] m-3 ${
                     open ? "rotate-[360deg] mr-0" : ""
                   }`}
                 />
@@ -183,7 +183,7 @@ export default function Home() {
                   leaveTo="scale-0 absolute"
                 >
                   <h1
-                    className={`text-lg [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
+                    className={`text-lg max-sm:text-sm [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
                   >
                     ALL ABOUT ME...
                   </h1>
@@ -192,7 +192,7 @@ export default function Home() {
             </div>
 
             <div
-              className={`flex py-5 ease-in-out duration-500 lg:mx-2 ${
+              className={`flex py-5 max-sm:py-1 ease-in-out duration-500 lg:mx-2 ${
                 open ? "" : "max-lg:scale-0"
               }`}
             >
@@ -207,7 +207,7 @@ export default function Home() {
                 }}
               >
                 <BiCodeAlt
-                  className={`text-5xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-in-out] flex-shrink-0 p-1 m-3 ${
+                  className={`text-5xl max-sm:text-4xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-in-out] flex-shrink-0 p-1 m-3 ${
                     open ? "rotate-[360deg] mr-0" : ""
                   }`}
                 />
@@ -221,7 +221,7 @@ export default function Home() {
                   leaveTo="scale-0 absolute"
                 >
                   <h1
-                    className={`text-lg [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
+                    className={`text-lg max-sm:text-sm [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
                   >
                     PROJECTS
                   </h1>
@@ -230,7 +230,7 @@ export default function Home() {
             </div>
 
             <div
-              className={`flex py-5 ease-in-out duration-500 lg:mx-2 ${
+              className={`flex py-5 max-sm:py-1 ease-in-out duration-500 lg:mx-2 ${
                 open ? "" : "max-lg:scale-0"
               }`}
             >
@@ -245,7 +245,7 @@ export default function Home() {
                 }}
               >
                 <MdWorkOutline
-                  className={`text-5xl rounded float-left flex-shrink-0 p-1 [transition:_color_75ms,transform_0.5s_ease-in-out] m-3 ${
+                  className={`text-5xl max-sm:text-4xl rounded float-left flex-shrink-0 p-1 [transition:_color_75ms,transform_0.5s_ease-in-out] m-3 ${
                     open ? "rotate-[360deg] mr-0" : ""
                   }`}
                 />
@@ -259,7 +259,7 @@ export default function Home() {
                   leaveTo="scale-0 absolute"
                 >
                   <h1
-                    className={`text-lg [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
+                    className={`text-lg max-sm:text-sm [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
                   >
                     WORK EXPERIENCE
                   </h1>
@@ -268,7 +268,7 @@ export default function Home() {
             </div>
 
             <div
-              className={`flex py-5 ease-in-out duration-500 lg:mx-2 ${
+              className={`flex py-5 max-sm:py-1 ease-in-out duration-500 lg:mx-2 ${
                 open ? "" : "max-lg:scale-0"
               }`}
             >
@@ -283,7 +283,7 @@ export default function Home() {
                 }}
               >
                 <MdOutlineVolunteerActivism
-                  className={`text-5xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-in-out] flex-shrink-0 p-1 m-3 ${
+                  className={`text-5xl max-sm:text-4xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-in-out] flex-shrink-0 p-1 m-3 ${
                     open ? "rotate-[360deg] mr-0" : ""
                   }`}
                 />
@@ -297,7 +297,7 @@ export default function Home() {
                   leaveTo="scale-0 absolute"
                 >
                   <h1
-                    className={`text-lg [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
+                    className={`text-lg max-sm:text-sm [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
                   >
                     VOLUNTEER EXPERIENCE
                   </h1>
@@ -306,7 +306,7 @@ export default function Home() {
             </div>
 
             <div
-              className={`flex py-5 ease-in-out duration-500 lg:mx-2 ${
+              className={`flex py-5 max-sm:py-1 ease-in-out duration-500 lg:mx-2 ${
                 open ? "" : "max-lg:scale-0"
               }`}
             >
@@ -321,7 +321,7 @@ export default function Home() {
                 }}
               >
                 <BiSolidAward
-                  className={`text-5xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-in-out] flex-shrink-0 p-1 m-3 ${
+                  className={`text-5xl max-sm:text-4xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-in-out] flex-shrink-0 p-1 m-3 ${
                     open ? "rotate-[360deg] mr-0" : ""
                   }`}
                 />
@@ -335,7 +335,7 @@ export default function Home() {
                   leaveTo="scale-0 absolute"
                 >
                   <h1
-                    className={`text-lg [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
+                    className={`text-lg max-sm:text-sm [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
                   >
                     AWARDS
                   </h1>
@@ -382,7 +382,7 @@ export default function Home() {
                 );
               })}
               <button
-                className={`text-center text-lg bg-slate-300 text-slate-900 hover:bg-slate-900 hover:text-slate-300 border-2 border-slate-300 shadow-cs-lg p-10 rounded-xl w-[100%] mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 max-sm:text-sm ${
+                className={`text-center text-lg bg-slate-300 text-slate-900 hover:bg-slate-900 hover:text-slate-300 border-2 border-slate-300 shadow-cs-lg p-10 max-sm:p-5 rounded-xl w-[100%] mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 max-sm:text-sm ${
                   noMore ? "hidden" : ""
                 }`}
                 onClick={showMoreItems}
