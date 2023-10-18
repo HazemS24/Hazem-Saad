@@ -1,5 +1,5 @@
-localStorage.theme = "light";
 ("use client");
+localStorage.theme = "light";
 
 import { Transition } from "@headlessui/react";
 import Head from "next/head";
