@@ -58,8 +58,6 @@ export default function Home() {
     }
   };
 
-  const types = Array.from(new Set(sections.map((section) => section.type)));
-
   function EndDate(section_start_date: any, section_end_date: any) {
     if (section_end_date) {
       return (
@@ -74,7 +72,7 @@ export default function Home() {
   return (
     <div className="bg-slate-900 font-poopins overflow-hidden">
       <Head>
-        <title>Hazem Saad's Portfolio</title>
+        <title>Hazem Saad&apos;s Portfolio</title>
         <meta name="description" content="Personal Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -365,9 +363,10 @@ export default function Home() {
                 const { name, description, start_date, end_date, image } =
                   section;
                 return (
-                  <li className="text-center hover:bg-slate-800 shadow-cs-lg p-10 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center">
+                  <li key="" className="text-center hover:bg-slate-800 shadow-cs-lg p-10 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center">
                     <img
                       src={section.image}
+                      alt=""
                       className="max-h-[250px] rounded-2xl mx-auto drop-shadow-3xl mt-5"
                     />
                     <div className="text-lg font-medium pt-8 pb-2">
@@ -375,7 +374,7 @@ export default function Home() {
                     </div>
                     <div className="py-2">
                       {description.split("\n").map((line) => (
-                        <p className="mt-1">{line}</p>
+                        <p key="" className="mt-1">{line}</p>
                       ))}
                     </div>
                     <div className="p-4 my-5 text-teal-300 rounded-full bg-teal-400/10 shadow-cs-md">
