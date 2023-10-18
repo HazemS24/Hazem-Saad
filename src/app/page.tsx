@@ -71,7 +71,7 @@ export default function Home() {
   }
 
   return (
-    <div className="bg-slate-900 font-poopins overflow-hidden">
+    <div className="bg-slate-900 dark:bg-slate-200 font-poopins overflow-hidden">
       <Head>
         <title>Hazem Saad&apos;s Portfolio</title>
         <meta name="description" content="Personal Portfolio" />
