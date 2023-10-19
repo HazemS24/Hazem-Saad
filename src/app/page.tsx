@@ -89,7 +89,7 @@ export default function Home() {
             </h3>
             <p className="text-md max-sm:text-sm py-5 leading-8 md:text-lg max-w-2xl mx-auto text-slate-400 font-archivo">
               A current University of Waterloo student pursuing a Computer
-              Engineering Major. I have gained vital life pyexperience after
+              Engineering Major. I have gained vital life experience after
               travelling the world, living in THREE different countries, and
               observing different cultures.
             </p>
