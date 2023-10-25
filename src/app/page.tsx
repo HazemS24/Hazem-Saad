@@ -27,7 +27,7 @@ export default function Home() {
   const [noMore, setNoMore] = useState(false);
   const [filteredSections, setFilteredSections] = useState(sections);
   const [type, setType] = useState("ALL ABOUT ME...");
-  const[darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(false)
 
   const showMoreItems = () => {
     if (visible + 4 >= filteredSections.length) {
