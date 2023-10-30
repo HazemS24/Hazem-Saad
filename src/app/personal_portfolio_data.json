@@ -1,6 +1,6 @@
 [	
 	{
-		"name": "Renison University College - Technical Support Consultant",
+		"name": "Technical Support Consultant - Renison University College",
 		"description": "I monitored and managed the JIRA management system where classroom and office help requests would appear. These help requests consisted of technological equipment replacement, network troubleshooting and many other personal problems that people faced with regard to technology. Furthermore, I was in charge of creating new Automation Rules and AI-generated documentation for the JIRA management system and the newer Azure-DevOps system to decrease the workload of our team. I also managed the facility's audio equipment for graduation ceremonies and other event set-ups.",
 		"start_date": "September 2023",
 		"end_date": "Present",
@@ -8,7 +8,7 @@
 		"image": "/images/renison.png"
 	},
 	{
-		"name": "Tuq Inc - Junior Developer",
+		"name": "Junior Developer - Tuq Inc",
 		"description": "I worked on 6 client-based projects and maintained 3 older company projects throughout the Work Term. Each project contained 20+ models, updated with user-specific features and tested with 2500+ RSpec and rswag tests. These projects were planned with detailed database diagrams encompassing models and associations using draw.io. All projects were created with Ruby on Rails, RSpec, rswag, HTML, PostgreSQL, Linux as the OS, and GitHub for source control.",
 		"start_date": "January 2023",
 		"end_date": "April 2023",
@@ -16,15 +16,23 @@
 		"image": "/images/tuq.png"
 	},
 	{
-		"name": "Pinned",
-		"description": "A team of 7 people - including myself - worked on developing a service meant for organizing and showcasing an organization's events for subscribers. These events include anything related to clubs, ceremonies, speaker talks, and much more!\n - \nLanguages and Tools used: MongoDB, Express, React, NodeJS, Notion, GitHub",
+		"name": "Machine Learning & Software Engineer - Waterloo Aerial Robotics Group",
+		"description": "I utilized a YoloV8 model training a drone to detect landing pads with 96% accuracy. Other tasks included creating an autonomous flight algorithm for path detections and other path calculations for unprecedented changes during a flight.\n - \nLanguages and Tools used: Python, YoloV8, Github",
+		"start_date": "September 2023",
+		"end_date": "Present",
+		"type": "Projects",
+		"image": "/images/warg.png"
+	},
+	{
+		"name": "Lead Web Developer - Pinned",
+		"description": "Led a team of 7 developers to work on developing a news platform showcasing organization's events for subscribers. These events include anything related to clubs, ceremonies, speaker talks, and much more!\n - \nLanguages and Tools used: MongoDB, Express.js, React.js, Node.js, Notion, GitHub",
 		"start_date": "October 2023",
 		"end_date": "Present",
 		"type": "Projects",
-		"image": "/images/pin.png"
+		"image": "/images/pinned.png"
 	},
 	{
-		"name": "MIST TORONTO Competitions Organizor",
+		"name": "Competitions Organizor - MIST TORONTO",
 		"description": "I helped recruit 70+ judges, moderators, and volunteers for high-school competitions - of all categories - to take place at the University of Toronto Saint George Campus. I completed this task with 100+ members in 6 months while attending bi-weekly meetings.",
 		"start_date": "September 2022",
 		"end_date": "March 2023",
@@ -32,7 +40,7 @@
 		"image": "/images/mist_toronto.png"
 	},
 	{
-		"name": "Math4me - Mentor",
+		"name": "Mentor - Math4me",
 		"description": "I worked as a Math, Science, and English mentor to middle-school and high-school students who required assistance. I achieved 'Mentor of the Month' during my first month as a result of the hard work and dedication I had put into the job. After almost 3 years of working at Math4me, I have learned how to adapt and please different mindsets while convincing people - especially youth - to do what is right for them.",
 		"start_date": "November 2020",
 		"end_date": "Present",
@@ -41,7 +49,7 @@
 	},
 	{
 		"name": "Personal Portfolio",
-		"description": "I worked on and updated the front-end aspects of this project for professional functionality while practicing efficient quality assurance for 3+ years.\n - \nLanguages and Tools used: React, TypeScript, NextJS, Tailwind CSS, Headless UI, GitHub",
+		"description": "I worked on and updated the front-end aspects of this project for professional functionality while practicing efficient quality assurance for 3+ years.\n - \nLanguages and Tools used: React.js, TypeScript, Next.js, Tailwind CSS, GitHub",
 		"start_date": "September 2020",
 		"end_date": "Present",
 		"type": "Projects",
@@ -64,7 +72,7 @@
 		"image": "/images/mist_math_olympics.png"
 	},
 	{
-		"name": "Self Employed - Math Tutor for International Students",
+		"name": "International Math Tutor - Self Employed",
 		"description": "I have been an entrepreneur for two years as I started my own tutoring business for international students - outside of Canada - and my own YouTube channel where I create more math videos to supplement my teaching.",
 		"start_date": "September 2021",
 		"end_date": "Present",
@@ -112,7 +120,7 @@
 		"image": "/images/tree.png"
 	},
 	{
-		"name": "Muslim Student Association (MSA) Event Organizer",
+		"name": "Event Organizer - Muslim Student Association (MSA)",
 		"description": "I was part of the planners for major school-wide events. I learned about the responsibilities it takes for someone to run public events in an organized manner. We multitasked to make sure that there would be minimal littering involved while also enjoying our time since we had to create a sense of responsibility among participants.",
 		"start_date": "September 2021",
 		"end_date": "June 2022",
@@ -174,13 +182,5 @@
 		"end_date": null,
 		"type": "Volunteer Experience",
 		"image": "/images/salvation_army.jpg"
-	},
-	{
-		"name": "Gleaning",
-		"description": "A group of 100+ people affiliated with the YMCA - including myself - went to a local farm and gleaned carrots to donate to food banks in the City of Saint John.",
-		"start_date": "Ocotober 2018",
-		"end_date": null,
-		"type": "Volunteer Experience",
-		"image": "/images/carrots.jpg"
 	}
 ]
