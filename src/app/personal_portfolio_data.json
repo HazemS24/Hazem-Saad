@@ -152,35 +152,11 @@
 		"image": "/images/thirdshift.jpg"
 	},
 	{
-		"name": "Mikey AED CPR",
-		"description": "This is a course that I voluntarily took to learn about the procedures of performing CPR and other life-saving techniques which could be used if someone else ever needed it.",
-		"start_date": "October 2020",
-		"end_date": null,
-		"type": "Volunteer Experience",
-		"image": "/images/mikey_aid_cpr.png"
-	},
-	{
-		"name": "Volunteer Book Organizer at Big Brothers Big sisters of Saint John",
-		"description": "I was very fortunate to volunteer for Big Brothers Big Sisters of Saint John as we took the time to organize all the donated books. Our main goal was to ensure people could find what they wanted to read as that is a major factor when convincing others to read more and put in the effort.",
-		"start_date": "August 2019",
-		"end_date": null,
-		"type": "Volunteer Experience",
-		"image": "/images/bbbs.png"
-	},
-	{
 		"name": "GreyHound Hounds Honors",
 		"description": "I achieved GreyHound Hounds Honors with a 95% average at Saint John High School during the 2018-2019 school year. I was also enrolled in an IB program which made this award much harder to achieve.",
 		"start_date": "June 2019",
 		"end_date": null,
 		"type": "Awards",
 		"image": "/images/greyhound.jpg"
-	},
-	{
-		"name": "Salvation Army Kettle Drive",
-		"description": "The Salvation Army Kettle Drive is an organization that dedicates its efforts to donations. I - with a group of people - collected donations in an Atlantic Superstore during Christmas and presented candy canes as a gift for donors.",
-		"start_date": "February 2018",
-		"end_date": null,
-		"type": "Volunteer Experience",
-		"image": "/images/salvation_army.jpg"
 	}
 ]
