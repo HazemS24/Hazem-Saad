@@ -88,6 +88,14 @@
 		"image": "/images/ontario_scholar.jpg"
 	},
 	{
+		"name": "Deforestation Prevention Foundation",
+		"description": "A group of 2 people - including myself - built a friendly website to educate 270+ students in our high school on ways to reduce the effects of deforestation. We presented reliable statistics and facts to spread information about the issue.\n - \nLanguages and Tools used: HTML, CSS, JS",
+		"start_date": "September 2020",
+		"end_date": "January 2022",
+		"type": "Projects",
+		"image": "/images/tree.png"
+	},
+	{
 		"name": "Senior Scholar at John Fraser Secondary School",
 		"description": "I volunteered an hour of my time per week to help out peers and students in our school with specific subject materials that they were struggling with. I got the chance to feel charitable and master all the concepts I was helping with from all points of view - since I had to understand their questions using my logical thinking and connect them to common misinterpretations about each concept.",
 		"start_date": "September 2021",
@@ -110,14 +118,6 @@
 		"end_date": "November 2019",
 		"type": "Volunteer Experience",
 		"image": "/images/peace_mural.png"
-	},
-	{
-		"name": "Deforestation Prevention Foundation",
-		"description": "A group of 2 people - including myself - built a friendly website to educate 270+ students in our high school on ways to reduce the effects of deforestation. We presented reliable statistics and facts to spread information about the issue.\n - \nLanguages and Tools used: HTML, CSS, JS",
-		"start_date": "September 2020",
-		"end_date": "January 2022",
-		"type": "Projects",
-		"image": "/images/tree.png"
 	},
 	{
 		"name": "Event Organizer - Muslim Student Association (MSA)",
