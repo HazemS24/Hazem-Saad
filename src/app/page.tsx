@@ -94,7 +94,7 @@ export default function Home() {
               observing different cultures.
             </p>
           </div>
-          <div className="text-5xl max-sm:text-3xl max-sm:py-0  text-slate-400 flex justify-center gap-[60px] py-4 max-md:gap-[30px]">
+          <div className="text-5xl max-sm:text-3xl max-sm:py-0 text-slate-400 flex justify-center gap-[60px] py-4 max-md:gap-[30px]">
             <a href="https://github.com/HazemS24">
               <AiOutlineGithub className="hover:text-slate-200" />
             </a>
