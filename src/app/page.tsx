@@ -19,7 +19,7 @@ import { BiSolidAward, BiCodeAlt } from "react-icons/bi";
 import Image from "next/image";
 import hazem from "public/images/hazem_saad.jpg";
 import sections from "./personal_portfolio_data.json";
-import { useState } from "react"; 
+import { useState } from "react";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -27,7 +27,7 @@ export default function Home() {
   const [noMore, setNoMore] = useState(false);
   const [filteredSections, setFilteredSections] = useState(sections);
   const [type, setType] = useState("ALL ABOUT ME...");
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(false);
 
   const showMoreItems = () => {
     if (visible + 4 >= filteredSections.length) {
@@ -89,24 +89,32 @@ export default function Home() {
             </h3>
             <p className="text-md max-sm:text-sm py-5 leading-8 md:text-lg max-w-2xl mx-auto text-slate-400 font-archivo">
               A current University of Waterloo student pursuing a Computer
-              Engineering Major. I have gained vital life experience after
-              travelling the world, living in THREE different countries, and
+              Engineering Degree. I have gained vital life experience after
+              travelling the world, living in <span className="text-slate-100">three</span> different countries, and
               observing different cultures.
             </p>
           </div>
           <div className="text-5xl max-sm:text-3xl max-sm:py-0 text-slate-400 flex justify-center gap-[60px] py-4 max-md:gap-[30px]">
-            <a href="https://github.com/HazemS24">
-              <AiOutlineGithub className="hover:text-slate-200" />
-            </a>
-            <a href="https://www.linkedin.com/in/hazem-saad">
-              <AiFillLinkedin className="hover:text-slate-200" />
-            </a>
-            <a href="https://www.instagram.com/hazem_saad04/">
-              <AiOutlineInstagram className="hover:text-slate-200" />
-            </a>
-            <a href="https://www.youtube.com/channel/UCW2xU773uz7wGhp5ToAIX2A/">
-              <AiFillYoutube className="hover:text-slate-200" />
-            </a>
+            <div className="hover:scale-110 duration-100">
+              <a href="https://github.com/HazemS24">
+                <AiOutlineGithub className="hover:text-slate-200" />
+              </a>
+            </div>
+            <div className="hover:scale-110 duration-100">
+              <a href="https://www.linkedin.com/in/hazem-saad">
+                <AiFillLinkedin className="hover:text-slate-200" />
+              </a>
+            </div>
+            <div className="hover:scale-110 duration-100">
+              <a href="https://www.instagram.com/hazem_saad04/">
+                <AiOutlineInstagram className="hover:text-slate-200" />
+              </a>
+            </div>
+            <div className="hover:scale-110 duration-100">
+              <a href="https://www.youtube.com/channel/UCW2xU773uz7wGhp5ToAIX2A/">
+                <AiFillYoutube className="hover:text-slate-200" />
+              </a>
+            </div>
           </div>
           <div className="relative mx-auto rounded-full w-80 h-80 my-20 max-sm:mb-0  overflow-hidden border-slate-200 md:h-96 md:w-96 border-2 shadow-cs-xl shadow-slate-500 max-sm:h-60 max-sm:w-60">
             <Image src={hazem} alt="" />
@@ -154,12 +162,12 @@ export default function Home() {
             </Transition>
 
             <div
-              className={`flex py-5 max-sm:py-1 ease-in-out duration-500 lg:mt-5 lg:mx-2 ${
+              className={`flex py-3 max-sm:py-1 ease-in-out duration-500 lg:mt-5 lg:mx-2 ${
                 open ? "" : "max-lg:scale-0 p-0"
               }`}
             >
               <button
-                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+                className={`p-0 duration-300 relative rounded-3xl text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
                   open ? "w-[360px]" : "flex-none"
                 }`}
                 onClick={() => {
@@ -192,12 +200,12 @@ export default function Home() {
             </div>
 
             <div
-              className={`flex py-5 max-sm:py-1 ease-in-out duration-500 lg:mx-2 ${
+              className={`flex py-3 max-sm:py-1 ease-in-out duration-500 lg:mx-2 ${
                 open ? "" : "max-lg:scale-0"
               }`}
             >
               <button
-                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+                className={`p-0 duration-300 relative rounded-3xl text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
                   open ? "w-[360px]" : "flex-none"
                 }`}
                 onClick={() => {
@@ -230,12 +238,12 @@ export default function Home() {
             </div>
 
             <div
-              className={`flex py-5 max-sm:py-1 ease-in-out duration-500 lg:mx-2 ${
+              className={`flex py-3 max-sm:py-1 ease-in-out duration-500 lg:mx-2 ${
                 open ? "" : "max-lg:scale-0"
               }`}
             >
               <button
-                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+                className={`p-0 duration-300 relative rounded-3xl text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
                   open ? "w-[360px]" : "flex-none"
                 }`}
                 onClick={() => {
@@ -268,12 +276,12 @@ export default function Home() {
             </div>
 
             <div
-              className={`flex py-5 max-sm:py-1 ease-in-out duration-500 lg:mx-2 ${
+              className={`flex py-3 max-sm:py-1 ease-in-out duration-500 lg:mx-2 ${
                 open ? "" : "max-lg:scale-0"
               }`}
             >
               <button
-                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+                className={`p-0 duration-300 relative rounded-3xl text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
                   open ? "w-[360px]" : "flex-none"
                 }`}
                 onClick={() => {
@@ -306,12 +314,12 @@ export default function Home() {
             </div>
 
             <div
-              className={`flex py-5 max-sm:py-1 ease-in-out duration-500 lg:mx-2 ${
+              className={`flex py-3 max-sm:py-1 ease-in-out duration-500 lg:mx-2 ${
                 open ? "" : "max-lg:scale-0"
               }`}
             >
               <button
-                className={`p-0 duration-500 relative rounded-md text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+                className={`p-0 duration-300 relative rounded-3xl text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
                   open ? "w-[360px]" : "flex-none"
                 }`}
                 onClick={() => {
