@@ -129,7 +129,15 @@ export default function Home() {
           </section>
         </motion.div>
 
-        <section className="flex m-5 max-sm:my-1 relative rounded-3xl h-[92vh] overflow-y-scroll [@media(min-width:0)]:scrollbar-hide border-slate-300 border-2 shadow-cs-xl shadow-slate-500">
+        <section className="flex m-5 max-sm:my-1 relative rounded-3xl h-[92vh] overflow-y-scroll [@media(min-width:0)]:scrollbar-hide border-slate-300 border-2 shadow-cs-xl shadow-slate-500 z-10">
+          <div className="sticky top-0 h-0 w-0 -z-10">
+            <div className="h-[300px] w-[350px] lg:h-[500px] lg:w-[700px] -right-[20rem] top-[5rem] lg:-top-[10rem] lg:-right-[35rem] absolute bg-slate-500 rounded-full blur-[9rem]" />
+          </div>
+
+          <div className="sticky top-0 h-0 w-0 -z-10">
+            <div className="h-[350px] w-[350px] lg:h-[500px] lg:w-[800px] -right-[45rem] md:-right[80rem] lg:-right-[75rem] xl:-right-[115rem] -bottom-[50rem] absolute bg-teal-600 rounded-full blur-[9rem]" />
+          </div>
+
           <div className="sticky max-lg:h-0 max-lg:w-0 top-0 max-lg:z-[99]">
             <div
               className={`bg-slate-900 lg:h-[96%] p-5 pt-8 shadow-cs-xl shadow-slate-500 duration-500 max-lg:ml-4 max-lg:mt-4 z-[99] border-slate-300 rounded-3xl ml-4 my-4 ${
@@ -365,14 +373,14 @@ export default function Home() {
           </div>
 
           <div className="p-[30px] xl:pt-5">
-            <div className="text-right font-archivo shadow-cs-lg shadow-slate-900 p-10 rounded-xl w-[100%] mx-1 xl:mx-3 md:max-lg:mx-3 mb-3">
-              <div className="text-slate-300 max-h-[100%] max-w-[100%] max-sm:text-3xl sm:max-md:text-5xl md:text-6xl duration-500">
+            <div className="text-right font-archivo shadow-slate-900 p-10 rounded-xl w-[100%] mx-1 xl:mx-3 md:max-lg:mx-3 mb-3">
+              <div className="text-slate-300 max-h-[100%] max-w-[100%] max-sm:text-3xl sm:max-md:text-5xl md:text-6xl z-[99]">
                 {type}
               </div>
             </div>
 
             <ul
-              className={`text-slate-300 xl:flex xl:flex-row xl:flex-wrap xl:justify-between md:max-lg:flex md:max-lg:flex-row md:max-lg:flex-wrap md:max-lg:justify-between ${
+              className={`text-slate-300 xl:flex xl:flex-row xl:flex-wrap xl:justify-between md:max-lg:flex md:max-lg:flex-row md:max-lg:flex-wrap md:max-lg:justify-between z-[99] ${
                 noMore ? "max-lg:py-3" : ""
               }`}
             >
@@ -382,7 +390,7 @@ export default function Home() {
                 return (
                   <li
                     key=""
-                    className="text-center hover:bg-slate-800 shadow-cs-lg p-10 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center max-w-[100%]"
+                    className="bg-slate-900 text-center hover:bg-slate-800 shadow-cs-section p-10 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center max-w-[100%]"
                   >
                     <img
                       src={section.image}
@@ -406,7 +414,7 @@ export default function Home() {
                 );
               })}
               <button
-                className={`text-center text-lg bg-slate-300 text-slate-900 hover:bg-slate-900 hover:text-slate-300 border-2 border-slate-300 shadow-cs-lg py-5 max-sm:p-5 rounded-xl w-[100%] mx-1 xl:mx-3 md:max-lg:mx-3 mb-5 duration-200 max-sm:text-sm ${
+                className={`text-center text-lg bg-slate-300 text-slate-900 hover:bg-slate-900 hover:text-slate-300 border-2 border-slate-300 shadow-cs-lg py-5 max-sm:p-5 rounded-xl w-[100%] mx-1 xl:mx-3 md:max-lg:mx-3 mb-5 duration-200 max-sm:text-sm z-[99] ${
                   noMore ? "hidden" : ""
                 }`}
                 onClick={showMoreItems}
