@@ -11,6 +11,7 @@ import { RxDashboard } from "react-icons/rx";
 import { BiSolidAward, BiCodeAlt } from "react-icons/bi";
 import sections from "./personal_portfolio_data.json";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export const Content = () => {
   const [open, setOpen] = useState(false);

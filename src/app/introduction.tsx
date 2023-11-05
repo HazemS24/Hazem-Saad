@@ -6,7 +6,7 @@ import {
 } from "react-icons/ai";
 import Image from "next/image";
 import hazem from "public/images/hazem_saad.jpg";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 export const Introduction = () => {
   return (
