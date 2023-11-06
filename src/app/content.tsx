@@ -11,7 +11,7 @@ import { RxDashboard } from "react-icons/rx";
 import { BiSolidAward, BiCodeAlt } from "react-icons/bi";
 import sections from "./personal_portfolio_data.json";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 export const Content = () => {
   const [open, setOpen] = useState(false);
@@ -60,8 +60,9 @@ export const Content = () => {
     }
     return <div>{section_start_date}</div>;
   }
+
   return (
-    <section className="flex m-5 max-sm:my-1 relative rounded-3xl h-[92vh] overflow-y-scroll [@media(min-width:0)]:scrollbar-hide border-slate-300 border-2 shadow-cs-xl shadow-slate-500 z-10">
+    <section className="flex m-5 max-sm:my-1 relative rounded-3xl h-[92vh] overflow-y-scroll overflow-x-hidden [@media(min-width:0)]:scrollbar-hide border-slate-300 border-2 shadow-cs-xl shadow-slate-500 z-10">
       <div className="sticky top-0 h-0 w-0 -z-10">
         <div className="h-[300px] w-[350px] lg:h-[500px] lg:w-[700px] -right-[20rem] top-[5rem] lg:-top-[10rem] lg:-right-[35rem] absolute bg-slate-500 rounded-full blur-[9rem]" />
       </div>
@@ -96,10 +97,10 @@ export const Content = () => {
             show={open}
             enter="transition ease-in duration-200 delay-100"
             enterTo="scale-100 w-[100%]"
-            enterFrom="scale-0 w-[0%]"
-            leave="transition ease-in duration-100"
+            enterFrom="scale-0 w-[0%] h-0"
+            leave="transition duration-100"
             leaveFrom="scale-100 w-[100%]"
-            leaveTo="scale-0 w-[0%] ml-15"
+            leaveTo="scale-0 w-[0%] ml-15 h-0"
           >
             <div
               className={`bg-slate-900 text-slate-300 text-6xl font-archivo ${
@@ -134,13 +135,13 @@ export const Content = () => {
                 show={open}
                 enter="transition ease-in duration-[200ms] delay-100"
                 enterTo="scale-100"
-                enterFrom="scale-0 absolute"
+                enterFrom="scale-0"
                 leave="transition duration-0"
                 leaveFrom="scale-100"
-                leaveTo="scale-0 absolute"
+                leaveTo="scale-0"
               >
                 <h1
-                  className={`text-lg max-sm:text-sm [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
+                  className={`absolute text-lg max-sm:text-sm [transition:_color_75ms] text-inherit left-[60px] ml-3 mt-[22px]`}
                 >
                   ALL ABOUT ME...
                 </h1>
@@ -172,13 +173,13 @@ export const Content = () => {
                 show={open}
                 enter="transition ease-in duration-[200ms] delay-100"
                 enterTo="scale-100"
-                enterFrom="scale-0 absolute"
+                enterFrom="scale-0"
                 leave="transition duration-0"
                 leaveFrom="scale-100"
-                leaveTo="scale-0 absolute"
+                leaveTo="scale-0"
               >
                 <h1
-                  className={`text-lg max-sm:text-sm [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
+                  className={`absolute text-lg max-sm:text-sm [transition:_color_75ms] text-inherit left-[60px] ml-3 mt-[22px]`}
                 >
                   PROJECTS
                 </h1>
@@ -210,13 +211,13 @@ export const Content = () => {
                 show={open}
                 enter="transition ease-in duration-[200ms] delay-100"
                 enterTo="scale-100"
-                enterFrom="scale-0 absolute"
+                enterFrom="scale-0"
                 leave="transition duration-0"
                 leaveFrom="scale-100"
-                leaveTo="scale-0 absolute"
+                leaveTo="scale-0"
               >
                 <h1
-                  className={`text-lg max-sm:text-sm [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
+                  className={`absolute text-lg max-sm:text-sm [transition:_color_75ms] text-inherit left-[60px] ml-3 mt-[22px]`}
                 >
                   WORK EXPERIENCE
                 </h1>
@@ -248,13 +249,13 @@ export const Content = () => {
                 show={open}
                 enter="transition ease-in duration-[200ms] delay-100"
                 enterTo="scale-100"
-                enterFrom="scale-0 absolute"
+                enterFrom="scale-0"
                 leave="transition duration-0"
                 leaveFrom="scale-100"
-                leaveTo="scale-0 absolute"
+                leaveTo="scale-0"
               >
                 <h1
-                  className={`text-lg max-sm:text-sm [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
+                  className={`absolute text-lg max-sm:text-sm [transition:_color_75ms] text-inherit left-[60px] ml-3 mt-[22px]`}
                 >
                   VOLUNTEER EXPERIENCE
                 </h1>
@@ -286,13 +287,13 @@ export const Content = () => {
                 show={open}
                 enter="transition ease-in duration-[200ms] delay-100"
                 enterTo="scale-100"
-                enterFrom="scale-0 absolute"
+                enterFrom="scale-0"
                 leave="transition duration-0"
                 leaveFrom="scale-100"
-                leaveTo="scale-0 absolute"
+                leaveTo="scale-0"
               >
                 <h1
-                  className={`text-lg max-sm:text-sm [transition:_color_75ms] text-inherit float-left ml-3 mt-[22px]`}
+                  className={`absolute text-lg max-sm:text-sm [transition:_color_75ms] text-inherit left-[60px] ml-3 mt-[22px]`}
                 >
                   AWARDS
                 </h1>
@@ -308,7 +309,6 @@ export const Content = () => {
             {type}
           </div>
         </div>
-
         <ul
           className={`text-slate-300 xl:flex xl:flex-row xl:flex-wrap xl:justify-between md:max-lg:flex md:max-lg:flex-row md:max-lg:flex-wrap md:max-lg:justify-between z-[99] ${
             noMore ? "max-lg:py-3" : ""
