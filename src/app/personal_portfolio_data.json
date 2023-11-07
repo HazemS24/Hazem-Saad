@@ -5,31 +5,35 @@
 		"start_date": "September 2023",
 		"end_date": "Present",
 		"type": "Work Experience",
-		"image": "/images/renison.png"
+		"image": "/images/renison.png",
+		"tools": []
 	},
 	{
 		"name": "Junior Developer - Tuq Inc",
-		"description": "I worked on 6 client-based projects and maintained 3 older company projects throughout the Work Term. Each project contained 20+ models, updated with user-specific features and tested with 2500+ RSpec and rswag tests. These projects were planned with detailed database diagrams encompassing models and associations using draw.io. All projects were created with Ruby on Rails, RSpec, rswag, HTML, PostgreSQL, Linux as the OS, and GitHub for source control.",
+		"description": "I worked on 6 client-based projects and maintained 3 older company projects throughout the Work Term. Each project contained 20+ models, updated with user-specific features and tested with 2500+ RSpec and rswag tests. These projects were planned with detailed database diagrams encompassing models and associations using draw.io.",
 		"start_date": "January 2023",
 		"end_date": "April 2023",
 		"type": "Work Experience",
-		"image": "/images/tuq.png"
+		"image": "/images/tuq.png",
+		"tools": ["Ruby on Rails", "PostgreSQL", "Linux", "GitHub", "HTML", "RSpec", "rswag"]
 	},
 	{
 		"name": "Machine Learning & Software Engineer - Waterloo Aerial Robotics Group",
-		"description": "I utilized a YoloV8 model training a drone to detect landing pads with 96% accuracy. Other tasks included creating an autonomous flight algorithm for path detections and other path calculations for unprecedented changes during a flight.\n - \nLanguages and Tools used: Python, YoloV8, Github",
+		"description": "I utilized a YoloV8 model training a drone to detect landing pads with 96% accuracy. Other tasks included creating an autonomous flight algorithm for path detections and other path calculations for unprecedented changes during a flight.",
 		"start_date": "September 2023",
 		"end_date": "Present",
 		"type": "Projects",
-		"image": "/images/warg.png"
+		"image": "/images/warg.png",
+		"tools": ["Python", "YoloV8", "GitHub"]
 	},
 	{
 		"name": "Full Stack Developer - Pinned",
-		"description": "Was part of a 7-person team developing a news platform showcasing organization's events for subscribers. These events include anything related to clubs, ceremonies, speaker talks, and much more!\n - \nLanguages and Tools used: MongoDB, Express.js, React.js, Node.js, Notion, GitHub",
+		"description": "Was part of a 7-person team developing a news platform showcasing organization's events for subscribers. These events include anything related to clubs, ceremonies, speaker talks, and much more!",
 		"start_date": "October 2023",
 		"end_date": "Present",
 		"type": "Projects",
-		"image": "/images/pinned.png"
+		"image": "/images/pinned.png",
+		"tools": ["MongoDB", "Express.js", "React.js", "Node.js", "Linear", "GitHub"]
 	},
 	{
 		"name": "Competitions Organizor - MIST TORONTO",
@@ -37,7 +41,8 @@
 		"start_date": "September 2022",
 		"end_date": "March 2023",
 		"type": "Volunteer Experience",
-		"image": "/images/mist_toronto.png"
+		"image": "/images/mist_toronto.png",
+		"tools": []
 	},
 	{
 		"name": "Mentor - Math4me",
@@ -45,23 +50,26 @@
 		"start_date": "November 2020",
 		"end_date": "Present",
 		"type": "Work Experience",
-		"image": "/images/math4me.png"
+		"image": "/images/math4me.png",
+		"tools": []
 	},
 	{
 		"name": "Personal Portfolio",
-		"description": "I worked on and updated the front-end aspects of this project for professional functionality while practicing efficient quality assurance for 3+ years.\n - \nLanguages and Tools used: React.js, TypeScript, Next.js, Tailwind CSS, GitHub",
+		"description": "I worked on and updated the front-end aspects of this project for professional functionality while practicing efficient quality assurance for 3+ years.",
 		"start_date": "September 2020",
 		"end_date": "Present",
 		"type": "Projects",
-		"image": "/images/portfolio.png"
+		"image": "/images/portfolio.png",
+		"tools": ["React.js", "TypeScript", "Next.js", "Tailwind CSS", "GitHub"]
 	},
 	{
 		"name": "2023 Toyota Innovation Challenge",
-		"description": "My team - which included 4 people including myself - placed first out of 40+ teams receiving the \"Most Unique Approach\" award in this challenge by Toyota Motor Manufacturing Canada. We used OpenCV to develop an image-processing AI to detect sticker placement over holes on metallic surfaces. The algorithm was optimized to obtain a 99% success rate and run over live video feed achieving 30 fps.\n - \nLanguages & Tools used: Python, OpenCV, Google Colab",
+		"description": "My team - which included 4 people including myself - placed first out of 40+ teams receiving the \"Most Unique Approach\" award in this challenge by Toyota Motor Manufacturing Canada. We used OpenCV to develop an image-processing AI to detect sticker placement over holes on metallic surfaces. The algorithm was optimized to obtain a 99% success rate and run over live video feed achieving 30 fps.",
 		"start_date": "May 2023",
 		"end_date": null,
 		"type": ["Awards","Projects"],
-		"image": "/images/tmmc.png"
+		"image": "/images/tmmc.png",
+		"tools": ["Python", "OpenCV", "Google Colab"]
 	},
 	{
 		"name": "MIST (Muslim Interscholastic Tournament) Toronto Math Olympics",
@@ -69,7 +77,8 @@
 		"start_date": "May 2022",
 		"end_date": null,
 		"type": "Awards",
-		"image": "/images/mist_math_olympics.png"
+		"image": "/images/mist_math_olympics.png",
+		"tools": []
 	},
 	{
 		"name": "International Math Tutor - Self Employed",
@@ -77,7 +86,8 @@
 		"start_date": "September 2021",
 		"end_date": "Present",
 		"type": "Work Experience",
-		"image": "/images/face.png"
+		"image": "/images/face.png",
+		"tools": []
 	},
 	{
 		"name": "Ontario Scholar",
@@ -85,15 +95,17 @@
 		"start_date": "June 2022",
 		"end_date": null,
 		"type": "Awards",
-		"image": "/images/ontario_scholar.jpg"
+		"image": "/images/ontario_scholar.jpg",
+		"tools": []
 	},
 	{
 		"name": "Deforestation Prevention Foundation",
-		"description": "A group of 2 people - including myself - built a friendly website to educate 270+ students in our high school on ways to reduce the effects of deforestation. We presented reliable statistics and facts to spread information about the issue.\n - \nLanguages and Tools used: HTML, CSS, JS",
+		"description": "A group of 2 people - including myself - built a friendly website to educate 270+ students in our high school on ways to reduce the effects of deforestation. We presented reliable statistics and facts to spread information about the issue.",
 		"start_date": "September 2020",
 		"end_date": "January 2022",
 		"type": "Projects",
-		"image": "/images/tree.png"
+		"image": "/images/tree.png",
+		"tools": ["HTML", "CSS", "JavaScript"]
 	},
 	{
 		"name": "Senior Scholar at John Fraser Secondary School",
@@ -101,7 +113,8 @@
 		"start_date": "September 2021",
 		"end_date": " June 2022",
 		"type": "Volunteer Experience",
-		"image": "/images/johnfraser_logo.png"
+		"image": "/images/johnfraser_logo.png",
+		"tools": []
 	},
 	{
 		"name": "University of Waterloo - Math Contests",
@@ -109,7 +122,8 @@
 		"start_date": "2018",
 		"end_date": "2022",
 		"type": "Awards",
-		"image": "/images/uw_math_contests.png"
+		"image": "/images/uw_math_contests.png",
+		"tools": []
 	},
 	{
 		"name": "Youth Peace Mural",
@@ -117,7 +131,8 @@
 		"start_date": "September 2019",
 		"end_date": "November 2019",
 		"type": "Volunteer Experience",
-		"image": "/images/peace_mural.png"
+		"image": "/images/peace_mural.png",
+		"tools": []
 	},
 	{
 		"name": "Event Organizer - Muslim Student Association (MSA)",
@@ -125,7 +140,8 @@
 		"start_date": "September 2021",
 		"end_date": "June 2022",
 		"type": "Volunteer Experience",
-		"image": "/images/jfss_msa.jpg"
+		"image": "/images/jfss_msa.jpg",
+		"tools": []
 	},
 	{
 		"name": "Scholten's Shell - Convenience Store",
@@ -133,7 +149,8 @@
 		"start_date": "June 2020",
 		"end_date": "August 2020",
 		"type": "Work Experience",
-		"image": "/images/scholten.jpg"
+		"image": "/images/scholten.jpg",
+		"tools": []
 	},
 	{
 		"name": "ASD-S Math Competition",
@@ -141,7 +158,8 @@
 		"start_date": "November 2019",
 		"end_date": null,
 		"type": "Awards",
-		"image": "/images/asds_winner.jpg"
+		"image": "/images/asds_winner.jpg",
+		"tools": []
 	},
 	{
 		"name": "Third Shift Workshops",
@@ -149,7 +167,8 @@
 		"start_date": "August 2019",
 		"end_date": null,
 		"type": "Volunteer Experience",
-		"image": "/images/thirdshift.jpg"
+		"image": "/images/thirdshift.jpg",
+		"tools": []
 	},
 	{
 		"name": "GreyHound Hounds Honors",
@@ -157,6 +176,7 @@
 		"start_date": "June 2019",
 		"end_date": null,
 		"type": "Awards",
-		"image": "/images/greyhound.jpg"
+		"image": "/images/greyhound.jpg",
+		"tools": []
 	}
 ]
