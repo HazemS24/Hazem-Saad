@@ -11,7 +11,7 @@ import { RxDashboard } from "react-icons/rx";
 import { BiSolidAward, BiCodeAlt } from "react-icons/bi";
 import sections from "./personal_portfolio_data.json";
 import { useState } from "react";
-import { motion, Variants } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 export const Content = () => {
   const [open, setOpen] = useState(false);
@@ -80,14 +80,14 @@ export const Content = () => {
           }`}
         >
           <MdKeyboardArrowLeft
-            className={`max-lg:hidden bg-slate-900 text-slate-300 hover:bg-slate-300 hover:text-slate-900 text-4xl absolute rounded-full -right-4 top-4 border-2 border-slate-300 [transition:_color_75ms,transform_0.5s_ease-in-out] cursor-pointer my-5 ${
+            className={`max-lg:hidden bg-slate-900 text-slate-300 hover:bg-slate-300 hover:text-slate-900 text-4xl absolute rounded-full -right-4 top-4 border-2 border-slate-300 [transition:_color_75ms,transform_0.5s_ease-out] cursor-pointer my-5 ${
               !open && "rotate-180"
             }`}
             onClick={() => setOpen(!open)}
           />
 
           <MdOutlineFilterList
-            className={`lg:hidden rounded-md border-2 bg-slate-900 text-slate-300 hover:bg-slate-300 hover:text-slate-900 border-slate-300 text-5xl duration-500 cursor-pointer mb-5 ${
+            className={`lg:hidden rounded-lg border-2 bg-slate-900 text-slate-300 hover:bg-slate-300 hover:text-slate-900 border-slate-300 text-5xl duration-500 cursor-pointer mb-5 ${
               open ? "w-[100%]" : "rotate-[360deg] mt-1 ml-1"
             }`}
             onClick={() => setOpen(!open)}
@@ -112,12 +112,12 @@ export const Content = () => {
           </Transition>
 
           <div
-            className={`flex py-3 max-sm:py-1 ease-in-out duration-500 lg:mt-5 lg:mx-2 ${
+            className={`flex py-3 max-sm:py-1 ease-out duration-500 lg:mt-5 lg:mx-2 ${
               open ? "" : "max-lg:scale-0 p-0"
             }`}
           >
             <button
-              className={`p-0 duration-300 relative rounded-3xl text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+              className={`p-0 duration-300 relative rounded-3xl text-slate-300 hover:bg-slate-200 hover:text-slate-900 hover:scale-[105%] ${
                 open ? "w-[360px]" : "flex-none"
               }`}
               onClick={() => {
@@ -127,7 +127,7 @@ export const Content = () => {
               }}
             >
               <RxDashboard
-                className={`text-5xl max-sm:text-4xl rounded float-left flex-shrink-0 p-1 [transition:_color_75ms,transform_0.5s_ease-in-out] m-3 ${
+                className={`text-5xl max-sm:text-4xl rounded float-left flex-shrink-0 p-1 [transition:_color_75ms,transform_0.5s_ease-out] m-3 ${
                   open ? "rotate-[360deg] mr-0" : ""
                 }`}
               />
@@ -150,12 +150,12 @@ export const Content = () => {
           </div>
 
           <div
-            className={`flex py-3 max-sm:py-1 ease-in-out duration-500 lg:mx-2 ${
+            className={`flex py-3 max-sm:py-1 ease-out duration-500 lg:mx-2 ${
               open ? "" : "max-lg:scale-0"
             }`}
           >
             <button
-              className={`p-0 duration-300 relative rounded-3xl text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+              className={`p-0 duration-200 relative rounded-3xl text-slate-300 hover:bg-slate-300 hover:text-slate-900 hover:scale-[105%] ${
                 open ? "w-[360px]" : "flex-none"
               }`}
               onClick={() => {
@@ -165,7 +165,7 @@ export const Content = () => {
               }}
             >
               <BiCodeAlt
-                className={`text-5xl max-sm:text-4xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-in-out] flex-shrink-0 p-1 m-3 ${
+                className={`text-5xl max-sm:text-4xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-out] flex-shrink-0 p-1 m-3 ${
                   open ? "rotate-[360deg] mr-0" : ""
                 }`}
               />
@@ -188,12 +188,12 @@ export const Content = () => {
           </div>
 
           <div
-            className={`flex py-3 max-sm:py-1 ease-in-out duration-500 lg:mx-2 ${
+            className={`flex py-3 max-sm:py-1 ease-out duration-500 lg:mx-2 ${
               open ? "" : "max-lg:scale-0"
             }`}
           >
             <button
-              className={`p-0 duration-300 relative rounded-3xl text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+              className={`p-0 duration-200 relative rounded-3xl text-slate-300 hover:bg-slate-300 hover:text-slate-900 hover:scale-[105%] ${
                 open ? "w-[360px]" : "flex-none"
               }`}
               onClick={() => {
@@ -203,7 +203,7 @@ export const Content = () => {
               }}
             >
               <MdWorkOutline
-                className={`text-5xl max-sm:text-4xl rounded float-left flex-shrink-0 p-1 [transition:_color_75ms,transform_0.5s_ease-in-out] m-3 ${
+                className={`text-5xl max-sm:text-4xl rounded float-left flex-shrink-0 p-1 [transition:_color_75ms,transform_0.5s_ease-out] m-3 ${
                   open ? "rotate-[360deg] mr-0" : ""
                 }`}
               />
@@ -226,12 +226,12 @@ export const Content = () => {
           </div>
 
           <div
-            className={`flex py-3 max-sm:py-1 ease-in-out duration-500 lg:mx-2 ${
+            className={`flex py-3 max-sm:py-1 ease-out duration-500 lg:mx-2 ${
               open ? "" : "max-lg:scale-0"
             }`}
           >
             <button
-              className={`p-0 duration-300 relative rounded-3xl text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+              className={`p-0 duration-200 relative rounded-3xl text-slate-300 hover:bg-slate-300 hover:text-slate-900 hover:scale-[105%] ${
                 open ? "w-[360px]" : "flex-none"
               }`}
               onClick={() => {
@@ -241,7 +241,7 @@ export const Content = () => {
               }}
             >
               <MdOutlineVolunteerActivism
-                className={`text-5xl max-sm:text-4xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-in-out] flex-shrink-0 p-1 m-3 ${
+                className={`text-5xl max-sm:text-4xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-out] flex-shrink-0 p-1 m-3 ${
                   open ? "rotate-[360deg] mr-0" : ""
                 }`}
               />
@@ -264,12 +264,12 @@ export const Content = () => {
           </div>
 
           <div
-            className={`flex py-3 max-sm:py-1 ease-in-out duration-500 lg:mx-2 ${
+            className={`flex py-3 max-sm:py-1 ease-out duration-500 lg:mx-2 ${
               open ? "" : "max-lg:scale-0"
             }`}
           >
             <button
-              className={`p-0 duration-300 relative rounded-3xl text-slate-300 hover:bg-slate-300 hover:text-slate-900 ${
+              className={`p-0 duration-200 relative rounded-3xl text-slate-300 hover:bg-slate-300 hover:text-slate-900 hover:scale-[105%] ${
                 open ? "w-[360px]" : "flex-none"
               }`}
               onClick={() => {
@@ -279,7 +279,7 @@ export const Content = () => {
               }}
             >
               <BiSolidAward
-                className={`text-5xl max-sm:text-4xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-in-out] flex-shrink-0 p-1 m-3 ${
+                className={`text-5xl max-sm:text-4xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-out] flex-shrink-0 p-1 m-3 ${
                   open ? "rotate-[360deg] mr-0" : ""
                 }`}
               />
@@ -315,31 +315,44 @@ export const Content = () => {
           }`}
         >
           {filteredSections.slice(0, visible).map((section) => {
-            const { name, description, start_date, end_date, image } = section;
+            const { name, description, start_date, end_date, image, tools } = section;
             return (
-              <li
-                key=""
-                className="bg-slate-900 text-center hover:bg-slate-800 shadow-cs-section p-10 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center max-w-[100%]"
-              >
-                <img
-                  src={section.image}
-                  alt=""
-                  className="max-h-[250px] rounded-2xl mx-auto drop-shadow-3xl mt-5"
-                />
-                <div className="text-lg font-medium pt-8 pb-2">
-                  <strong>{name}</strong>
-                </div>
-                <div className="py-2 max-sm:text-sm">
-                  {description.split("\n").map((line) => (
-                    <p key="" className="mt-1">
-                      {line}
-                    </p>
-                  ))}
-                </div>
-                <div className="p-4 my-5 text-teal-300 rounded-full bg-teal-400/10 shadow-cs-md max-sm:text-sm">
-                  {EndDate(start_date, end_date)}
-                </div>
-              </li>
+              <AnimatePresence mode="wait">
+                <motion.li
+                  key={type ? type : "empty"}
+                  initial={{ y: 10, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: -10, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                  className="bg-slate-900 text-center hover:bg-slate-800 shadow-cs-section p-10 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center max-w-[100%]"
+                >
+                  <img
+                    src={image}
+                    alt=""
+                    className="max-h-[250px] rounded-2xl mx-auto drop-shadow-3xl mt-5"
+                  />
+                  <div className="text-lg font-medium pt-8 pb-2">
+                    <strong>{name}</strong>
+                  </div>
+                  <div className="py-2 max-sm:text-sm">
+                    {description.split("\n").map((line) => (
+                      <p key="" className="mt-1">
+                        {line}
+                      </p>
+                    ))}
+                  </div>
+                  <div>
+                  {tools.map((tool) => (
+                      <p key="" className="mt-1">
+                        {tool}
+                      </p>
+                    ))}
+                  </div>
+                  <div className="p-4 my-5 text-teal-300 rounded-full bg-teal-400/10 shadow-cs-md max-sm:text-sm">
+                    {EndDate(start_date, end_date)}
+                  </div>
+                </motion.li>
+              </AnimatePresence>
             );
           })}
           <button
