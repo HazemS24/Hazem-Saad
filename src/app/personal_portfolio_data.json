@@ -69,7 +69,7 @@
 		"end_date": null,
 		"type": ["Awards","Projects"],
 		"image": "/images/tmmc.png",
-		"tools": ["Python", "OpenCV", "Google Colab"]
+		"tools": ["Python", "Matplotlib", "NumPy", "OpenCV", "Google Colab"]
 	},
 	{
 		"name": "MIST (Muslim Interscholastic Tournament) Toronto Math Olympics",
