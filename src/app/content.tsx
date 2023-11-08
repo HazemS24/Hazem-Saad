@@ -337,16 +337,16 @@ export const Content = () => {
                   </div>
                   <hr className="w-[60%] self-center my-3 rounded h-1 bg-slate-500 border-none" />
                   <div className="py-2 max-sm:text-sm mb-3">
-                    {description.split("\n").map((line) => (
-                      <p key="" className="mt-1">
+                    {description.split("\n").map((line, index) => (
+                      <p key={index} className="mt-1">
                         {line}
                       </p>
                     ))}
                   </div>
                   <div className="flex flex-row gap-[10px] flex-wrap justify-center max-sm:text-sm">
-                    {tools.map((tool) => {
+                    {tools.map((tool, index) => {
                       return (
-                        <p key="" className="bg-custom-orange/60 rounded-full my-1 px-3 py-2 max-sm:px-2 max-sm:py-1 drop-shadow-xl duration-200 hover:scale-[108%] hover:bg-custom-orange">
+                        <p key={index} className="bg-custom-orange/60 rounded-full my-1 px-3 py-2 max-sm:px-2 max-sm:py-1 drop-shadow-xl duration-200 hover:scale-[108%] hover:bg-custom-orange">
                           {tool}
                         </p>
                       );
