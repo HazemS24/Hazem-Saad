@@ -318,7 +318,7 @@ export const Content = () => {
             const { name, description, start_date, end_date, image, tools } =
               section;
             return (
-              <AnimatePresence mode="wait">
+              <AnimatePresence key={index} mode="wait">
                 <motion.li
                   key={index}
                   initial={{ y: 10, opacity: 0 }}
