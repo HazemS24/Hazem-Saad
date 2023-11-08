@@ -346,7 +346,7 @@ export const Content = () => {
                   <ul className="flex flex-row gap-[10px] flex-wrap justify-center max-sm:text-sm">
                     {tools.map((tool) => {
                       return (
-                        <li className="bg-custom-orange/60 rounded-full my-1 px-3 py-2 max-sm:px-2 max-sm:py-1 drop-shadow-xl duration-200 hover:scale-[108%] hover:bg-custom-orange">
+                        <li key="" className="bg-custom-orange/60 rounded-full my-1 px-3 py-2 max-sm:px-2 max-sm:py-1 drop-shadow-xl duration-200 hover:scale-[108%] hover:bg-custom-orange">
                           {tool}
                         </li>
                       );
