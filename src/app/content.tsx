@@ -325,7 +325,7 @@ export const Content = () => {
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: -10, opacity: 0 }}
                   transition={{ duration: 0.2 }}
-                  className="bg-slate-900 text-center hover:bg-slate-800 shadow-cs-section px-10 py-5 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center max-w-[100%]"
+                  className="bg-slate-900 text-center hover:bg-slate-800 hover:scale-[105%] shadow-cs-section px-10 py-5 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center max-w-[100%]"
                 >
                   <img
                     src={image}
