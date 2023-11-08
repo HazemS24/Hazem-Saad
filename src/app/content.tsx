@@ -335,6 +335,7 @@ export const Content = () => {
                   <div className="text-lg font-medium pt-8 pb-2">
                     <strong>{name}</strong>
                   </div>
+                  <hr className="w-[60%] self-center my-3 rounded h-1 bg-slate-500 border-none" />
                   <div className="py-2 max-sm:text-sm mb-3">
                     {description.split("\n").map((line) => (
                       <p key="" className="mt-1">
