@@ -54,7 +54,7 @@ export const Content = () => {
     offscreen: {
       y: 30,
       opacity: 0.6,
-      scale: 0.9
+      scale: 0.9,
     },
     onscreen: {
       y: 0,
@@ -68,9 +68,13 @@ export const Content = () => {
           duration: 0.5,
         },
         scale: {
-          duraiton: 0.4
-        }
+          duraiton: 0.4,
+        },
       },
+    },
+    hover: {
+      scale: 1.05,
+      transition: { duration: 0.2 },
     },
   };
 
@@ -345,11 +349,12 @@ export const Content = () => {
               <AnimatePresence key={index} mode="wait">
                 <motion.li
                   key={type ? type : "empty"}
+                  whileHover="hover"
                   initial="offscreen"
                   whileInView="onscreen"
                   viewport={{ once: true, amount: 0.5 }}
                   variants={cardVariants}
-                  className="bg-slate-900 text-center hover:bg-slate-800 shadow-cs-section px-10 py-5 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center max-w-[100%]"
+                  className="bg-slate-900 text-center hover:bg-slate-800 hover:z-[100] shadow-cs-section px-10 py-5 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center max-w-[100%]"
                 >
                   <img
                     src={image}
