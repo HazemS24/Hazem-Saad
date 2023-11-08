@@ -15,8 +15,7 @@ module.exports = {
         archivo: ["Archivo Black", "sans-serif"],
       },
       colors: {
-        "very-dark-gray": "#25252A",
-        "very-dark-blue": "#293241",
+        "custom-orange": "#ea6e66",
       },
       boxShadow: {
         "cs-md": "0px 0px 30px 5px rgba(0, 0, 0, 0.3)",

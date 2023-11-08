@@ -10,12 +10,12 @@
 	},
 	{
 		"name": "Junior Developer - Tuq Inc",
-		"description": "I worked on 6 client-based projects and maintained 3 older company projects throughout the Work Term. Each project contained 20+ models, updated with user-specific features and tested with 2500+ RSpec and rswag tests. These projects were planned with detailed database diagrams encompassing models and associations using draw.io.",
+		"description": "I developed and documented 6 client-based projects and updated 3 older company projects throughout the Work Term. Each project contained 20+ models, updated with customer-requested features, and tested with 2500+ RSpec tests. I also designed 30+ emails per project, creating an automated environment for a seamless user experience. These projects leveraged RESTful APIs, guiding the user towards wanted features in an organized manner. 5 billing systems were also implemented using Moneris, allowing users the ability to purchase premium features within projects.",
 		"start_date": "January 2023",
 		"end_date": "April 2023",
 		"type": "Work Experience",
 		"image": "/images/tuq.png",
-		"tools": ["Ruby on Rails", "PostgreSQL", "Linux", "GitHub", "HTML", "RSpec", "rswag"]
+		"tools": ["Ruby", "PostgreSQL", "Linux", "GitHub", "HTML", "RSpec", "rswag"]
 	},
 	{
 		"name": "Machine Learning & Software Engineer - Waterloo Aerial Robotics Group",

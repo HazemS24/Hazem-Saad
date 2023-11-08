@@ -64,11 +64,11 @@ export const Content = () => {
   return (
     <section className="flex m-5 max-sm:my-1 relative rounded-3xl h-[92vh] overflow-y-scroll overflow-x-hidden [@media(min-width:0)]:scrollbar-hide border-slate-300 border-2 shadow-cs-xl shadow-slate-500 z-10">
       <div className="sticky top-0 h-0 w-0 -z-10">
-        <div className="h-[300px] w-[350px] lg:h-[500px] lg:w-[700px] -right-[20rem] top-[5rem] lg:-top-[10rem] lg:-right-[35rem] absolute bg-slate-500 rounded-full blur-[9rem]" />
+        <div className="h-[300px] w-[350px] lg:h-[500px] lg:w-[700px] -right-[20rem] top-[5rem] lg:-top-[10rem] lg:-right-[35rem] absolute bg-teal-800 rounded-full blur-[9rem]" />
       </div>
 
       <div className="sticky top-0 h-0 w-0 -z-10">
-        <div className="h-[350px] w-[350px] lg:h-[500px] lg:w-[800px] -right-[45rem] md:-right[80rem] lg:-right-[75rem] xl:-right-[115rem] -bottom-[50rem] absolute bg-teal-600 rounded-full blur-[9rem]" />
+        <div className="h-[350px] w-[350px] lg:h-[500px] lg:w-[800px] -right-[45rem] md:-right[80rem] lg:-right-[75rem] xl:-right-[115rem] -bottom-[50rem] absolute bg-teal-800 rounded-full blur-[9rem]" />
       </div>
 
       <div className="sticky max-lg:h-0 max-lg:w-0 top-0 max-lg:z-[99]">
@@ -304,7 +304,7 @@ export const Content = () => {
       </div>
 
       <div className="p-[30px] xl:pt-5">
-        <div className="text-right font-archivo shadow-slate-900 p-10 rounded-xl w-[100%] mx-1 xl:mx-3 md:max-lg:mx-3 mb-3">
+        <div className="text-right font-archivo p-10 rounded-xl w-[100%] mx-1 xl:mx-3 md:max-lg:mx-3 mb-3">
           <div className="text-slate-300 max-h-[100%] max-w-[100%] max-sm:text-3xl sm:max-md:text-5xl md:text-6xl z-[99]">
             {type}
           </div>
@@ -315,7 +315,8 @@ export const Content = () => {
           }`}
         >
           {filteredSections.slice(0, visible).map((section) => {
-            const { name, description, start_date, end_date, image, tools } = section;
+            const { name, description, start_date, end_date, image, tools } =
+              section;
             return (
               <AnimatePresence mode="wait">
                 <motion.li
@@ -324,7 +325,7 @@ export const Content = () => {
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: -10, opacity: 0 }}
                   transition={{ duration: 0.2 }}
-                  className="bg-slate-900 text-center hover:bg-slate-800 shadow-cs-section p-10 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center max-w-[100%]"
+                  className="bg-slate-900 text-center hover:bg-slate-800 shadow-cs-section px-10 py-5 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center max-w-[100%]"
                 >
                   <img
                     src={image}
@@ -334,20 +335,22 @@ export const Content = () => {
                   <div className="text-lg font-medium pt-8 pb-2">
                     <strong>{name}</strong>
                   </div>
-                  <div className="py-2 max-sm:text-sm">
+                  <div className="py-2 max-sm:text-sm mb-3">
                     {description.split("\n").map((line) => (
                       <p key="" className="mt-1">
                         {line}
                       </p>
                     ))}
                   </div>
-                  <div>
-                  {tools.map((tool) => (
-                      <p key="" className="mt-1">
-                        {tool}
-                      </p>
-                    ))}
-                  </div>
+                  <ul className="flex flex-row gap-[10px] flex-wrap justify-center max-sm:text-sm">
+                    {tools.map((tool) => {
+                      return (
+                        <li className="bg-custom-orange/60 rounded-full my-1 px-3 py-2 max-sm:px-2 max-sm:py-1 drop-shadow-xl duration-200 hover:scale-[108%] hover:bg-custom-orange">
+                          {tool}
+                        </li>
+                      );
+                    })}
+                  </ul>
                   <div className="p-4 my-5 text-teal-300 rounded-full bg-teal-400/10 shadow-cs-md max-sm:text-sm">
                     {EndDate(start_date, end_date)}
                   </div>
