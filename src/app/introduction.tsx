@@ -25,11 +25,16 @@ export const Introduction = () => {
             Developer and Engineer.
           </h3>
           <p className="text-md max-sm:text-sm py-5 leading-8 md:text-lg max-w-2xl mx-auto text-slate-400 font-archivo">
-            A current University of Waterloo student pursuing a Computer
-            Engineering Degree. I have gained vital life experience after
-            travelling the world, living in{" "}
+            A current{" "}
+            <span className="text-slate-100">University of Waterloo</span>{" "}
+            student pursuing a Computer Engineering Degree. I have gained vital
+            life experience after travelling the world, living in{" "}
             <span className="text-slate-100">three</span> different countries,
-            and observing different cultures.
+            and observing different cultures. With all the challenges I have
+            conquered and the accomplishments I have achieved, I made the choice to
+            pursue a degree in the software industry because of the endless
+            possibilities for solutions someone can create for any problem
+            humanity has faced.
           </p>
         </div>
         <div className="text-5xl max-sm:text-3xl max-sm:py-0 text-slate-400 flex justify-center gap-[60px] py-4 max-md:gap-[30px]">
@@ -60,4 +65,4 @@ export const Introduction = () => {
       </section>
     </motion.div>
   );
-}
+};
