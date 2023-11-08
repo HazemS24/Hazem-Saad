@@ -314,13 +314,13 @@ export const Content = () => {
             noMore ? "max-lg:py-3" : ""
           }`}
         >
-          {filteredSections.slice(0, visible).map((section) => {
+          {filteredSections.slice(0, visible).map((section, index) => {
             const { name, description, start_date, end_date, image, tools } =
               section;
             return (
               <AnimatePresence mode="wait">
                 <motion.li
-                  key={type ? type : "empty"}
+                  key={index}
                   initial={{ y: 10, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: -10, opacity: 0 }}
@@ -337,16 +337,19 @@ export const Content = () => {
                   </div>
                   <hr className="w-[60%] self-center my-3 rounded h-1 bg-slate-500 border-none" />
                   <div className="py-2 max-sm:text-sm mb-3">
-                    {description.split("\n").map((line, index) => (
-                      <p key={index} className="mt-1">
+                    {description.split("\n").map((line, index_two) => (
+                      <p key={index_two} className="mt-1">
                         {line}
                       </p>
                     ))}
                   </div>
                   <div className="flex flex-row gap-[10px] flex-wrap justify-center max-sm:text-sm">
-                    {tools.map((tool, index) => {
+                    {tools.map((tool, index_three) => {
                       return (
-                        <p key={index} className="bg-custom-orange/60 rounded-full my-1 px-3 py-2 max-sm:px-2 max-sm:py-1 drop-shadow-xl duration-200 hover:scale-[108%] hover:bg-custom-orange">
+                        <p
+                          key={index_three}
+                          className="bg-custom-orange/60 rounded-full my-1 px-3 py-2 max-sm:px-2 max-sm:py-1 drop-shadow-xl duration-200 hover:scale-[108%] hover:bg-custom-orange"
+                        >
                           {tool}
                         </p>
                       );
