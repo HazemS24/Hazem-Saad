@@ -11,7 +11,7 @@ import { RxDashboard } from "react-icons/rx";
 import { BiSolidAward, BiCodeAlt } from "react-icons/bi";
 import sections from "./personal_portfolio_data.json";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 
 export const Content = () => {
   const [open, setOpen] = useState(false);
@@ -48,6 +48,30 @@ export const Content = () => {
     if (type === "Awards") {
       setType("AWARDS...");
     }
+  };
+
+  const cardVariants: Variants = {
+    offscreen: {
+      y: 30,
+      opacity: 0.6,
+      scale: 0.9
+    },
+    onscreen: {
+      y: 0,
+      opacity: 100,
+      scale: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.5,
+        opacity: {
+          duration: 0.5,
+        },
+        scale: {
+          duraiton: 0.4
+        }
+      },
+    },
   };
 
   function EndDate(section_start_date: any, section_end_date: any) {
@@ -321,11 +345,11 @@ export const Content = () => {
               <AnimatePresence key={index} mode="wait">
                 <motion.li
                   key={type ? type : "empty"}
-                  initial={{ y: 10, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  exit={{ y: -10, opacity: 0 }}
-                  transition={{ duration: 0.2 }}
-                  className="bg-slate-900 text-center hover:bg-slate-800 hover:scale-[105%] shadow-cs-section px-10 py-5 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center max-w-[100%]"
+                  initial="offscreen"
+                  whileInView="onscreen"
+                  viewport={{ once: true, amount: 0.5 }}
+                  variants={cardVariants}
+                  className="bg-slate-900 text-center hover:bg-slate-800 shadow-cs-section px-10 py-5 rounded-xl basis-5/12 flex-1 relative mb-5 mx-1 xl:mx-3 md:max-lg:mx-3 duration-200 flex flex-col justify-center max-w-[100%]"
                 >
                   <img
                     src={image}
