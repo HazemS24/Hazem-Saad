@@ -343,15 +343,15 @@ export const Content = () => {
                       </p>
                     ))}
                   </div>
-                  <ul className="flex flex-row gap-[10px] flex-wrap justify-center max-sm:text-sm">
+                  <div className="flex flex-row gap-[10px] flex-wrap justify-center max-sm:text-sm">
                     {tools.map((tool) => {
                       return (
-                        <li key="" className="bg-custom-orange/60 rounded-full my-1 px-3 py-2 max-sm:px-2 max-sm:py-1 drop-shadow-xl duration-200 hover:scale-[108%] hover:bg-custom-orange">
+                        <p key="" className="bg-custom-orange/60 rounded-full my-1 px-3 py-2 max-sm:px-2 max-sm:py-1 drop-shadow-xl duration-200 hover:scale-[108%] hover:bg-custom-orange">
                           {tool}
-                        </li>
+                        </p>
                       );
                     })}
-                  </ul>
+                  </div>
                   <div className="p-4 my-5 text-teal-300 rounded-full bg-teal-400/10 shadow-cs-md max-sm:text-sm">
                     {EndDate(start_date, end_date)}
                   </div>
