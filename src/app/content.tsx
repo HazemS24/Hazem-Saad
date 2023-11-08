@@ -330,7 +330,7 @@ export const Content = () => {
                   <img
                     src={image}
                     alt=""
-                    className="max-h-[250px] rounded-2xl mx-auto drop-shadow-3xl mt-5"
+                    className="max-h-[250px] max-w-[90%] rounded-2xl mx-auto drop-shadow-3xl mt-5"
                   />
                   <div className="text-lg font-medium pt-8 pb-2">
                     <strong>{name}</strong>
