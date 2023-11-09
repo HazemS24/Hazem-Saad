@@ -68,12 +68,12 @@ export const Content = () => {
           duration: 0.5,
         },
         scale: {
-          duraiton: 0.4,
+          duraiton: 0.2,
         },
       },
     },
     hover: {
-      scale: 1.05,
+      scale: 1.03,
       transition: { duration: 0.2 },
     },
   };
