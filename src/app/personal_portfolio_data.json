@@ -28,7 +28,7 @@
 	},
 	{
 		"name": "Full Stack Developer - Pinned",
-		"description": "Was part of a 7-person team developing a news platform showcasing organization's events for subscribers. These events include anything related to clubs, ceremonies, speaker talks, and much more!",
+		"description": "In my role as a member of a 5-person team, I actively employed MongoDB, Express.js, React.js, Node.js, Linear, and GitHub to contribute to the development of a dynamic news platform. This platform served as a showcase for organizational events tailored for subscribers, with a special emphasis on administrators facilitating these events. I took charge of engineering RESTful APIs, ensuring smooth communication between the front and back end. To validate our data model, I implemented Mocha tests, enhancing the robustness of our system. Engaging in code reviews, I played a key role in upholding coding standards, which not only facilitated comprehensive documentation but also streamlined our debugging processes.",
 		"start_date": "October 2023",
 		"end_date": "Present",
 		"type": "Projects",
