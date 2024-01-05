@@ -64,7 +64,7 @@
 	},
 	{
 		"name": "2023 Toyota Innovation Challenge",
-		"description": "My team - which included 4 people including myself - placed first out of 40+ teams receiving the \"Most Unique Approach\" award in this challenge by Toyota Motor Manufacturing Canada. We used OpenCV to develop an image-processing AI to detect sticker placement over holes on metallic surfaces. The algorithm was optimized to obtain a 99% success rate and run over live video feed achieving 30 fps.",
+		"description": "My team - 4 people including myself - placed first out of 40+ teams receiving the \"Most Unique Approach\" award in this challenge by Toyota Motor Manufacturing Canada. We used OpenCV to develop an image-processing AI to detect sticker placement over holes on metallic surfaces. The algorithm was optimized to obtain a 99% success rate and run over live video feed achieving 30 fps.",
 		"start_date": "May 2023",
 		"end_date": null,
 		"type": ["Awards","Projects"],
