@@ -6,7 +6,7 @@
 		"end_date": "December 2023",
 		"type": "Work Experience",
 		"image": "/images/renison.png",
-		"tools": []
+		"tools": ["Visual Basic", "Jira", "Azure DevOps", "SharePoint"]
 	},
 	{
 		"name": "Junior Developer - Tuq Inc",
