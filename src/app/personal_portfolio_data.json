@@ -18,15 +18,6 @@
 		"tools": ["Ruby", "PostgreSQL", "Linux", "GitHub", "HTML", "RSpec", "rswag"]
 	},
 	{
-		"name": "Machine Learning & Software Engineer - Waterloo Aerial Robotics Group",
-		"description": "I utilized a YoloV8 model training a drone to detect landing pads with 96% accuracy. Other tasks included creating an autonomous flight algorithm for path detections and other path calculations for unprecedented changes during a flight.",
-		"start_date": "September 2023",
-		"end_date": "Present",
-		"type": "Projects",
-		"image": "/images/warg.png",
-		"tools": ["Python", "YoloV8", "GitHub"]
-	},
-	{
 		"name": "Full Stack Developer - Pinned",
 		"description": "In my role as a member of a 5-person team, I actively employed MongoDB, Express.js, React.js, Node.js, Linear, and GitHub to contribute to the development of a dynamic news platform. This platform served as a showcase for organizational events tailored for subscribers, with a special emphasis on administrators facilitating these events. I took charge of engineering RESTful APIs, ensuring smooth communication between the front and back end. To validate our data model, I implemented Mocha tests, enhancing the robustness of our system. Engaging in code reviews, I played a key role in upholding coding standards, which not only facilitated comprehensive documentation but also streamlined our debugging processes.",
 		"start_date": "October 2023",
@@ -36,22 +27,22 @@
 		"tools": ["MongoDB", "Express.js", "React.js", "Node.js", "Linear", "GitHub"]
 	},
 	{
-		"name": "Competitions Organizor - MIST TORONTO",
-		"description": "I helped recruit 70+ judges, moderators, and volunteers for high-school competitions - of all categories - to take place at the University of Toronto Saint George Campus. I completed this task with 100+ members in 6 months while attending bi-weekly meetings.",
-		"start_date": "September 2022",
-		"end_date": "March 2023",
-		"type": "Volunteer Experience",
-		"image": "/images/mist_toronto.png",
-		"tools": []
+		"name": "Machine Learning & Software Engineer - Waterloo Aerial Robotics Group",
+		"description": "I utilized a YoloV8 model training a drone to detect landing pads with 96% accuracy. Other tasks included creating an autonomous flight algorithm for path detections and other path calculations for unprecedented changes during a flight.",
+		"start_date": "September 2023",
+		"end_date": "Present",
+		"type": "Projects",
+		"image": "/images/warg.png",
+		"tools": ["Python", "YoloV8", "GitHub"]
 	},
 	{
-		"name": "Mentor - Math4me",
-		"description": "I worked as a Math, Science, and English mentor to middle-school and high-school students who required assistance. I achieved 'Mentor of the Month' during my first month as a result of the hard work and dedication I had put into the job. After almost 3 years of working at Math4me, I have learned how to adapt and please different mindsets while convincing people - especially youth - to do what is right for them.",
-		"start_date": "November 2020",
-		"end_date": "Present",
-		"type": "Work Experience",
-		"image": "/images/math4me.png",
-		"tools": []
+		"name": "Code Snippet Saver",
+		"description": "I utilized JavaScript, HTML, Tailwind CSS, and GitHub to craft a feature-rich snippet management Chrome extension, enabling users to effortlessly save and organize code snippets. Leveraging the powerful features of Prism.js and Highlight.js, I intelligently color-coded the snippets, enhancing readability and offering a clearer understanding of syntax and code structure. By tapping into Chrome's local data storage system, I expanded support to over 250 programming languages, providing users with a versatile entry point to kickstart their coding journey with flexibility and ease.",
+		"start_date": "January 2024",
+		"end_date": null,
+		"type": "Projects",
+		"image": "/images/css.png",
+		"tools": ["JavaScript", "HTML", "Prism.js", "Highlight.js", "Tailwind CSS", "GitHub"]
 	},
 	{
 		"name": "Personal Portfolio",
@@ -70,6 +61,24 @@
 		"type": ["Awards","Projects"],
 		"image": "/images/tmmc.png",
 		"tools": ["Python", "Matplotlib", "NumPy", "OpenCV", "Google Colab"]
+	},
+	{
+		"name": "Mentor - Math4me",
+		"description": "I worked as a Math, Science, and English mentor to middle-school and high-school students who required assistance. I achieved 'Mentor of the Month' during my first month as a result of the hard work and dedication I had put into the job. After almost 3 years of working at Math4me, I have learned how to adapt and please different mindsets while convincing people - especially youth - to do what is right for them.",
+		"start_date": "November 2020",
+		"end_date": "Present",
+		"type": "Work Experience",
+		"image": "/images/math4me.png",
+		"tools": []
+	},
+	{
+		"name": "Competitions Organizor - MIST TORONTO",
+		"description": "I helped recruit 70+ judges, moderators, and volunteers for high-school competitions - of all categories - to take place at the University of Toronto Saint George Campus. I completed this task with 100+ members in 6 months while attending bi-weekly meetings.",
+		"start_date": "September 2022",
+		"end_date": "March 2023",
+		"type": "Volunteer Experience",
+		"image": "/images/mist_toronto.png",
+		"tools": []
 	},
 	{
 		"name": "MIST (Muslim Interscholastic Tournament) Toronto Math Olympics",
