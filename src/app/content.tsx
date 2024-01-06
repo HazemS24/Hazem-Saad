@@ -121,24 +121,6 @@ export const Content = () => {
             onClick={() => setOpen(!open)}
           />
 
-          <Transition
-            show={open}
-            enter="transition duration-200 delay-100"
-            enterTo="scale-100 w-[100%]"
-            enterFrom="scale-0 w-[0%] ml-15 h-0"
-            leave="transition duration-100"
-            leaveFrom="scale-100 w-[100%]"
-            leaveTo="scale-0 w-[0%] ml-15 h-0"
-          >
-            <div
-              className={`bg-slate-900 text-slate-300 text-6xl font-archivo ${
-                open ? "lg:ml-5 lg:mt-4 max-lg:hidden" : "h-0 m-0 pl-10 pt-10"
-              }`}
-            >
-              FILTERS
-            </div>
-          </Transition>
-
           <div
             className={`flex py-3 max-sm:py-1 ease-out duration-500 lg:mt-5 lg:mx-2 ${
               open ? "" : "max-lg:scale-0 p-0"
