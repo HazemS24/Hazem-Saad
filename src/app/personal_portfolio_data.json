@@ -15,7 +15,7 @@
 		"end_date": "April 2023",
 		"type": "Work Experience",
 		"image": "/images/tuq.png",
-		"tools": ["Ruby", "PostgreSQL", "Linux", "GitHub", "HTML", "RSpec", "rswag"]
+		"tools": ["Ruby", "PostgreSQL", "Linux", "GitHub", "HTML", "RSpec", "Swagger"]
 	},
 	{
 		"name": "Full Stack Developer - Pinned",
