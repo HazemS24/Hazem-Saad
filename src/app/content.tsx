@@ -3,7 +3,6 @@
 import { Transition } from "@headlessui/react";
 import {
   MdWorkOutline,
-  MdOutlineVolunteerActivism,
   MdOutlineFilterList,
   MdKeyboardArrowLeft,
 } from "react-icons/md";
