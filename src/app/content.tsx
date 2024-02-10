@@ -42,9 +42,6 @@ export const Content = () => {
     if (type === "Work Experience") {
       setType("WORK EXPERIENCE...");
     }
-    if (type === "Volunteer Experience") {
-      setType("VOLUNTEER EXPERIENCE...");
-    }
     if (type === "Awards") {
       setType("AWARDS...");
     }
@@ -230,44 +227,6 @@ export const Content = () => {
                   className={`absolute text-lg max-sm:text-sm [transition:_color_75ms] text-inherit left-[60px] ml-3 mt-[22px]`}
                 >
                   WORK EXPERIENCE
-                </h1>
-              </Transition>
-            </button>
-          </div>
-
-          <div
-            className={`flex py-3 max-sm:py-1 ease-out duration-500 lg:mx-2 ${
-              open ? "" : "max-lg:scale-0"
-            }`}
-          >
-            <button
-              className={`p-0 duration-200 relative rounded-3xl text-slate-300 hover:bg-slate-300 hover:text-slate-900 hover:scale-[105%] ${
-                open ? "w-[360px]" : "flex-none"
-              }`}
-              onClick={() => {
-                filterByType("Volunteer Experience");
-                setVisible(4);
-                setNoMore(false);
-              }}
-            >
-              <MdOutlineVolunteerActivism
-                className={`text-5xl max-sm:text-4xl rounded float-left [transition:_color_75ms,transform_0.5s_ease-out] flex-shrink-0 p-1 m-3 ${
-                  open ? "rotate-[360deg] mr-0" : ""
-                }`}
-              />
-              <Transition
-                show={open}
-                enter="transition ease-in duration-[200ms] delay-100"
-                enterTo="scale-100"
-                enterFrom="scale-0"
-                leave="transition duration-0"
-                leaveFrom="scale-100"
-                leaveTo="scale-0"
-              >
-                <h1
-                  className={`absolute text-lg max-sm:text-sm [transition:_color_75ms] text-inherit left-[60px] ml-3 mt-[22px]`}
-                >
-                  VOLUNTEER EXPERIENCE
                 </h1>
               </Transition>
             </button>

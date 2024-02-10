@@ -117,39 +117,12 @@
 		"tools": ["HTML", "CSS", "JavaScript"]
 	},
 	{
-		"name": "Senior Scholar at John Fraser Secondary School",
-		"description": "I volunteered an hour of my time per week to help out peers and students in our school with specific subject materials that they were struggling with. I got the chance to feel charitable and master all the concepts I was helping with from all points of view - since I had to understand their questions using my logical thinking and connect them to common misinterpretations about each concept.",
-		"start_date": "September 2021",
-		"end_date": " June 2022",
-		"type": "Volunteer Experience",
-		"image": "/images/johnfraser_logo.png",
-		"tools": []
-	},
-	{
 		"name": "University of Waterloo - Math Contests",
 		"description": "Achieved top 25% out of all participants across the world in the following contests:\nPascal Contest (2018)\nCayley Contest (2019)\nFermat Contest (2020)\nCanadian Senior Mathematics Contest (2020)\nCanadian Senior Mathematics Contest (2021)",
 		"start_date": "2018",
 		"end_date": "2022",
 		"type": "Awards",
 		"image": "/images/uw_math_contests.png",
-		"tools": []
-	},
-	{
-		"name": "Youth Peace Mural",
-		"description": "The Youth Peace mural was a building-size project which took several months of work. I would be scheduled to help paint the mural for 5 hours per week alongside other people and newcomers. I gained experience creating ice-breakers and being socially aware since some newcomers could not speak English. I took it as my own responsibility to make sure that everyone had the best experience, no matter what obstacles they faced. It was my honour to be a part of this project since it stands for diversity and equality between all people with no discrimination!",
-		"start_date": "September 2019",
-		"end_date": "November 2019",
-		"type": "Volunteer Experience",
-		"image": "/images/peace_mural.png",
-		"tools": []
-	},
-	{
-		"name": "Event Organizer - Muslim Student Association (MSA)",
-		"description": "I was part of the planners for major school-wide events. I learned about the responsibilities it takes for someone to run public events in an organized manner. We multitasked to make sure that there would be minimal littering involved while also enjoying our time since we had to create a sense of responsibility among participants.",
-		"start_date": "September 2021",
-		"end_date": "June 2022",
-		"type": "Volunteer Experience",
-		"image": "/images/jfss_msa.jpg",
 		"tools": []
 	},
 	{
@@ -168,15 +141,6 @@
 		"end_date": null,
 		"type": "Awards",
 		"image": "/images/asds_winner.jpg",
-		"tools": []
-	},
-	{
-		"name": "Third Shift Workshops",
-		"description": "The third shift workshop was a painting project dedicated to the city of Saint John. The painting was established on the idea of building a new life/career after immigrating to a new city that supported it. Furthermore, since it was also a two-person project, I gained experience working in a less chaotic environment where communication was vital to ensure efficient success.",
-		"start_date": "August 2019",
-		"end_date": null,
-		"type": "Volunteer Experience",
-		"image": "/images/thirdshift.jpg",
 		"tools": []
 	},
 	{
