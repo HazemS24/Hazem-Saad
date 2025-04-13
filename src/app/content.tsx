@@ -8,6 +8,7 @@ import {
 } from "react-icons/md";
 import { RxDashboard } from "react-icons/rx";
 import { BiSolidAward, BiCodeAlt } from "react-icons/bi";
+import { HiExternalLink } from "react-icons/hi";
 import sections from "./personal_portfolio_data.json";
 import { useState } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
@@ -301,8 +302,13 @@ export const Content = () => {
                     alt=""
                     className="max-h-[250px] max-w-[90%] rounded-2xl mx-auto drop-shadow-3xl mt-5"
                   />
-                  <div className="text-lg font-medium pt-8 pb-2">
+                  <div className="text-lg font-medium pt-8 pb-2 flex items-center justify-center gap-2">
                     <strong>{name}</strong>
+                    {section.url && (
+                      <a href={section.url} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-teal-400 text-xl transition-transform duration-200 hover:scale-110" >
+                        <HiExternalLink />
+                      </a>
+                    )}
                   </div>
                   <hr className="w-[60%] self-center my-3 rounded h-1 bg-slate-500 border-none" />
                   <div className="py-2 text-md max-sm:text-sm mb-3">

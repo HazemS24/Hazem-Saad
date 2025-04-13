@@ -1,15 +1,36 @@
 [	
 	{
-		"name": "Technical Support Consultant - Renison University College",
-		"description": "In managing the Jira system for classroom and office help requests, I introduced AI Automated Rules for Jira, Azure DevOps, and SharePoint, leading to a 45% increase in user satisfaction due to improved response accuracy. I also documented audio equipment usage, reducing related help requests by 30%, and optimized a Marking Tool in Microsoft Word using Visual Basic, cutting marking time for 70+ professors by half. These contributions collectively improved system efficiency and enhanced user experience.",
-		"start_date": "September 2023",
-		"end_date": "December 2023",
+		"name": "Software Engineer - eXp Realty",
+		"description": "For notable achievements, I helped build scalable and high-performance frontend architectures for Zoocasa and eXp Realty, optimizing user experience across web and mobile platforms using React, React Native, and TypeScript. I also transformed design concepts into polished interfaces by collaborating with the design team, and implemented advanced features such as cookie-based personalization and GTM-driven analytics, driving engagement and user retention.",
+		"start_date": "January 2025",
+		"end_date": "April 2025",
 		"type": "Work Experience",
-		"image": "/images/renison.png",
-		"tools": ["Visual Basic", "Jira", "Azure DevOps", "SharePoint"]
+		"image": "/images/exp.png",
+		"url": "https://www.exprealty.com/",
+		"tools": ["React", "React Native", "TypeScript", "GitHub", "Ruby", "Golang", "AWS", "Kubernetes"]
 	},
 	{
-		"name": "Junior Developer - Tuq Inc",
+		"name": "Software & Machine Learning Engineer - University of Waterloo's RoboHub",
+		"description": "At the University of Waterloo, I collaborated with AirBoss on a computer vision and robotics project, where I engineered a machine learning model for edge detection on their proprietary rubber material using Python and PyTorch - marking a first-of-its-kind solution in North America. The system was deployed within a ROS environment, enabling LIDAR-equipped robotic arms to map elevated terrain and accurately detect material edges. In another project, I utilized SAM2 to segment white bags of powedered material, calculated precise location relative to a robotic arm to pick it up with 98% positioning precision.",
+		"start_date": "January 2024",
+		"end_date": "Present",
+		"type": "Work Experience",
+		"image": "/images/robohub.png",
+		"url": "https://uwaterloo.ca/robohub/",
+		"tools": ["Python", "Pytorch", "ROS", "SAM2", "C++", "OpenCV"]
+	},
+	{
+		"name": "QA Automation Engineer - Zoocasa & eXp Realty",
+		"description": "As a QA Automation Engineer at Zoocasa, I boosted backend reliability by increasing the project's Golang test coverage from 30% to 73%, enhancing code quality and maintainability. I also reinforced frontend test infrastructure using Cypress and Playwright to ensure stability across key React components. Additionally, I optimized search and data parsing in MapKit with Elasticsearch, improving property listing speeds and delivering a smoother experience within the Apple Maps integration.",
+		"start_date": "May 2024",
+		"end_date": "August 2024",
+		"type": "Work Experience",
+		"image": "/images/zoocasa.png",
+		"url": "https://www.zoocasa.com/",
+		"tools": ["React", "TypeScript", "GitHub", "Cypress/Playwright", "Golang", "Elasticsearch"]
+	},
+	{
+		"name": "Software Engineer - Tuq Inc",
 		"description": "I developed and documented 6 client-based projects and updated 3 older company projects throughout the Work Term. Each project contained 20+ models, updated with customer-requested features, and tested with 2500+ RSpec tests. I also designed 30+ emails per project, creating an automated environment for a seamless user experience. These projects leveraged RESTful APIs, guiding the user towards wanted features in an organized manner. 5 billing systems were also implemented using Moneris, allowing users the ability to purchase premium features within projects.",
 		"start_date": "January 2023",
 		"end_date": "April 2023",
@@ -18,12 +39,13 @@
 		"tools": ["Ruby", "PostgreSQL", "Linux", "GitHub", "HTML", "RSpec", "Swagger"]
 	},
 	{
-		"name": "Full Stack Developer - Pinned",
+		"name": "Software Engineer - Pinned",
 		"description": "In my role as a member of a 5-person team, I actively employed MongoDB, Express.js, React.js, Node.js, Linear, and GitHub to contribute to the development of a dynamic news platform. This platform served as a showcase for organizational events tailored for subscribers, with a special emphasis on administrators facilitating these events. I took charge of engineering RESTful APIs, ensuring smooth communication between the front and back end. To validate our data model, I implemented Mocha tests, enhancing the robustness of our system. Engaging in code reviews, I played a key role in upholding coding standards, which not only facilitated comprehensive documentation but also streamlined our debugging processes.",
 		"start_date": "October 2023",
 		"end_date": "Present",
 		"type": "Projects",
 		"image": "/images/pinned.png",
+		"url": "https://www.uwpinned.com/",
 		"tools": ["MongoDB", "Express.js", "React.js", "Node.js", "Linear", "GitHub"]
 	},
 	{
@@ -36,12 +58,22 @@
 		"tools": ["Python", "YoloV8", "GitHub"]
 	},
 	{
+		"name": "Technical Support Consultant - Renison University College",
+		"description": "In managing the Jira system for classroom and office help requests, I introduced AI Automated Rules for Jira, Azure DevOps, and SharePoint, leading to a 45% increase in user satisfaction due to improved response accuracy. I also documented audio equipment usage, reducing related help requests by 30%, and optimized a Marking Tool in Microsoft Word using Visual Basic, cutting marking time for 70+ professors by half. These contributions collectively improved system efficiency and enhanced user experience.",
+		"start_date": "September 2023",
+		"end_date": "December 2023",
+		"type": "Work Experience",
+		"image": "/images/renison.png",
+		"tools": ["Visual Basic", "Jira", "Azure DevOps", "SharePoint"]
+	},
+	{
 		"name": "Code Snippet Saver",
 		"description": "I utilized JavaScript, HTML, Tailwind CSS, and GitHub to craft a feature-rich snippet management Chrome extension, enabling users to effortlessly save and organize code snippets. Leveraging the powerful features of Prism.js and Highlight.js, I intelligently color-coded the snippets, enhancing readability and offering a clearer understanding of syntax and code structure. By tapping into Chrome's local data storage system, I expanded support to over 250 programming languages, providing users with a versatile entry point to kickstart their coding journey with flexibility and ease.",
 		"start_date": "January 2024",
 		"end_date": null,
 		"type": "Projects",
 		"image": "/images/css.png",
+		"url": "https://chromewebstore.google.com/detail/code-snippet-saver/enhioekiigdmlkfdlijbhbladeekmcag",
 		"tools": ["JavaScript", "HTML", "Prism.js", "Highlight.js", "Tailwind CSS", "GitHub"]
 	},
 	{
@@ -60,13 +92,14 @@
 		"end_date": null,
 		"type": ["Awards","Projects"],
 		"image": "/images/tmmc.png",
+		"url": "https://github.com/HazemS24/Toyota-ML-Challenge",
 		"tools": ["Python", "Matplotlib", "NumPy", "OpenCV", "Google Colab"]
 	},
 	{
 		"name": "Mentor - Math4me",
 		"description": "I worked as a Math, Science, and English mentor to middle-school and high-school students who required assistance. I achieved 'Mentor of the Month' during my first month as a result of the hard work and dedication I had put into the job. After almost 3 years of working at Math4me, I have learned how to adapt and please different mindsets while convincing people - especially youth - to do what is right for them.",
 		"start_date": "November 2020",
-		"end_date": "Present",
+		"end_date": "April 2025",
 		"type": "Work Experience",
 		"image": "/images/math4me.png",
 		"tools": []
@@ -123,15 +156,6 @@
 		"end_date": "2022",
 		"type": "Awards",
 		"image": "/images/uw_math_contests.png",
-		"tools": []
-	},
-	{
-		"name": "Scholten's Shell - Convenience Store",
-		"description": "I was a floor worker and a substitute cashier at a convenience store in New Brunswick. Working here gave me the experience to know how people think and how much someone would be willing to spend on snacks.",
-		"start_date": "June 2020",
-		"end_date": "August 2020",
-		"type": "Work Experience",
-		"image": "/images/scholten.jpg",
 		"tools": []
 	},
 	{
