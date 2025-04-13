@@ -7,7 +7,7 @@
 		"type": "Work Experience",
 		"image": "/images/exp.png",
 		"url": "https://www.exprealty.com/",
-		"tools": ["React", "React Native", "TypeScript", "GitHub", "Ruby", "Golang", "AWS", "Kubernetes"]
+		"tools": ["React", "React Native", "TypeScript", "GitHub", "Ruby", "Golang", "AWS", "Kubernetes", "PostgreSQL"]
 	},
 	{
 		"name": "Software & Machine Learning Engineer - University of Waterloo's RoboHub",
