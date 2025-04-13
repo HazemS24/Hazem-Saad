@@ -27,7 +27,7 @@ export const Introduction = () => {
           <p className="text-md max-sm:text-sm py-5 leading-8 md:text-lg max-w-2xl mx-auto text-slate-400 font-archivo">
             A current{" "}
             <span className="text-slate-100">University of Waterloo</span>{" "}
-            student pursuing a <span className="text-slate-100">Computer Engineering Degree with a minor inArtifical Intelligence.</span> I am passionate about creating innovative solutions for modern complex problems!{" "} Feel free to explore my portfolio and connect on my social media accounts!
+            student pursuing a <span className="text-slate-100">Computer Engineering Degree with a minor in Artifical Intelligence.</span> I am passionate about creating innovative solutions for modern complex problems!{" "} Feel free to explore my portfolio and connect on my social media accounts!
           </p>
         </div>
         <div className="text-5xl max-sm:text-3xl max-sm:py-0 text-slate-400 flex justify-center gap-[60px] py-4 max-md:gap-[30px]">
