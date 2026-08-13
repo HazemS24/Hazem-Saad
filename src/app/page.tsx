@@ -1,22 +1,30 @@
-"use client";
-
-import Head from "next/head";
-import { Introduction } from "./introduction";
-import { Content } from "./content";
+import { About } from "./components/About";
+import { Companion } from "./components/Companion";
+import { Contact } from "./components/Contact";
+import { Hero } from "./components/Hero";
+import { ScrollSpine } from "./components/ScrollSpine";
+import { Stack } from "./components/Stack";
+import { Timeline } from "./components/Timeline";
+import { Work } from "./components/Work";
+import { Divider } from "./components/primitives";
 
 export default function Home() {
   return (
-    <div className="bg-slate-900 font-poopins overflow-hidden">
-      <Head>
-        <title>Hazem Saad&apos;s Portfolio</title>
-        <meta name="description" content="Personal Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
+      <ScrollSpine />
+      <Companion />
 
-      <main className="light">
-        <Introduction />
-        <Content />
+      <main className="relative">
+        <Hero />
+        <About />
+        <Divider />
+        <Timeline />
+        <Divider />
+        <Work />
+        <Divider />
+        <Stack />
+        <Contact />
       </main>
-    </div>
+    </>
   );
 }

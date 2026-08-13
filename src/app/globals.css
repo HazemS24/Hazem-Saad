@@ -1,22 +1,394 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * Hazem Saad — portfolio design system.
+ * Dark, editorial, glass. Gradients are accents only, never backgrounds.
+ */
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* Surfaces */
+  --bg: #06060a;
+  --bg-elev: #0a0a11;
+  --card: rgba(255, 255, 255, 0.035);
+  --card-hover: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.16);
+
+  /* Type */
+  --fg: #ecedf3;
+  --fg-muted: #9a9ab0;
+  --fg-subtle: #6b6b82;
+
+  /* Accents */
+  --a1: #5eead4; /* teal */
+  --a2: #818cf8; /* indigo */
+  --a3: #e879f9; /* fuchsia */
+
+  --grad: linear-gradient(135deg, var(--a1) 0%, var(--a2) 52%, var(--a3) 100%);
+
+  /* Cursor position, published by <CursorGlow /> for the ambient spotlight */
+  --cursor-x: 50vw;
+  --cursor-y: 50vh;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: rgba(129, 140, 248, 0.35);
+    color: #fff;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--bg);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 99px;
+    border: 3px solid var(--bg);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.22);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--a2);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+@layer components {
+  /* ---------- Glass ---------- */
+  .glass {
+    background: var(--card);
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+    border: 1px solid var(--border);
+  }
+
+  .glass-strong {
+    background: rgba(12, 12, 20, 0.62);
+    backdrop-filter: blur(28px) saturate(170%);
+    -webkit-backdrop-filter: blur(28px) saturate(170%);
+    border: 1px solid var(--border);
+  }
+
+  /* ---------- Ambient colour blob ---------- */
+  .blob {
+    position: absolute;
+    border-radius: 9999px;
+    background: var(--grad);
+    filter: blur(90px);
+    opacity: 0.18;
+    pointer-events: none;
+    will-change: transform;
+    z-index: 0;
+    /* Never let a decorative blob exceed the viewport — on phones the fixed
+       px sizes are wider than the screen and push the layout around. */
+    max-width: 65vw;
+    max-height: 65vw;
+  }
+
+  /* ---------- Gradient text / fills ---------- */
+  .text-grad {
+    background: var(--grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-grad {
+    background: var(--grad);
+  }
+
+  /* Animated gradient text — slow hue drift, used on the hero word */
+  .text-grad-anim {
+    background: linear-gradient(
+      110deg,
+      var(--a1) 0%,
+      var(--a2) 28%,
+      var(--a3) 50%,
+      var(--a2) 72%,
+      var(--a1) 100%
+    );
+    background-size: 260% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: grad-drift 9s ease-in-out infinite;
+  }
+
+  /* ---------- Display type ---------- */
+  .display-xl {
+    font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.045em;
+    line-height: 0.94;
+    font-size: clamp(2.75rem, 8vw, 7rem);
+  }
+
+  .display-lg {
+    font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.038em;
+    line-height: 1;
+    font-size: clamp(2.1rem, 5vw, 4rem);
+  }
+
+  .display-sm {
+    font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1.08;
+    font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+  }
+
+  .eyebrow {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--fg-subtle);
+  }
+
+  /* ---------- Section rhythm ---------- */
+  .section-pad {
+    padding-inline: 1.25rem;
+    padding-block: 6rem;
+  }
+  @media (min-width: 768px) {
+    .section-pad {
+      padding-inline: 3rem;
+      padding-block: 9rem;
+    }
+  }
+  @media (min-width: 1280px) {
+    .section-pad {
+      padding-inline: 5rem;
+      padding-block: 11rem;
+    }
+  }
+
+  /* ---------- Hairline divider that fades at both ends ---------- */
+  .hairline {
+    height: 1px;
+    background: linear-gradient(
+      to right,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      var(--border-strong),
+      transparent
+    );
+  }
+
+  /* ---------- Fine grid backdrop ---------- */
+  .grid-bg {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.028) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.028) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 20%, transparent 78%);
+    -webkit-mask-image: radial-gradient(
+      ellipse 80% 60% at 50% 0%,
+      #000 20%,
+      transparent 78%
+    );
+  }
+
+  /* ---------- Ambient spotlight that trails the cursor ---------- */
+  .cursor-spotlight {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      520px circle at var(--cursor-x) var(--cursor-y),
+      rgba(129, 140, 248, 0.09),
+      transparent 62%
+    );
+    transition: opacity 400ms ease;
+  }
+
+  /* ---------- Soft aura behind the avatar ---------- */
+  .aura {
+    position: absolute;
+    inset: -18%;
+    z-index: 0;
+    border-radius: 9999px;
+    background: var(--grad);
+    filter: blur(56px);
+    opacity: 0.3;
+    pointer-events: none;
+    animation: float-slow 16s ease-in-out infinite;
+  }
+
+  /* ---------- Marquee mask ---------- */
+  .marquee-mask {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 12%,
+      #000 88%,
+      transparent
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 12%,
+      #000 88%,
+      transparent
+    );
+  }
 }
 
+/* ---------- Keyframes ---------- */
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -4%, 0) scale(1.07);
+  }
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.012);
+  }
+}
+
+@keyframes grad-drift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes scroll-hint {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(14px);
+    opacity: 0;
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 18s ease-in-out infinite;
+}
+.animate-breathe {
+  animation: breathe 6s ease-in-out infinite;
+}
+.animate-marquee {
+  animation: marquee 42s linear infinite;
+}
+.animate-scroll-hint {
+  animation: scroll-hint 2s ease-in-out infinite;
+}
+
+/* ------------------------------------------------------------------ *
+ * Phones: the ambient layer is the expensive part (big blurs, infinite
+ * transforms, stacked backdrop-filters). Trim it hard — the layout and
+ * the scroll-driven motion stay, the idle decoration goes.
+ * ------------------------------------------------------------------ */
+@media (max-width: 767px) {
+  .blob {
+    filter: blur(60px);
+    opacity: 0.14;
+    max-width: 55vw;
+    max-height: 55vw;
+    animation: none;
+  }
+
+  .aura {
+    filter: blur(34px);
+    opacity: 0.22;
+    animation: none;
+  }
+
+  .glass,
+  .glass-strong {
+    backdrop-filter: blur(12px) saturate(140%);
+    -webkit-backdrop-filter: blur(12px) saturate(140%);
+  }
+
+  .animate-float-slow {
+    animation: none;
+  }
+
+  .animate-marquee {
+    animation-duration: 60s;
+  }
+
+  .grid-bg {
+    background-size: 44px 44px;
+  }
+}
+
+/* Coarse pointers never get the hover-only cursor layers. */
+@media (pointer: coarse) {
+  .cursor-spotlight {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+  .cursor-spotlight {
+    display: none;
+  }
+}

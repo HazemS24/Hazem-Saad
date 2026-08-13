@@ -1,65 +1,56 @@
-[	
+[
 	{
-		"name": "Software Engineer - eXp Realty",
-		"description": "For notable achievements, I helped build scalable and high-performance frontend architectures for Zoocasa and eXp Realty, optimizing user experience across web and mobile platforms using React, React Native, and TypeScript. I also transformed design concepts into polished interfaces by collaborating with the design team, and implemented advanced features such as cookie-based personalization and GTM-driven analytics, driving engagement and user retention.",
-		"start_date": "January 2025",
-		"end_date": "April 2025",
+		"name": "Software Engineering Intern, Developer Tools - Shopify",
+		"description": "Joining the Developer Tools team for the Fall 2026 term.",
+		"start_date": "September 2026",
+		"end_date": null,
 		"type": "Work Experience",
-		"image": "/images/exp.png",
-		"url": "https://www.exprealty.com/",
-		"tools": ["React", "React Native", "TypeScript", "GitHub", "Ruby", "Golang", "AWS", "Kubernetes", "PostgreSQL"]
+		"image": "/images/shopify.png",
+		"url": "https://www.shopify.com/",
+		"tools": ["Ruby", "Ruby on Rails", "TypeScript", "GraphQL"]
 	},
 	{
-		"name": "Software & Machine Learning Engineer - University of Waterloo's RoboHub",
-		"description": "At the University of Waterloo, I collaborated with AirBoss on a computer vision and robotics project, where I engineered a machine learning model for edge detection on their proprietary rubber material using Python and PyTorch - marking a first-of-its-kind solution in North America. The system was deployed within a ROS environment, enabling LIDAR-equipped robotic arms to map elevated terrain and accurately detect material edges. In another project, I utilized SAM2 to segment white bags of powedered material, calculated precise location relative to a robotic arm to pick it up with 98% positioning precision.",
-		"start_date": "January 2024",
-		"end_date": "Present",
+		"name": "Software Engineer Intern - Shopify",
+		"description": "Launched shopify.com/students, onboarding 1,500+ student merchants within weeks.\nRe-architected live billing from plan-name checks to an entitlements model across 39+ checkout files.\nMigrated pricing across 3 merchant tiers in 150+ countries.",
+		"start_date": "January 2026",
+		"end_date": "April 2026",
+		"type": "Work Experience",
+		"image": "/images/shopify.png",
+		"url": "https://www.shopify.com/",
+		"tools": ["Ruby", "Ruby on Rails", "TypeScript", "Claude Code", "RSpec"]
+	},
+	{
+		"name": "Software & Robotics Engineer - University of Waterloo's RoboHub",
+		"description": "Built a closed-loop robotic perception system with SAM2 segmentation and real-time arm control — 70% fewer errors at under 50ms.\nDesigned a 15 FPS RGB-D capture pipeline on an Intel RealSense for real-time motion guidance.\nTrained a first-of-its-kind edge-detection model for AirBoss rubber, deployed in ROS.",
+		"start_date": "August 2024",
+		"end_date": "December 2025",
 		"type": "Work Experience",
 		"image": "/images/robohub.png",
 		"url": "https://uwaterloo.ca/robohub/",
-		"tools": ["Python", "Pytorch", "ROS", "SAM2", "C++", "OpenCV"]
+		"tools": ["Python", "PyTorch", "ROS2", "SAM2", "C++", "OpenCV", "CUDA"]
 	},
 	{
-		"name": "QA Automation Engineer - Zoocasa & eXp Realty",
-		"description": "As a QA Automation Engineer at Zoocasa, I boosted backend reliability by increasing the project's Golang test coverage from 30% to 73%, enhancing code quality and maintainability. I also reinforced frontend test infrastructure using Cypress and Playwright to ensure stability across key React components. Additionally, I optimized search and data parsing in MapKit with Elasticsearch, improving property listing speeds and delivering a smoother experience within the Apple Maps integration.",
+		"name": "Software Engineer Intern - Zoocasa & eXp Realty",
+		"description": "Built React and React Native frontends driving 21,000+ extra monthly visits and 320+ agent sign-ups.\nRaised Go test coverage from 30% to 73%, with 90%+ frontend coverage in Cypress and Playwright.\nMoved MapKit property search onto Elasticsearch — one indexed lookup per viewport.",
 		"start_date": "May 2024",
-		"end_date": "August 2024",
+		"end_date": "April 2025",
 		"type": "Work Experience",
-		"image": "/images/zoocasa.png",
+		"image": "/images/exp.png",
 		"url": "https://www.zoocasa.com/",
-		"tools": ["React", "TypeScript", "GitHub", "Cypress/Playwright", "Golang", "Elasticsearch"]
+		"tools": ["React", "React Native", "TypeScript", "Next.js", "Golang", "Cypress", "Elasticsearch"]
 	},
 	{
 		"name": "Software Engineer - Tuq Inc",
-		"description": "I developed and documented 6 client-based projects and updated 3 older company projects throughout the Work Term. Each project contained 20+ models, updated with customer-requested features, and tested with 2500+ RSpec tests. I also designed 30+ emails per project, creating an automated environment for a seamless user experience. These projects leveraged RESTful APIs, guiding the user towards wanted features in an organized manner. 5 billing systems were also implemented using Moneris, allowing users the ability to purchase premium features within projects.",
+		"description": "Shipped 6 client projects and modernized 3 legacy ones, each with 20+ models.\nWrote 2,500+ RSpec tests and built 5 Moneris billing integrations.",
 		"start_date": "January 2023",
 		"end_date": "April 2023",
 		"type": "Work Experience",
 		"image": "/images/tuq.png",
-		"tools": ["Ruby", "PostgreSQL", "Linux", "GitHub", "HTML", "RSpec", "Swagger"]
-	},
-	{
-		"name": "Software Engineer - Pinned",
-		"description": "In my role as a member of a 5-person team, I actively employed MongoDB, Express.js, React.js, Node.js, Linear, and GitHub to contribute to the development of a dynamic news platform. This platform served as a showcase for organizational events tailored for subscribers, with a special emphasis on administrators facilitating these events. I took charge of engineering RESTful APIs, ensuring smooth communication between the front and back end. To validate our data model, I implemented Mocha tests, enhancing the robustness of our system. Engaging in code reviews, I played a key role in upholding coding standards, which not only facilitated comprehensive documentation but also streamlined our debugging processes.",
-		"start_date": "October 2023",
-		"end_date": "Present",
-		"type": "Projects",
-		"image": "/images/pinned.png",
-		"url": "https://www.uwpinned.com/",
-		"tools": ["MongoDB", "Express.js", "React.js", "Node.js", "Linear", "GitHub"]
-	},
-	{
-		"name": "Machine Learning & Software Engineer - Waterloo Aerial Robotics Group",
-		"description": "I utilized a YoloV8 model training a drone to detect landing pads with 96% accuracy. Other tasks included creating an autonomous flight algorithm for path detections and other path calculations for unprecedented changes during a flight.",
-		"start_date": "September 2023",
-		"end_date": "Present",
-		"type": "Projects",
-		"image": "/images/warg.png",
-		"tools": ["Python", "YoloV8", "GitHub"]
+		"tools": ["Ruby", "Ruby on Rails", "PostgreSQL", "Linux", "RSpec", "Swagger"]
 	},
 	{
 		"name": "Technical Support Consultant - Renison University College",
-		"description": "In managing the Jira system for classroom and office help requests, I introduced AI Automated Rules for Jira, Azure DevOps, and SharePoint, leading to a 45% increase in user satisfaction due to improved response accuracy. I also documented audio equipment usage, reducing related help requests by 30%, and optimized a Marking Tool in Microsoft Word using Visual Basic, cutting marking time for 70+ professors by half. These contributions collectively improved system efficiency and enhanced user experience.",
+		"description": "Introduced automated Jira and Azure DevOps rules, lifting user satisfaction 45%.\nHalved marking time for 70+ professors with a Visual Basic tool.",
 		"start_date": "September 2023",
 		"end_date": "December 2023",
 		"type": "Work Experience",
@@ -67,37 +58,8 @@
 		"tools": ["Visual Basic", "Jira", "Azure DevOps", "SharePoint"]
 	},
 	{
-		"name": "Code Snippet Saver",
-		"description": "I utilized JavaScript, HTML, Tailwind CSS, and GitHub to craft a feature-rich snippet management Chrome extension, enabling users to effortlessly save and organize code snippets. Leveraging the powerful features of Prism.js and Highlight.js, I intelligently color-coded the snippets, enhancing readability and offering a clearer understanding of syntax and code structure. By tapping into Chrome's local data storage system, I expanded support to over 250 programming languages, providing users with a versatile entry point to kickstart their coding journey with flexibility and ease.",
-		"start_date": "January 2024",
-		"end_date": null,
-		"type": "Projects",
-		"image": "/images/css.png",
-		"url": "https://chromewebstore.google.com/detail/code-snippet-saver/enhioekiigdmlkfdlijbhbladeekmcag",
-		"tools": ["JavaScript", "HTML", "Prism.js", "Highlight.js", "Tailwind CSS", "GitHub"]
-	},
-	{
-		"name": "Personal Portfolio",
-		"description": "I worked on and updated the front-end aspects of this project for professional functionality while practicing efficient quality assurance for 3+ years.",
-		"start_date": "September 2020",
-		"end_date": "Present",
-		"type": "Projects",
-		"image": "/images/portfolio.png",
-		"tools": ["React.js", "TypeScript", "Next.js", "Tailwind CSS", "GitHub"]
-	},
-	{
-		"name": "2023 Toyota Innovation Challenge",
-		"description": "My team - 4 people including myself - placed first out of 40+ teams receiving the \"Most Unique Approach\" award in this challenge by Toyota Motor Manufacturing Canada. We used OpenCV to develop an image-processing AI to detect sticker placement over holes on metallic surfaces. The algorithm was optimized to obtain a 99% success rate and run over live video feed achieving 30 fps.",
-		"start_date": "May 2023",
-		"end_date": null,
-		"type": ["Awards","Projects"],
-		"image": "/images/tmmc.png",
-		"url": "https://github.com/HazemS24/Toyota-ML-Challenge",
-		"tools": ["Python", "Matplotlib", "NumPy", "OpenCV", "Google Colab"]
-	},
-	{
 		"name": "Mentor - Math4me",
-		"description": "I worked as a Math, Science, and English mentor to middle-school and high-school students who required assistance. I achieved 'Mentor of the Month' during my first month as a result of the hard work and dedication I had put into the job. After almost 3 years of working at Math4me, I have learned how to adapt and please different mindsets while convincing people - especially youth - to do what is right for them.",
+		"description": "Math, science, and English mentor. Named Mentor of the Month in my first month.",
 		"start_date": "November 2020",
 		"end_date": "April 2025",
 		"type": "Work Experience",
@@ -105,8 +67,75 @@
 		"tools": []
 	},
 	{
-		"name": "Competitions Organizor - MIST TORONTO",
-		"description": "I helped recruit 70+ judges, moderators, and volunteers for high-school competitions - of all categories - to take place at the University of Toronto Saint George Campus. I completed this task with 100+ members in 6 months while attending bi-weekly meetings.",
+		"name": "International Math Tutor - Self Employed",
+		"description": "Run a tutoring business for students outside Canada, plus a YouTube channel for math.",
+		"start_date": "September 2021",
+		"end_date": "June 2026",
+		"type": "Work Experience",
+		"image": "/images/face.png",
+		"tools": []
+	},
+	{
+		"name": "Mousey-Housey Real Estate",
+		"description": "LSTM price forecasting up to 5 years out — 24% lower RMSE across 50,000+ listings.\nGemini-powered investment insights in under 1s on a CPU path.",
+		"start_date": "June 2025",
+		"end_date": "Present",
+		"type": "Projects",
+		"image": "/images/mouseyhousey.png",
+		"tools": ["Python", "TensorFlow", "Next.js", "LSTM", "Gemini"]
+	},
+	{
+		"name": "2x Toyota Innovation Challenge Winner",
+		"description": "2023 — OpenCV sticker-placement detection at 97% success, 30 FPS. Most Unique Approach, 1st of 40+ teams.\n2025 — ROS2 autonomous navigation with LiDAR and AprilTags, accurate within 5cm. Best Overall Design.",
+		"start_date": "May 2023",
+		"end_date": "May 2025",
+		"type": ["Awards", "Projects"],
+		"image": "/images/tmmc.png",
+		"url": "https://github.com/HazemS24/Toyota-ML-Challenge",
+		"tools": ["Python", "OpenCV", "ROS2", "YOLOv8", "LiDAR"]
+	},
+	{
+		"name": "Software Engineer - Pinned",
+		"description": "Built RESTful APIs and Mocha tests for a student news platform with a 5-person team.",
+		"start_date": "October 2023",
+		"end_date": "April 2025",
+		"type": "Projects",
+		"image": "/images/pinned.png",
+		"url": "https://www.uwpinned.com/",
+		"tools": ["MongoDB", "Express.js", "React.js", "Node.js"]
+	},
+	{
+		"name": "Machine Learning Engineer - Waterloo Aerial Robotics Group",
+		"description": "Trained YOLOv8 to detect drone landing pads at 96% accuracy.\nWrote autonomous flight path algorithms for in-flight course changes.",
+		"start_date": "September 2023",
+		"end_date": "April 2024",
+		"type": "Projects",
+		"image": "/images/warg.png",
+		"tools": ["Python", "YOLOv8", "OpenCV"]
+	},
+	{
+		"name": "Code Snippet Saver",
+		"description": "Chrome extension for saving and organizing code snippets across 250+ languages.\nSyntax highlighting via Prism.js and Highlight.js.",
+		"start_date": "January 2024",
+		"end_date": null,
+		"type": "Projects",
+		"image": "/images/css.png",
+		"url": "https://chromewebstore.google.com/detail/code-snippet-saver/enhioekiigdmlkfdlijbhbladeekmcag",
+		"tools": ["JavaScript", "HTML", "Prism.js", "Tailwind CSS"]
+	},
+	{
+		"name": "Personal Portfolio",
+		"description": "This site — cursor-reactive illustration, scroll-driven motion, and glass surfaces.",
+		"start_date": "September 2020",
+		"end_date": "Present",
+		"type": "Projects",
+		"image": "/images/portfolio.png",
+		"url": "https://hazem-saad.vercel.app",
+		"tools": ["React.js", "TypeScript", "Next.js", "Tailwind CSS", "Framer Motion"]
+	},
+	{
+		"name": "Competitions Organizer - MIST TORONTO",
+		"description": "Recruited 70+ judges, moderators, and volunteers for high-school competitions at U of T.",
 		"start_date": "September 2022",
 		"end_date": "March 2023",
 		"type": "Volunteer Experience",
@@ -114,8 +143,8 @@
 		"tools": []
 	},
 	{
-		"name": "MIST (Muslim Interscholastic Tournament) Toronto Math Olympics",
-		"description": "Achieved first place across all participating schools (in the Greater Toronto Area) in MIST Toronto's Math Olympics. This took almost 6 months of weekly exams and self-supervised tests as a practice to achieve.",
+		"name": "MIST Toronto Math Olympics",
+		"description": "First place across all participating schools in the Greater Toronto Area.",
 		"start_date": "May 2022",
 		"end_date": null,
 		"type": "Awards",
@@ -123,17 +152,8 @@
 		"tools": []
 	},
 	{
-		"name": "International Math Tutor - Self Employed",
-		"description": "I have been an entrepreneur for two years as I started my own tutoring business for international students - outside of Canada - and my own YouTube channel where I create more math videos to supplement my teaching.",
-		"start_date": "September 2021",
-		"end_date": "Present",
-		"type": "Work Experience",
-		"image": "/images/face.png",
-		"tools": []
-	},
-	{
 		"name": "Ontario Scholar",
-		"description": "Achieved a grade of 80% at least six times in Grade 12 courses and graduated with an impressive 97% average from John Fraser Secondary School.",
+		"description": "Graduated with a 97% average from John Fraser Secondary School.",
 		"start_date": "June 2022",
 		"end_date": null,
 		"type": "Awards",
@@ -142,7 +162,7 @@
 	},
 	{
 		"name": "Deforestation Prevention Foundation",
-		"description": "A group of 2 people - including myself - built a friendly website to educate 270+ students in our high school on ways to reduce the effects of deforestation. We presented reliable statistics and facts to spread information about the issue.",
+		"description": "Built a site teaching 270+ students how to reduce the effects of deforestation.",
 		"start_date": "September 2020",
 		"end_date": "January 2022",
 		"type": "Projects",
@@ -151,7 +171,7 @@
 	},
 	{
 		"name": "University of Waterloo - Math Contests",
-		"description": "Achieved top 25% out of all participants across the world in the following contests:\nPascal Contest (2018)\nCayley Contest (2019)\nFermat Contest (2020)\nCanadian Senior Mathematics Contest (2020)\nCanadian Senior Mathematics Contest (2021)",
+		"description": "Top 25% worldwide across Pascal, Cayley, Fermat, and two Canadian Senior Mathematics Contests.",
 		"start_date": "2018",
 		"end_date": "2022",
 		"type": "Awards",
@@ -160,7 +180,7 @@
 	},
 	{
 		"name": "ASD-S Math Competition",
-		"description": "Achieved first place with a team in a Mathematics Competition across all schools in the Anglophone South District - South (ASD-S) District at Saint John, New Brunswick.",
+		"description": "First place with my team across all schools in the ASD-S district, New Brunswick.",
 		"start_date": "November 2019",
 		"end_date": null,
 		"type": "Awards",
@@ -169,7 +189,7 @@
 	},
 	{
 		"name": "GreyHound Hounds Honors",
-		"description": "I achieved GreyHound Hounds Honors with a 95% average at Saint John High School during the 2018-2019 school year. I was also enrolled in an IB program which made this award much harder to achieve.",
+		"description": "Hounds Honors with a 95% average at Saint John High School, in an IB program.",
 		"start_date": "June 2019",
 		"end_date": null,
 		"type": "Awards",
